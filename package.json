@@ -1,0 +1,26 @@
+{
+  "name": "tsk-web",
+  "version": "1.0.0",
+  "description": "Tetamba Studio Kreasi - Sekrit project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/asset/css/output.css --watch"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paradiess-svg/TSK-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paradiess-svg/TSK-web/issues"
+  },
+  "homepage": "https://github.com/Paradiess-svg/TSK-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
+}
