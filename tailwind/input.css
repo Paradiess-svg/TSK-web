@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .navbar.sticky-costum{
+        background: rgba(37, 42, 66, 1);
+    }
+    /* .head untuk mancing navbar */
+    .head{
+    height: 900px;;
+    background-image: url(https://i.pinimg.com/564x/40/9d/a1/409da1b6773f57f956373dc752383f9b.jpg);
+    }
+}
