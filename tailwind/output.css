@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.navbar.sticky-costum{
+  background: rgba(37, 42, 66, 1);
+}
+
 .container {
   width: 100%;
 }
@@ -554,8 +558,14 @@ video {
 /* .head untuk mancing navbar */
 
 .head{
-  height: 900px;
-  background-image: url(https://i.pinimg.com/564x/40/9d/a1/409da1b6773f57f956373dc752383f9b.jpg);
+  height: 900px;;
+    background-image: url(/public/asset/Group\ 1.svg);
+    background-repeat: no-repeat;
+    z-index: 40;
+  }
+
+.static {
+  position: static;
 }
 
 .static {
@@ -918,8 +928,16 @@ video {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .items-center {
@@ -1078,6 +1096,7 @@ video {
 .opacity-100 {
   opacity: 1;
 }
+
 
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
