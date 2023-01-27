@@ -3,21 +3,32 @@
 @tailwind utilities;
 
 @layer components {
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 50;
+        padding: 30px 0;
+        padding-left: 1px;
+        transition: all 0.3s ease;
+    }
     .navbar.sticky-costum{
-        background: rgba(37, 42, 66, 1);
-        position: sticky;
+        background: #F39C12;
+        padding: 15px 0;
+        padding-left: 1px;
+        transition: all 0.3s ease;
+        /* transition: all;
+        transition-duration: 500ms; */
     }
-    /* .head untuk mancing navbar */
-    .head{
-    width: auto ;
-    height:100%;
-    background-image: url(/public/asset/Group\ 1.png);
-    background-repeat: no-repeat;
-    z-index: 40;
+    .navbar.sticky-costum-2{
+        background: #F39C12;
+        padding: 30px 0;
+        padding-left: 1px;
+        transition: all 0.3s ease;
     }
-    .head2{
-        height: 900px;
-        background-image: url(https://i.pinimg.com/564x/01/d6/fb/01d6fb0ccf850166d08bed962c3be0bc.jpg);
-        z-index: 10;
+    .hero{
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-bottom: 105%;
     }
+   
 }
