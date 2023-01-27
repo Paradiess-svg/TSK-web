@@ -547,7 +547,6 @@ video {
   }
 }
 
-<<<<<<< HEAD
 .navbar{
   position: fixed;
   width: 100%;
@@ -555,11 +554,6 @@ video {
   padding: 30px 0;
   padding-left: 1px;
   transition: all 0.3s ease;
-=======
-.navbar.sticky-costum{
-  background: rgba(37, 42, 66, 1);
-  position: sticky;
->>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .navbar.sticky-costum{
@@ -571,7 +565,6 @@ video {
         transition-duration: 500ms; */
 }
 
-<<<<<<< HEAD
 .navbar.sticky-costum-2{
   background: #F39C12;
   padding: 30px 0;
@@ -583,18 +576,10 @@ video {
   padding-top: 15%;
   padding-left: 10%;
   padding-bottom: 105%;
-=======
-.head{
-  width: auto ;
-  height:100%;
-  background-image: url(/public/asset/Group\ 1.png);
-  background-repeat: no-repeat;
-  z-index: 40;
->>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
-.fixed {
-  position: fixed;
+.static {
+  position: static;
 }
 
 .absolute {
@@ -605,13 +590,6 @@ video {
   position: sticky;
 }
 
-<<<<<<< HEAD
-.left-11 {
-  left: 2.75rem;
-}
-
-=======
->>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 .left-0 {
   left: 0px;
 }
@@ -731,10 +709,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -791,26 +765,16 @@ video {
   height: 2.5rem;
 }
 
-<<<<<<< HEAD
 .h-full {
   height: 100%;
 }
 
-.w-\[400px\] {
-  width: 400px;
-=======
 .w-3\/4 {
   width: 75%;
->>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .w-full {
   width: 100%;
-}
-
-.rotate-180 {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -886,24 +850,12 @@ video {
   background-color: rgba(44, 52, 135, 1);
 }
 
-<<<<<<< HEAD
 .bg-warna5 {
   background-color: rgba(243, 156, 18, 1);
-=======
-.bg-contain {
-  background-size: contain;
->>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-<<<<<<< HEAD
-=======
-}
-
-.p-5 {
-  padding: 1.25rem;
->>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .py-4 {
@@ -915,16 +867,16 @@ video {
   padding-left: 2.5rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
 .pl-7 {
   padding-left: 1.75rem;
 }
 
 .text-center {
   text-align: center;
+}
+
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
 .text-5xl {
