@@ -7,23 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TSK - Web</title>
   <link rel="stylesheet" href="../tailwind/output.css" />
-  <style>
-    /* * {
-        border: 1px solid red;
-      } */
-  </style>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/46197067d1.css" crossorigin="anonymous">
 </head>
 
 <body class="bg-warna2">
   <div class="container mx-auto">
 
     <!-- About -->
-    <div class="grid grid-cols-12 my-12">
-      <div class="bg-white h-96 mt-24 col-start-2 col-span-10 grid grid-rows-2 grid-cols-10 rounded-[50px] drop-shadow-2xl">
-        <div class="bg-warna6 h-20 mt-16 col-start-3 col-span-6 z-10 text-center">
-          <h1 class="text-white inline-block align-middle text-5xl font-bold">About</h1>
+    <div class="grid grid-cols-12 my-12" id="about">
+      <div
+        class="bg-white h-96 mt-24 col-start-2 col-span-10 grid grid-rows-3 grid-cols-10 rounded-[50px] drop-shadow-2xl">
+        <div class="bg-warna6 h-20 mt-16 col-start-3 col-span-6 z-10 flex items-center justify-center">
+          <h1 class="text-white text-5xl font-bold">About</h1>
         </div>
-        <div class="row-start-2 col-start-3 col-span-6 z-10">
+        <div class="row-start-2 col-start-3 col-span-6 z-10 mt-10">
           <p class="text-center text-xl">
             We are a professional IT consulting company that provides
             solutions to every technology problems for your company. Our tean
@@ -36,12 +33,12 @@
     <!-- About END -->
 
     <!-- Vision & Mission -->
-    <div class="grid grid-flow-row grid-cols-12 gap-5 my-12">
+    <div class="grid grid-flow-row grid-cols-12 gap-5 my-12" id="visionMission">
 
       <!-- vision -->
-      <div class="bg-white h-[510px] col-span-6 grid grid-cols-6 grid-rows-3 rounded-[50px] gap-5 drop-shadow-2xl">
-        <div class="bg-warna6 h-20 mt-16 col-start-2 col-span-4 z-10">
-          <h1 class="text-white text-5xl my-auto text-center font-bold">Vision</h1>
+      <div class="bg-white h-[510px] col-span-6 grid grid-cols-6 grid-rows-3 rounded-[50px] gap-5 drop-shadow-2xl" id="vision">
+        <div class="bg-warna6 h-20 mt-16 col-start-2 col-span-4 z-10 flex items-center justify-center">
+          <h1 class="text-white text-5xl my-auto font-bold">Vision</h1>
         </div>
         <div class="col-start-2 col-span-4 z-10 mt-5">
           <p class="text-center text-xl">
@@ -54,43 +51,74 @@
       <!-- Vision END -->
 
       <!-- Mission -->
-      <div class="bg-white h-[510px] col-span-6 grid grid-rows-3 grid-cols-6 rounded-[50px] gap-5">
-        <div class="bg-warna6 h-20 mt-16 col-start-2 col-span-4 z-10">
-          <h1 class="text-white text-5xl text-center font-bold">Mission<h1>
+      <div class="bg-white h-[510px] col-span-6 grid grid-rows-3 grid-cols-6 rounded-[50px] gap-5" id="mission">
+        <div class="bg-warna6 h-20 mt-16 col-start-2 col-span-4 z-10 flex items-center justify-center">
+          <h1 class="text-white text-5xl font-bold">Mission<h1>
         </div>
         <div class="col-start-2 col-span-4 z-10 text-xl">
-            <li>Giving the best service</li>
-            <li>Provide adequate result as needed</li>
-            <li>Provide added value to the company with a system that can be seeded, safe, and competitive cost</li>
-            <li>Develop new products</li>
-            <li>Building partnership</li>
-            <li>Providing employment</li>
-            <li>Making a learning place for prospective system research and system development </li>
+          <li>Giving the best service</li>
+          <li>Provide adequate result as needed</li>
+          <li>Provide added value to the company with a system that can be seeded, safe, and competitive cost</li>
+          <li>Develop new products</li>
+          <li>Building partnership</li>
+          <li>Providing employment</li>
+          <li>Making a learning place for prospective system research and system development </li>
         </div>
       </div>
       <!-- Mission END -->
-    </div>
 
-    <!-- Amazing Team -->
-    <div class="grid grid-cols-12 my-12 ">
-      <div class="bg-white h-[510px] col-span-12 grid grid-rows-3 grid-cols-12 rounded-[50px] gap-5">
-        <div class="bg-warna6 h-20 mt-16 col-start-4 col-span-6 z-10">
-          <h1 class="text-white text-5xl text-center font-bold">Amazing Team<h1>
+    </div>
+  </div>
+
+  <!-- Amazing Team -->
+  <div class="grid grid-cols-12 my-12 container mx-auto" id="amazingTeam">
+    <div class="bg-white h-[680px] col-span-12 grid grid-rows-4 grid-cols-12 rounded-[50px] gap-5">
+      <div class="bg-warna6 h-20 mt-16 col-start-4 col-span-6 z-10 flex items-center justify-center">
+        <h1 class="text-white text-5xl font-bold">Amazing Team</h1>
+      </div>
+
+      <div class="row-start-2 col-span-12 mt-5 grid grid-cols-12 h-auto">
+        <img src="/public/asset/img/team.svg" alt="team" class="col-span-4 aspect-square pl-10" width="400px">
+        <!-- <div class="flex items-center justify-center">
+          <a href="#"><img src="asset/img/next-left.svg" alt="next-left" class="hover:scale-105 transition duration-300 ease-in-out" width="60px"></a>
+        </div> -->
+        <div class="flex justify-center items-center">
+          <a href="#"><img src="asset/img/next-left.svg" alt="next-left" class="hover:scale-105 transition duration-300 ease-in-out" width="50px" height="100px"></a>
         </div>
-        <div class="row-start-2 static">
-          <img src="/public/asset/img/team.svg" alt="team" class="aspect-square w-[400px] h-[400px] relative left-11">
+
+        <!-- Card -->
+        <div class="col-span-6 col-start-6 grid grid-cols-6 gap-5" id="cardFrontendUiux">
+          <div class="col-span-3 bg-warna2 h-[420px] rounded-2xl shadow-2xl grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out" id="cardFrontend">
+            <div class="h-[150px] flex mt-10">
+              <img src="asset/img/code.svg" alt="code" class="mx-auto items-center">
+            </div>
+            <hr class="bg-white w-3/4 mx-auto row-start-2 mt-24">
+            <div class="text-white h-1 text-center">
+              <h1 class="text-4xl font-semibold">FRONTEND</h1>
+            </div>
+          </div>
+
+          <div class="col-span-3 rounded-2xl border h-[420px] border-warna2 shadow-2xl grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out" id="cardUiux">
+            <div class="h-[150px] flex mt-10">
+              <img src="asset/img/uiux.svg" alt="uiux" class="mx-auto items-center">
+            </div>
+            <hr class="bg-warna2 h-1 w-3/4 mx-auto row-start-2 mt-24">
+            <div class="text-warna2 text-center">
+              <h1 class="text-4xl font-semibold">UI/UX</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Card END -->
+
+        <div class="flex justify-center items-center">
+          <a href="#"><img src="asset/img/next-right.svg" alt="next-left" class="hover:scale-105 transition duration-300 ease-in-out" width="60px" height="100px"></a>
         </div>
       </div>
     </div>
-
   </div>
+  <!-- Amazing Team END -->
+
+  <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-              
-              
-              
-              
-              
