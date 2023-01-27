@@ -547,19 +547,50 @@ video {
   }
 }
 
+<<<<<<< HEAD
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  padding: 30px 0;
+  padding-left: 1px;
+  transition: all 0.3s ease;
+=======
 .navbar.sticky-costum{
   background: rgba(37, 42, 66, 1);
   position: sticky;
+>>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
-/* .head untuk mancing navbar */
+.navbar.sticky-costum{
+  background: #F39C12;
+  padding: 15px 0;
+  padding-left: 1px;
+  transition: all 0.3s ease;
+  /* transition: all;
+        transition-duration: 500ms; */
+}
 
+<<<<<<< HEAD
+.navbar.sticky-costum-2{
+  background: #F39C12;
+  padding: 30px 0;
+  padding-left: 1px;
+  transition: all 0.3s ease;
+}
+
+.hero{
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-bottom: 105%;
+=======
 .head{
   width: auto ;
   height:100%;
   background-image: url(/public/asset/Group\ 1.png);
   background-repeat: no-repeat;
   z-index: 40;
+>>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .fixed {
@@ -574,12 +605,27 @@ video {
   position: sticky;
 }
 
+<<<<<<< HEAD
+.left-11 {
+  left: 2.75rem;
+}
+
+=======
+>>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 .left-0 {
   left: 0px;
 }
 
 .top-\[-400px\] {
   top: -400px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .top-\[80px\] {
@@ -590,8 +636,8 @@ video {
   z-index: 10;
 }
 
-.z-50 {
-  z-index: 50;
+.z-\[-10\] {
+  z-index: -10;
 }
 
 .col-span-10 {
@@ -647,6 +693,11 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-2 {
@@ -736,8 +787,17 @@ video {
   height: 2.5rem;
 }
 
+<<<<<<< HEAD
+.h-full {
+  height: 100%;
+}
+
+.w-\[400px\] {
+  width: 400px;
+=======
 .w-3\/4 {
   width: 75%;
+>>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .w-full {
@@ -817,16 +877,24 @@ video {
   background-color: rgba(44, 52, 135, 1);
 }
 
+<<<<<<< HEAD
+.bg-warna5 {
+  background-color: rgba(243, 156, 18, 1);
+=======
 .bg-contain {
   background-size: contain;
+>>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
 }
 
 .p-5 {
   padding: 1.25rem;
+>>>>>>> afce644fccde42ab91e9def7657975b5a82c3984
 }
 
 .py-4 {
