@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
+
+
+
+@layer components {
+    .navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 50;
+        padding: 30px 0;
+        padding-left: 1px;
+        transition: all 0.3s ease;
+    }
+    .navbar.sticky-costum{
+        background: #F39C12;
+        padding: 15px 0;
+        padding-left: 1px;
+        transition: all 0.3s ease;
+        /* transition: all;
+        transition-duration: 500ms; */
+    }
+    .navbar.sticky-costum-2{
+        background: #F39C12;
+        padding: 30px 0;
+        padding-left: 1px;
+        transition: all 0.3s ease;
+    }
+    .hero{
+        padding-top: 15%;
+        padding-left: 10%;
+        padding-bottom: 105%;
+    }
+   
+}
