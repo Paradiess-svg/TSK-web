@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
-        comfortaa: ['comfotaa','serif']
+        comfortaa: ['comfortaa']
       },
       colors: {
         warna1: 'rgba(52, 152, 219, 1)',
