@@ -8,6 +8,16 @@
 
 
 @layer components {
+    body{
+        overflow-x: hidden;
+    }
+
+    .test{
+        background-color: #F39C12;
+        height: 1500px ;
+        width: 115px ;
+    }
+
     .navbar{
         position: fixed;
         width: 100%;
