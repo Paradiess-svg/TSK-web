@@ -5,18 +5,77 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Faviocon & Title -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>TSK - Web</title>
-  <link rel="stylesheet" href="../tailwind/output.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="asset/css/output.css" />
   <link rel="stylesheet" href="https://kit.fontawesome.com/46197067d1.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
+  <script src="asset/js/navbar-responsive.js"></script>
 </head>
 
 <body class="bg-warna2 min-h-[483px]">
-  <div class="container mx-auto sm:bg-black md:bg-green-600 lg:bg-yellow-400 xl:bg-pink-600">
+
+  <!-- navbar -->
+  <nav class="navbar md:flex md:items-center md:justify-between ">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl cursor-pointer">
+        <img class="h-10 inline mx-10" src="asset/img/Logo Full Color.png">
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block menu-click">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul
+      class=" md:flex md:items-center md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Product</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Portofolio</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Team</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Service</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Contact & Info</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- navbar END -->
+
+  <!-- hero -->
+  <div class=" bg-no-repeat z-10 static" style="background-image:url(../public/asset/img/Group\ 1.svg) ;">
+    <img class="hero" src="../public/asset/img/Logotype Putih.svg" alt="">
+    <img class="z-[-10] absolute top-0 right-0 h-full" src="../public/asset/img/img-hero.svg" alt="">
+  </div>
+  <!-- hero END -->
+
+  <!-- sm:bg-black md:bg-green-600 lg:bg-yellow-400 xl:bg-pink-600 -->
+  <div class="container mx-auto -mt-[400px] sm:-mt-[500px] md:-mt-[700px] lg:-mt-[1000px] xl-mt-[1200px] 2xl:-mt-[1700px]">
 
     <!-- About -->
-    <div class="grid grid-cols-12 my-12" id="about">
+    <div class="grid grid-cols-12 mb-12" id="about">
       <div
-        class="bg-white h-auto mt-24 col-start-2 col-span-10 grid grid-rows-3 grid-cols-10 rounded-2xl drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8">
+        class="bg-white h-auto mt-24 col-start-2 col-span-10 grid grid-rows-3 grid-cols-10 rounded-3xl drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8">
         <div
           class="bg-warna6 h-14 mt-5 mb-0 col-start-4 col-span-4 flex items-center justify-center md:mt-8 md:h-20 md:col-start-3 md:col-span-6 xl:mt-8">
           <h1 class="text-white text-3xl font-bold md:text-5xl">About</h1>
@@ -35,14 +94,18 @@
     <!-- About END -->
 
     <!-- Vision & Mission -->
-    <div class="grid grid-flow-row grid-cols-12 gap-5 my-12" id="visionMission">
+    <div class="grid grid-flow-row grid-cols-12 gap-5 my-12 mx-2" id="visionMission">
 
       <!-- vision -->
-      <div class="bg-white h-auto  col-span-6 grid grid-rows-5 grid-cols-6 rounded-2xl gap-3 drop-shadow-2xl sm:h-[400px] sm:grid-rows-4 sm:rounded-[50px] md:grid-rows-5 md:h-[550px] lg:h-auto lg:grid-rows-4 xl:h-[450px]" id="vision">
-        <div class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center md:h-20 md:mt-8 xl:mt-8">
+      <div
+        class="bg-white h-auto  col-span-6 grid grid-rows-5 grid-cols-6 rounded-3xl gap-3 drop-shadow-2xl sm:h-[400px] sm:grid-rows-4 sm:rounded-[50px] md:grid-rows-5 md:h-[550px] lg:h-auto lg:grid-rows-4 xl:h-[450px]"
+        id="vision">
+        <div
+          class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center md:h-20 md:mt-8 xl:mt-8">
           <h1 class="text-white text-3xl my-auto font-bold md:text-5xl">Vision</h1>
         </div>
-        <div class="col-start-2 col-span-4 row-span-4 text-sm mt-0 mb-5 sm:row-span-3 md:mt-4 md:text-xl md:mb-8 md:row-span-4 lg:row-span-3 xl:mt-4 xl:mb-8">
+        <div
+          class="col-start-2 col-span-4 row-span-4 text-sm mt-0 mb-5 sm:row-span-3 md:mt-4 md:text-xl md:mb-8 md:row-span-4 lg:row-span-3 xl:mt-4 xl:mb-8">
           <p class="text-center text-sm md:text-xl">
             Making the information Technology services provider company
             competent, leading, and providing the best solutions in it's field
@@ -53,11 +116,15 @@
       <!-- Vision END -->
 
       <!-- Mission -->
-      <div class="bg-white h-auto col-span-6 grid grid-rows-5 grid-cols-6 rounded-2xl gap-3 drop-shadow-2xl sm:h-[400px] sm:grid-rows-4 sm:rounded-[50px] md:grid-rows-5 md:h-[550px] lg:h-auto lg:grid-rows-4 xl:h-[450px]" id="mission">
-        <div class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center md:h-20 md:mt-8 xl:mt-8">
+      <div
+        class="bg-white h-auto col-span-6 grid grid-rows-5 grid-cols-6 rounded-3xl gap-3 drop-shadow-2xl sm:h-[400px] sm:grid-rows-4 sm:rounded-[50px] md:grid-rows-5 md:h-[550px] lg:h-auto lg:grid-rows-4 xl:h-[450px]"
+        id="mission">
+        <div
+          class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center md:h-20 md:mt-8 xl:mt-8">
           <h1 class="text-white text-3xl font-bold md:text-5xl">Mission<h1>
         </div>
-        <div class="col-start-2 col-span-4 row-span-4 text-sm mt-0 mb-5 sm:row-span-3 md:mt-4 md:text-xl md:mb-8 md:row-span-4 lg:row-span-3 xl:mt-4 xl:mb-8">
+        <div
+          class="col-start-2 col-span-4 row-span-4 text-sm mt-0 mb-5 sm:row-span-3 md:mt-4 md:text-xl md:mb-8 md:row-span-4 lg:row-span-3 xl:mt-4 xl:mb-8">
           <li>Giving the best service</li>
           <li>Provide adequate result as needed</li>
           <li>Provide added value to the company with a system that can be seeded, safe, and competitive cost</li>
@@ -70,6 +137,7 @@
       <!-- Mission END -->
 
     </div>
+
   </div>
 
   <!-- Amazing Team -->
@@ -126,7 +194,6 @@
   </div>
   <!-- Amazing Team END -->
 
-  <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

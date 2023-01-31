@@ -4,7 +4,7 @@
   "description": "Tetamba Studio Kreasi - Sekrit project",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./tailwind/input.css -o ./tailwind/output.css --watch"
+    "dev": "npx tailwindcss -i ./public/asset/css/input.css -o ./public/asset/css/output.css --watch"
     
   },
   "repository": {
