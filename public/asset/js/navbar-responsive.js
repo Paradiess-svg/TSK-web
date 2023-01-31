@@ -17,15 +17,6 @@ function Menu(e) {
       } else {
         $('.navbar').removeClass("sticky-costum");
       }
-
-
-
-      // scroll-up button show/hide script
-      if (this.scrollY > 500) {
-        $('.scroll-up-btn').addClass("show");
-      } else {
-        $('.scroll-up-btn').removeClass("show");
-      }
     });
 
   });
