@@ -10,6 +10,11 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>TSK - Web</title>
 
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="stylesheet" href="asset/css/output.css" />
   <link rel="stylesheet" href="https://kit.fontawesome.com/46197067d1.css" crossorigin="anonymous">
@@ -70,7 +75,8 @@
   <!-- hero END -->
 
   <!-- sm:bg-black md:bg-green-600 lg:bg-yellow-400 xl:bg-pink-600 -->
-  <div class="container mx-auto -mt-[400px] sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl-mt-[1400px] 2xl:-mt-[1700px]">
+  <div
+    class="container mx-auto -mt-[400px] sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl-mt-[1400px] 2xl:-mt-[1700px]">
 
     <!-- About -->
     <div class="grid grid-cols-12 mb-12" id="about">
@@ -94,7 +100,7 @@
       </div>
     </div>
     <!-- About END -->
-    
+
     <!-- Vision & Mission -->
     <div class="grid grid-flow-row grid-cols-12 gap-5 my-12 mx-2" id="visionMission">
 
@@ -145,13 +151,18 @@
 
   </div>
 
-  <!-- Amazing Team -->
+  
   <div class="grid grid-cols-12 my-12 container mx-auto" id="amazingTeam">
-    <div class="bg-white h-[320px] md:h-[550px] xl:h-[650px] col-span-12 grid grid-rows-3 md:grid-rows-4 grid-cols-12 rounded-2xl  md:gap-5 sm:rounded-[50px] relative" id="amazing-team">
-      
+
+    <!-- Amazing Team -->
+    <div
+      class="bg-white h-[320px] md:h-[550px] xl:h-[650px] col-span-12 grid grid-rows-3 md:grid-rows-4 grid-cols-12 rounded-2xl my-12 md:gap-5 sm:rounded-[50px] relative"
+      id="amazing-team">
+
       <!-- overlay -->
       <img src="asset/img/overlay/amazingTeam-overlay1.svg" alt="overlay-amazingTeam1" class="absolute">
-      <img src="asset/img/overlay/amazingTeam-overlay2.svg" alt="overlay-amazingTeam2" class="absolute bottom-0 right-0">
+      <img src="asset/img/overlay/amazingTeam-overlay2.svg" alt="overlay-amazingTeam2"
+        class="absolute bottom-0 right-0">
       <!-- overlay END -->
 
       <div class="bg-warna6 h-14 md:h-20 mt-5 md:mt-8 col-start-4 col-span-6 flex items-center justify-center z-10">
@@ -176,7 +187,7 @@
             <div class="h-12 md:h-24 lg:h-32 xl:h-44 flex mt-10">
               <img src="asset/img/code.svg" alt="code" class="mx-auto items-center">
             </div>
-            <hr class="bg-white w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10 xl:mt-24">
+            <hr class="bg-white h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10 xl:mt-24">
             <div class="text-white h-1 text-center">
               <h1 class="font-comfortaa font-medium text-base md:text-2xl lg:text-4xl">FRONTEND</h1>
             </div>
@@ -204,10 +215,62 @@
         <!-- button right END -->
 
       </div>
-      
     </div>
+    <!-- Amazing Team END -->
+
+    <!-- our product -->
+    <div class="col-span-full grid grid-cols-12 my-12" id="our-product">
+
+      <div class="bg-warna6 h-14 md:h-20 mt-5 col-start-4 col-span-6 flex items-center justify-center z-10">
+        <h1 class="text-white font-Montserrat text-3xl md:text-5xl font-bold">Our Product</h1>
+      </div>
+
+      <div class="bg-warna1 h-14 md:h-20 mt-5 md:mt-8 col-start-4 col-span-6 flex items-center justify-center z-10">
+        <h1 class="text-white font-Montserrat text-2xl md:text-4xl font-normal">Web Penerbit Salemba</h1>
+      </div>
+
+      <div class="col-span-full grid grid-rows-3 grid-cols-12 gap-3 mt-20">
+
+        <div class="col-span-4 row-span-3">
+          <img src="asset/img/1.png" alt="satu" class="">
+          <img src="asset/img/2.png" alt="dua" class="mt-5">
+          <img src="asset/img/3.png" alt="tiga" class="mt-5">
+        </div>
+
+        <div class="col-span-4 row-span-3 mt-8">
+          <img src="asset/img/4.png" alt="empat">
+          <img src="asset/img/5.png" alt="lima" class="mt-5">
+          <img src="asset/img/6.png" alt="enam" class="mt-5">
+        </div>
+
+        <div class="col-span-4 row-span-2 mt-28">
+
+          <div class="col-span-4">
+            <hr class="w-1/2 bg-warna5 h-1">
+          </div>
+
+          <div class="col-span-4 grid grid-cols-4 mt-8 gap-2">
+            <img src="asset/img/react.png" alt="react" class="col-span-1">
+            <img src="asset/img/net.png" alt="net" class="col-span-1">
+            <img src="asset/img/sql.png" alt="sql" class="col-span-1">
+          </div>
+
+          <div class="col-span-4 mt-5">
+            <p class="font-comfortaa font-medium text-white">We developer a service system called Salemba Practice for Penerbit Salemba. This service consists of e-learning , e-Tryiut and Training in mid-2019</p>
+            <br>
+            <p class="text-white font-comfortaa font-medium">There is also a catalog of various books that can be purchased , either in print or digital (e-book).</p>
+          </div>
+
+          <div class="col-span-3 mt-5">
+            <button class="bg-transparent hover:bg-warna5 border border-warna5 rounded-lg py-2 px-4 text-3xl font-montserrat font-bold text-warna5 hover:text-white transition duration-150 ease-in-out">Show More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- our product END -->
+
   </div>
-  <!-- Amazing Team END -->
 
 </body>
 
