@@ -1,9 +1,20 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 @layer components {
+    body{
+        overflow-x: hidden;
+    }
+
+    .test{
+        background-color: #F39C12;
+        height: 1500px ;
+        width: 115px ;
+    }
+
     .navbar{
         position: fixed;
         width: 100%;
@@ -17,8 +28,7 @@
         padding: 15px 0;
         padding-left: 1px;
         transition: all 0.3s ease;
-        /* transition: all;
-        transition-duration: 500ms; */
+
     }
     .navbar.sticky-costum-2{
         background: #F39C12;
@@ -26,10 +36,21 @@
         padding-left: 1px;
         transition: all 0.3s ease;
     }
+
     .hero{
         padding-top: 15%;
         padding-left: 10%;
-        padding-bottom: 105%;
+        padding-bottom: 115%;
+    }
+
+    .foot-line{
+        transform: rotate(58deg);
+	background-color:rgba(241.00000083446503, 196.00000351667404, 15.000000055879354, 1);
+	width:115px;
+	height:150px;
+    position: absolute;
+    left: -360px;
+    top: 3900px;
     }
    
 }
