@@ -55,5 +55,16 @@
     left: -360px;
     top: 3900px;
     }
+
+    .link-footer {
+        padding: 2%;
+        color: white;
+        transition: color 1s
+    }
+    
+    .link-footer :hover{
+        color: rgba(37, 42, 66, 1);
+        transition: color 1s
+    }
    
 }

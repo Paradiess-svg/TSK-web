@@ -235,16 +235,65 @@
       </div>
     </div>
     
-    
-    <footer class="bg-warna6 col-span-12 grid grid-cols-12">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid" width="90%" height="700px" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-span-7"></iframe>
-
-
-      <div class="pt-10 z-10 ">
-      <div class="font-comfort text-white">Contact us</div>
-      <span><i class="fa-regular fa-envelope"></i>
-      <div class="font-mont text-white">tetambastudio@gmail.com </div></span>
+    <!-- Footer
+    Yang kurang dari footer ini adalah icon yang tak mau menggunakan warna standar dari config dan dari hover belum ada perbahan stransisi walau sudah di css dan copy paste juga link ke alamat selanjutnya belu ada -->
+    <footer class="bg-warna6 grid grid-cols-2 grid-row-12">
+      <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid" width="100%" height="650px" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="grid col-span-1"></iframe>
+    </div>
+    <div>
+      <div class=" z-10 grid grid-rows-2 grid-cols-6 col-span-1 p-5 gap-5 ">
+      <div class="font-comfort text-white col-span-3 text-xl">Contact us</div>
+      <a class="col-start-1 text-4xl text-right link-footer" href="#"><i class="fa-solid fa-envelope" onclick="copyContentrel()"></i></a>
+      <div class="font-mont text-white pt-1 col-span-3">tetambastudio @gmail.com </div>
+      <a class="col-start-1 text-4xl text-right" href="#"><i class="fa-solid fa-phone"></i></a>
+      <div class="font-mont text-white pt-1 col-span-3">+62 XXX XXXX XXXX </div>
+    </div>
+    <div>
+      <div class=" z-10 grid grid-rows-2 grid-cols-6 col-span-1 p-5 gap-5 ">
+      <div class="font-comfort text-white col-span-2 text-xl">Address</div>
+      <a class="col-start-1 text-4xl text-right pt-1"><i class="fa-solid fa-location-dot "></i></a>
+      <div class="font-mont text-white col-start-2 col-span-4 ">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16432</div>
+    </div>
+    <div>
+      <div class=" z-10 grid grid-rows-2 grid-cols-6 col-span-1 p-5 ">
+      <div class="font-comfort text-white col-span-3 text-xl">More about us</div>
+      <div class="font-mont text-white pt-1 col-start-2">Product</div>
+      <div class="font-mont text-white pt-1 col-start-2">Portofolio</div>
+      <div class="font-mont text-white pt-1 col-start-3 row-start-2">Team</div>
+      <div class="font-mont text-white pt-1 col-start-3 row-start-3">Service</div>
+      <div class="font-mont text-white pt-1 col-start-4 row-start-2 col-span-2">Contact & info</div>
+    </div>
+    <div class="w-full h-auto">
+      <img src="asset/img/foot.svg" alt="">
+    </div>
+    <div>
+      <div class=" z-10 grid grid-rows-1 grid-cols-2 col-span-1 p-5 gap-5 ">
+        <div class="font-comfort text-white col-start-1 pt-3">Copyright© 2023 
+          PT.Tetamba Studio Kreasi. 
+          All rights reserved.</div>
+          <div class="col-start-2 grid grid-cols-5 pt-3 ">
+            <a class="col-start-1 text-4xl text-right pt-1" href="#"><i class="fa-brands fa-facebook "></i></a>
+            <a class="col-start-2 text-4xl text-right pt-1" href="#"><i class="fa-brands fa-twitter "></i></a>
+            <a class="col-start-3 text-4xl text-right pt-1" href="#"><i class="fa-brands fa-youtube "></i></a>
+            <a class="col-start-4 text-4xl text-right pt-1" href="#"><i class="fa-brands fa-linkedin "></i></a>
+            <a class="col-start-5 text-4xl text-right pt-1" href="#"><i class="fa-brands fa-instagram "></i></a>
+          </div>
+      </div>
+    </div>
     </footer>
+    <script>
+      let verrel = document.getElementById('rel').innerHTML;
+      const copyContentrel = async () => {
+        try {
+          await navigator.clipboard.writeText(verrel);
+          alert ("Verrel E-mail copied")
+        } catch (err) {
+          console.error('Failed to copy: ', err);
+        }
+      }
+    </script>
 </body>
+
 
 </html>
