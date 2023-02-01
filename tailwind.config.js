@@ -14,8 +14,12 @@ module.exports = {
         warna4: 'rgba(241, 196, 15, 1)',
         warna5: 'rgba(243, 156, 18, 1)',
         warna6: 'rgba(44, 52, 135, 1)'
+      },
+      fontFamily: {
+        comfortaa: ['Comfortaa', 'cursive'],
+        montserrat: ['Montserrat', 'sans-serif']
       }
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
