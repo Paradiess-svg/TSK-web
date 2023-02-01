@@ -577,7 +577,17 @@ body{
 .hero{
   padding-top: 15%;
   padding-left: 10%;
-  padding-bottom: 105%;
+  padding-bottom: 115%;
+}
+
+.foot-line{
+  transform: rotate(58deg);
+  background-color:rgba(241.00000083446503, 196.00000351667404, 15.000000055879354, 1);
+  width:115px;
+  height:150px;
+  position: absolute;
+  left: -360px;
+  top: 3900px;
 }
 
 .static {
@@ -620,16 +630,8 @@ body{
   z-index: -10;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
-.z-\[-20\] {
-  z-index: -20;
-}
-
-.z-20 {
-  z-index: 20;
+.z-30 {
+  z-index: 30;
 }
 
 .col-span-10 {
@@ -652,24 +654,20 @@ body{
   grid-column: span 3 / span 3;
 }
 
-.col-span-9 {
-  grid-column: span 9 / span 9;
-}
-
-.col-span-8 {
-  grid-column: span 8 / span 8;
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .col-span-7 {
   grid-column: span 7 / span 7;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
 .col-span-5 {
   grid-column: span 5 / span 5;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .col-start-2 {
@@ -775,8 +773,8 @@ body{
   margin-bottom: auto;
 }
 
-.-mt-\[400px\] {
-  margin-top: -400px;
+.-mt-\[420px\] {
+  margin-top: -420px;
 }
 
 .mb-12 {
@@ -815,84 +813,8 @@ body{
   margin-top: 2.5rem;
 }
 
-.mb-\[-500px\] {
-  margin-bottom: -500px;
-}
-
-.mb-\[-600px\] {
-  margin-bottom: -600px;
-}
-
-.mb-\[-400px\] {
-  margin-bottom: -400px;
-}
-
-.mb-\[-300px\] {
-  margin-bottom: -300px;
-}
-
-.mb-\[-100px\] {
-  margin-bottom: -100px;
-}
-
-.mb-\[-70000px\] {
-  margin-bottom: -70000px;
-}
-
-.mb-\[-700px\] {
-  margin-bottom: -700px;
-}
-
-.mb-\[-550px\] {
-  margin-bottom: -550px;
-}
-
-.mb-\[-450px\] {
-  margin-bottom: -450px;
-}
-
-.mb-\[-420px\] {
-  margin-bottom: -420px;
-}
-
-.mb-\[-470px\] {
-  margin-bottom: -470px;
-}
-
-.mb-\[-480px\] {
-  margin-bottom: -480px;
-}
-
-.mb-\[-4750px\] {
-  margin-bottom: -4750px;
-}
-
-.mb-\[-475px\] {
-  margin-bottom: -475px;
-}
-
-.mb-\[-478px\] {
-  margin-bottom: -478px;
-}
-
-.mb-\[-472px\] {
-  margin-bottom: -472px;
-}
-
-.mb-\[-473px\] {
-  margin-bottom: -473px;
-}
-
-.mb-\[-473\.5px\] {
-  margin-bottom: -473.5px;
-}
-
-.mb-\[-473\.9px\] {
-  margin-bottom: -473.9px;
-}
-
-.mb-\[-474px\] {
-  margin-bottom: -474px;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -947,44 +869,12 @@ body{
   height: 0.25rem;
 }
 
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[180px\] {
-  height: 180px;
-}
-
 .h-\[100px\] {
   height: 100px;
 }
 
-.h-\[120px\] {
-  height: 120px;
-}
-
-.h-\[110px\] {
-  height: 110px;
-}
-
-.h-\[210px\] {
-  height: 210px;
-}
-
-.h-\[190px\] {
-  height: 190px;
-}
-
-.h-\[2000px\] {
-  height: 2000px;
+.h-\[260px\] {
+  height: 260px;
 }
 
 .w-full {
@@ -1017,30 +907,6 @@ body{
 
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-9 {
-  grid-template-columns: repeat(9, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-7 {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-cols-8 {
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-3 {
@@ -1104,10 +970,6 @@ body{
   background-color: rgba(44, 52, 135, 1);
 }
 
-.bg-warna5 {
-  background-color: rgba(243, 156, 18, 1);
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1127,6 +989,14 @@ body{
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1262,8 +1132,8 @@ body{
     grid-row: span 3 / span 3;
   }
 
-  .sm\:-mt-\[500px\] {
-    margin-top: -500px;
+  .sm\:-mt-\[520px\] {
+    margin-top: -520px;
   }
 
   .sm\:h-\[400px\] {
@@ -1310,8 +1180,8 @@ body{
     margin-bottom: 0px;
   }
 
-  .md\:-mt-\[700px\] {
-    margin-top: -700px;
+  .md\:-mt-\[720px\] {
+    margin-top: -720px;
   }
 
   .md\:mt-8 {
@@ -1392,8 +1262,8 @@ body{
     grid-row: span 3 / span 3;
   }
 
-  .lg\:-mt-\[1000px\] {
-    margin-top: -1000px;
+  .lg\:-mt-\[1020px\] {
+    margin-top: -1020px;
   }
 
   .lg\:h-auto {
@@ -1442,7 +1312,7 @@ body{
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:-mt-\[1700px\] {
-    margin-top: -1700px;
+  .\32xl\:-mt-\[1720px\] {
+    margin-top: -1720px;
   }
 }
