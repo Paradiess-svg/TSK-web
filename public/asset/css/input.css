@@ -45,12 +45,11 @@
 
     .foot-line{
         transform: rotate(58deg);
-	background-color:rgba(241.00000083446503, 196.00000351667404, 15.000000055879354, 1);
-	width:115px;
-	height:150px;
-    position: absolute;
-    left: -360px;
-    top: 3900px;
+        background-color:rgba(241.00000083446503, 196.00000351667404, 15.000000055879354, 1);
+        width:115px;
+        height:150px;
+        position: absolute;
+        left: -360px;
+        top: 3900px;
     }
-   
 }
