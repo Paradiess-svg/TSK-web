@@ -32,9 +32,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+  <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
-  <script src="assets/js/navbar-responsive.js"></script>
+  <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="/public/asset/js/clipboard.min.js"></script>
+  <script src="asset/js/navbar-responsive.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -358,34 +362,25 @@
 
           <div class="col-span-3 mt-5">
             <button
-              class="bg-transparent hover:bg-warna5 border border-warna5  py-2 px-4 w-full text-4xlxl font-montserratserrat font-bold text-warna5 hover:text-white transition duration-150 ease-in-out">Show
+              class="bg-transparent hover:bg-warna5 border border-warna5  py-2 px-4 w-full text-4xlxl font-montserrat font-bold text-warna5 hover:text-white transition duration-500 ease-in-out">Show
               More</button>
           </div>
 
         </div>
 
       </div>
-
-    </section>
-    <!-- Our Product END -->
-
   </div>
 
-  <!-- Footer -->
-  <footer class="bg-warna6 col-span-12 grid grid-cols-12">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
-      width="90%" height="700px" style="border:0; " allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade" class="col-span-7"></iframe>
 
-    <div class="pt-10 z-10 ">
-      <div class="font-comfortaa text-white">Contact us</div>
-      <span><i class="fa-regular fa-envelope"></i>
-        <div class="font-montserrat text-white">tetambastudio@gmail.com </div>
-      </span>
-  </footer>
-  <!-- Footer END -->
+  
+  <script>
+    var btn = document.querySelector('#btn');
 
+    btn.addEventListener('click', () => {
+      const textCopied = ClipboardJS.copy('tetambastudio@gmail.com');
+      element.classList.add('copied')
+    })
+  </script>
 </body>
 
 </html>

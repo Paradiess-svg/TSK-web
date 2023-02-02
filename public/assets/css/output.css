@@ -1460,9 +1460,3 @@ body{
     background-color: rgb(219 39 119 / var(--tw-bg-opacity));
   }
 }
-
-@media (min-width: 1536px) {
-  .\32xl\:-mt-\[1700px\] {
-    margin-top: -1700px;
-  }
-}
