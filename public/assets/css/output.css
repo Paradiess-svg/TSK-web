@@ -1,6 +1,3 @@
-/*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
-*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -648,8 +645,8 @@ body{
   grid-column: span 12 / span 12;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
+.col-span-7 {
+  grid-column: span 7 / span 7;
 }
 
 .col-span-full {
@@ -660,12 +657,12 @@ body{
   grid-column: span 1 / span 1;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
-.col-span-5 {
-  grid-column: span 5 / span 5;
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .col-start-2 {
@@ -680,8 +677,8 @@ body{
   grid-column-start: 3;
 }
 
-.col-start-6 {
-  grid-column-start: 6;
+.col-start-5 {
+  grid-column-start: 5;
 }
 
 .col-start-8 {
@@ -692,8 +689,8 @@ body{
   grid-column-start: 1;
 }
 
-.col-start-5 {
-  grid-column-start: 5;
+.col-start-6 {
+  grid-column-start: 6;
 }
 
 .row-span-2 {
@@ -736,14 +733,34 @@ body{
   grid-row-start: 7;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-4 {
@@ -756,19 +773,16 @@ body{
   margin-bottom: 1.5rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.ml-0 {
+  margin-left: 0px;
 }
 
 .-mt-\[400px\] {
@@ -797,6 +811,14 @@ body{
 
 .mt-0 {
   margin-top: 0px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .mt-10 {
@@ -829,10 +851,6 @@ body{
 
 .mt-28 {
   margin-top: 7rem;
-}
-
-.mr-5 {
-  margin-right: 1.25rem;
 }
 
 .mr-4 {
@@ -903,6 +921,10 @@ body{
   width: 200px;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-3\/4 {
   width: 75%;
 }
@@ -943,12 +965,12 @@ body{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-rows-3 {
@@ -987,12 +1009,20 @@ body{
   gap: 0.75rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
 .self-center {
   align-self: center;
+}
+
+.overflow-visible {
+  overflow: visible;
 }
 
 .rounded-3xl {
@@ -1053,14 +1083,6 @@ body{
   background-repeat: no-repeat;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -1097,24 +1119,12 @@ body{
   padding-left: 1.25rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pr-5 {
   padding-right: 1.25rem;
 }
 
-.pl-\[-20\] {
-  padding-left: -20;
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pb-2 {
@@ -1139,11 +1149,6 @@ body{
 
 .font-montserrat {
   font-family: Montserrat, sans-serif;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1171,14 +1176,18 @@ body{
   line-height: 1;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[80px\] {
+  font-size: 80px;
 }
 
 .font-bold {
@@ -1364,6 +1373,10 @@ body{
     margin-bottom: 0px;
   }
 
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
   .md\:-mt-\[900px\] {
     margin-top: -900px;
   }
@@ -1542,6 +1555,14 @@ body{
 
   .xl\:h-\[420px\] {
     height: 420px;
+  }
+
+  .xl\:h-32 {
+    height: 8rem;
+  }
+
+  .xl\:h-36 {
+    height: 9rem;
   }
 
   .xl\:h-44 {
