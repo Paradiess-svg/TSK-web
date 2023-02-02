@@ -580,17 +580,6 @@ body{
   padding-bottom: 115%;
 }
 
-.link-footer {
-  padding: 2%;
-  color: white;
-  transition: color 1s
-}
-
-.link-footer :hover{
-  color: rgba(37, 42, 66, 1);
-  transition: color 1s
-}
-
 .static {
   position: static;
 }
@@ -1035,10 +1024,6 @@ body{
   padding: 1.25rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1066,16 +1051,12 @@ body{
   padding-top: 0.25rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
 .pr-5 {
   padding-right: 1.25rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-center {
@@ -1228,11 +1209,6 @@ body{
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-slate-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 .hover\:text-warna4:hover {
