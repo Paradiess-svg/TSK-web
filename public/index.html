@@ -37,11 +37,11 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
   <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-  <script src="/public/asset/js/clipboard.js-master/clipboard.js-master/dist/clipboard.min.js"></script>
+  <script src="/public/asset/js/clipboard.min.js"></script>
   <script src="asset/js/navbar-responsive.js"></script>
 
 
-  
+
 </head>
 
 <body class="bg-warna2 min-w-[483px]">
@@ -404,17 +404,15 @@
             <a class="col-start-4 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500" href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i class="fa-brands fa-linkedin "></i></a>
             <a class="col-start-5 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500" href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i class="fa-brands fa-instagram "></i></a>
           </div>
-      </div>
-    </div>
-    </footer>
-    <script>
-        var btn = document.querySelector('#btn');
+  </footer>
+  <script>
+    var btn = document.querySelector('#btn');
 
-btn.addEventListener('click', () => {
-  const textCopied = ClipboardJS.copy('tetambastudio@gmail.com');
-  element.classList.add('copied')
-})
-    </script>
+    btn.addEventListener('click', () => {
+      const textCopied = ClipboardJS.copy('tetambastudio@gmail.com');
+      element.classList.add('copied')
+    })
+  </script>
 </body>
 
 </html>
