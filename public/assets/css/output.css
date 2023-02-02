@@ -692,6 +692,10 @@ body{
   grid-column-start: 1;
 }
 
+.col-start-6 {
+  grid-column-start: 6;
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -755,6 +759,21 @@ body{
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .ml-5 {
@@ -1525,6 +1544,10 @@ body{
     margin-top: 1rem;
   }
 
+  .xl\:mt-24 {
+    margin-top: 6rem;
+  }
+
   .xl\:h-\[450px\] {
     height: 450px;
   }
@@ -1543,6 +1566,10 @@ body{
 
   .xl\:h-36 {
     height: 9rem;
+  }
+
+  .xl\:h-44 {
+    height: 11rem;
   }
 
   .xl\:bg-pink-600 {
