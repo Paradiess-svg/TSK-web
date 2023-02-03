@@ -692,10 +692,6 @@ body{
   grid-column-start: 1;
 }
 
-.col-start-6 {
-  grid-column-start: 6;
-}
-
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -759,21 +755,6 @@ body{
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .ml-5 {
@@ -854,6 +835,10 @@ body{
 
 .mt-28 {
   margin-top: 7rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mr-4 {
@@ -1082,6 +1067,11 @@ body{
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-red-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1126,12 +1116,12 @@ body{
   padding-right: 1.25rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pr-2 {
@@ -1146,12 +1136,12 @@ body{
   text-align: right;
 }
 
-.font-comfortaa {
-  font-family: Comfortaa, cursive;
-}
-
 .font-montserrat {
   font-family: Montserrat, sans-serif;
+}
+
+.font-comfortaa {
+  font-family: Comfortaa, cursive;
 }
 
 .text-3xl {
@@ -1544,10 +1534,6 @@ body{
     margin-top: 1rem;
   }
 
-  .xl\:mt-24 {
-    margin-top: 6rem;
-  }
-
   .xl\:h-\[450px\] {
     height: 450px;
   }
@@ -1566,10 +1552,6 @@ body{
 
   .xl\:h-36 {
     height: 9rem;
-  }
-
-  .xl\:h-44 {
-    height: 11rem;
   }
 
   .xl\:bg-pink-600 {
