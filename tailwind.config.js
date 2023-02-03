@@ -3,10 +3,6 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        mont: "'Montserrat',sans-serif",
-        comfort: "'Comfortaa', cursive"
-      },
       colors: {
         warna1: 'rgba(52, 152, 219, 1)',
         warna2: 'rgba(41, 128, 185, 1)',

@@ -1,3 +1,6 @@
+/*
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -661,13 +664,10 @@ body{
   grid-column: span 3 / span 3;
 }
 
-<<<<<<< HEAD:public/asset/css/output.css
-=======
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 
->>>>>>> bc2eaa3aea6eee0f3627410304a95eea96651813:public/assets/css/output.css
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -690,10 +690,6 @@ body{
 
 .col-start-1 {
   grid-column-start: 1;
-}
-
-.col-start-6 {
-  grid-column-start: 6;
 }
 
 .row-span-2 {
@@ -759,21 +755,6 @@ body{
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .ml-5 {
@@ -854,6 +835,10 @@ body{
 
 .mt-28 {
   margin-top: 7rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mr-4 {
@@ -1082,6 +1067,11 @@ body{
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-red-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1126,12 +1116,12 @@ body{
   padding-right: 1.25rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pr-2 {
@@ -1146,12 +1136,12 @@ body{
   text-align: right;
 }
 
-.font-comfortaa {
-  font-family: Comfortaa, cursive;
-}
-
 .font-montserrat {
   font-family: Montserrat, sans-serif;
+}
+
+.font-comfortaa {
+  font-family: Comfortaa, cursive;
 }
 
 .text-3xl {
@@ -1179,14 +1169,11 @@ body{
   line-height: 1;
 }
 
-<<<<<<< HEAD:public/asset/css/output.css
-=======
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
->>>>>>> bc2eaa3aea6eee0f3627410304a95eea96651813:public/assets/css/output.css
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1547,10 +1534,6 @@ body{
     margin-top: 1rem;
   }
 
-  .xl\:mt-24 {
-    margin-top: 6rem;
-  }
-
   .xl\:h-\[450px\] {
     height: 450px;
   }
@@ -1569,10 +1552,6 @@ body{
 
   .xl\:h-36 {
     height: 9rem;
-  }
-
-  .xl\:h-44 {
-    height: 11rem;
   }
 
   .xl\:bg-pink-600 {
