@@ -1,3 +1,6 @@
+/*
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -661,13 +664,10 @@ body{
   grid-column: span 3 / span 3;
 }
 
-<<<<<<< HEAD:public/asset/css/output.css
-=======
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 
->>>>>>> bc2eaa3aea6eee0f3627410304a95eea96651813:public/assets/css/output.css
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -1179,14 +1179,11 @@ body{
   line-height: 1;
 }
 
-<<<<<<< HEAD:public/asset/css/output.css
-=======
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
->>>>>>> bc2eaa3aea6eee0f3627410304a95eea96651813:public/assets/css/output.css
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
