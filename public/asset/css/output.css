@@ -664,10 +664,6 @@ body{
   grid-column: span 2 / span 2;
 }
 
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
-
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -831,10 +827,6 @@ body{
   margin-top: 7rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
 .mr-4 {
   margin-right: 1rem;
 }
@@ -943,12 +935,12 @@ body{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-rows-3 {
@@ -1053,14 +1045,6 @@ body{
   background-repeat: no-repeat;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -1097,24 +1081,12 @@ body{
   padding-left: 1.25rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .pr-5 {
   padding-right: 1.25rem;
 }
 
-.pl-\[-20\] {
-  padding-left: -20;
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pb-2 {
@@ -1169,11 +1141,6 @@ body{
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-lg {
