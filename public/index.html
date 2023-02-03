@@ -21,7 +21,9 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="assets/css/output.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assetss/owl.carousel.min.css" /> -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -370,25 +372,23 @@
   <!-- Our Product END-->
 
   <!-- Footer-->
-  <footer class="bg-warna6 w-[500px] grid grid-cols-2 grid-row-12 ">
+  <footer class="bg-warna6 h-[350px] w-full grid grid-cols-2 grid-row-12 ">
+
 
     <!-- Google map -->
     <div class="col-span-1">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
-        width="100%" height="350px" style="border:0; " allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" class="grid "></iframe>
+        style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        class="w-full h-full"></iframe>
     </div>
-    <!-- Google map END-->
 
-    <!-- Footer content -->
-    <!-- Contact us -->
-    <div>
-      <div class=" z-10 grid grid-rows-2 grid-cols-6 col-span-1 pl-5 ">
-        <div class="font-montserrat text-white col-span-3 text-2xl">Contact us</div>
+    <div class="col-span-1">
+      <div class="ml-3">
 
-        <div class="font-comfortaa col-start-1 col-span-4 flex">
-          <a id="btn" class=" text-lg text-right pr-5 text-warna2 hover:text-warna4 transition-all duration-500 "
+        <div class="font-montserrat text-white text-xl">Contact us</div>
+        <div class="flex items-center">
+          <a id="btn" class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500 "
             data-tooltip-target="tooltip-click" data-tooltip-trigger="click" data-tooltip-placement="left"><i
               class="fa-solid fa-envelope"></i></a>
           <div id="tooltip-click" role="tooltip"
@@ -396,84 +396,69 @@
             E-mail Copied
             <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
-          <div class=" font-montserrat text-white  ">tetambastudio@gmail.com </div>
+
+          <div class=" font-comfortaa text-white text-sm ml-2">tetambastudio@gmail.com </div>
         </div>
 
-        <div class="col-start-1 col-span-4 flex">
-          <a class=" text-lg text-right pr-5 text-warna2 hover:text-warna4 transition-all duration-500" href="#"><i
+        <div class="flex items-center">
+          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500" href="#"><i
               class="fa-solid fa-phone"></i></a>
-          <div class="font-montserrat text-white ">+62 XXX XXXX XXXX </div>
+          <div class="font-montserrat text-white text-sm ml-2">+62 XXX XXXX XXXX</div>
         </div>
-      </div>
-      <!-- contact us END -->
 
-      <!-- Adress -->
-      <div>
-        <div class="z-10 pl-5">
-          <div class="font-montserrat text-white col-span-2 text-2xl">Address</div>
-
-          <div class="flex">
-            <a class="text-lg text-right pr-5  text-warna2 hover:text-warna4 transition-all duration-500"
-              href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
-            <div class="font-comfortaa text-white mt-1">Jl. Nuri no.102, Depok Jaya, Kec. Pancoran Mas, Kota Depok, Jawa
-              Barat</div>
-          </div>
+        <div class="font-montserrat text-white text-xl mt-2">Address</div>
+        <div class="flex items-center">
+          <a class="text-xl text-right  text-warna2 hover:text-warna4 transition-all duration-500"
+            href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
+          <p class="font-montserrat text-white text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok,
+            Jawa Barat </p>
         </div>
         <!-- Address END -->
 
-        <!-- More about us -->
-        <div class=" z-10 grid grid-rows-2 grid-cols-6 col-span-1 pl-5 pb-2 ">
-          <div class="font-montserrat text-white col-span-3 text-2xl">More about us</div>
-          <div class="font-comfortaa col-start-1 col-span-6 flex">
-            <a class=" text-white  hover:text-warna4 transition-all duration-500 pt-1 mr-4 " href="#"
-              target="_blank">Product</a>
-            <a class=" text-white  hover:text-warna4 transition-all duration-500 pt-1 mr-4 " href="#"
-              target="_blank">Portofolio</a>
-            <a class=" text-white  hover:text-warna4 transition-all duration-500 pt-1 mr-4 " href="#"
-              target="_blank">Team</a>
-            <a class=" text-white  hover:text-warna4 transition-all duration-500 pt-1 mr-4 " href="#"
-              target="_blank">Service</a>
-            <a class=" text-white  hover:text-warna4 transition-all duration-500 pt-1 mr-4 " href="#"
-              target="_blank">Contact & info</a>
-          </div>
-        </div>
-        <!--More about us END-->
 
-        <!-- img -->
-        <div class="w-full h-auto">
-          <img src="assets/img/foot.svg" alt="">
-        </div>
-        <!-- img END -->
-
-        <!-- Copyright -->
-        <div>
-          <div class=" z-10 grid grid-rows-1 grid-cols-3 col-span-3 p-2 text-sm ">
-            <div class="font-comfortaa text-white col-start-1 col-span-2 mt-2">Copyright© 2023
-              PT.Tetamba Studio Kreasi.
-              <br>All rights reserved.
-            </div>
-            <!-- Copyright END -->
-
-            <!-- Icon -->
-            <div class="col-start-3 grid grid-cols-5 pr-2">
-              <a class="col-start-1 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
-                href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
-              <a class="col-start-2 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
-                href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
-                  class="fa-brands fa-twitter "></i></a>
-              <a class="col-start-3 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
-                href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
-              <a class="col-start-4 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
-                href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
-                  class="fa-brands fa-linkedin "></i></a>
-              <a class="col-start-5 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
-                href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
-                  class="fa-brands fa-instagram "></i></a>
-            </div>
-            <!-- Icon END -->
-          </div>
+        <div class="font-montserrat text-white col-span-3 text-xl mt-2">More about us</div>
+        <div class="flex items-center">
+          <a class="font-comfortaa text-white  hover:text-warna4 transition-all duration-500" href="#"
+            target="_blank">Product</a>
+          <a class="font-comfortaa text-white  hover:text-warna4 transition-all duration-500 ml-2" href="#"
+            target="_blank">Portofolio</a>
+          <a class="font-comfortaa text-white  hover:text-warna4 transition-all duration-500 ml-2" href="#"
+            target="_blank">Team</a>
+          <a class="font-comfortaa text-white  hover:text-warna4 transition-all duration-500 ml-2" href="#"
+            target="_blank">Service</a>
+          <a class="font-comfortaa text-white  hover:text-warna4 transition-all duration-500 ml-2" href="#"
+            target="_blank">Contact & info</a>
         </div>
       </div>
+
+      <div class="w-full h-auto mt-2">
+        <img src="assets/img/foot.svg" alt="">
+      </div>
+
+
+      <div class="flex justify-between mx-3 mt-3 ">
+        <div class="font-comfortaa text-white col-start-1 col-span-2">Copyright© 2023
+          PT.Tetamba Studio Kreasi.
+          <br>All rights reserved.
+        </div>
+        <div class="grid gap-4">
+          <a class="col-start-1 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
+            href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
+          <a class="col-start-2 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
+            href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
+              class="fa-brands fa-twitter "></i></a>
+          <a class="col-start-3 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
+            href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
+          <a class="col-start-4 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
+            href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
+              class="fa-brands fa-linkedin "></i></a>
+          <a class="col-start-5 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
+            href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
+              class="fa-brands fa-instagram "></i></a>
+        </div>
+      </div>
+
+
     </div>
   </footer>
 </body>

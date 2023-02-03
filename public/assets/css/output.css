@@ -757,6 +757,11 @@ body{
   margin-bottom: 3rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -845,6 +850,14 @@ body{
   margin-right: 1rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -899,6 +912,10 @@ body{
 
 .h-24 {
   height: 6rem;
+}
+
+.h-\[350px\] {
+  height: 350px;
 }
 
 .w-full {
@@ -1007,6 +1024,10 @@ body{
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .self-center {
