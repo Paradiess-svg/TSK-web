@@ -822,14 +822,6 @@ body{
   margin-top: 3rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
 }
@@ -908,14 +900,6 @@ body{
 
 .h-1 {
   height: 0.25rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-\[400px\] {
-  height: 400px;
 }
 
 .w-full {
@@ -1014,10 +998,6 @@ body{
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .self-center {
   align-self: center;
 }
@@ -1099,30 +1079,22 @@ body{
   padding-right: 1rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pl-7 {
   padding-left: 1.75rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
 }
 
 .text-center {
@@ -1161,11 +1133,6 @@ body{
   line-height: 1.5rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1176,13 +1143,13 @@ body{
   line-height: 1.75rem;
 }
 
-.text-\[80px\] {
-  font-size: 80px;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[80px\] {
+  font-size: 80px;
 }
 
 .font-bold {
@@ -1202,12 +1169,16 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-warna5 {
+  color: rgba(243, 156, 18, 1);
+}
+
 .text-warna2 {
   color: rgba(41, 128, 185, 1);
 }
 
-.text-warna5 {
-  color: rgba(243, 156, 18, 1);
+.text-warna3 {
+  color: rgba(52, 73, 94, 1);
 }
 
 .opacity-0 {
@@ -1337,11 +1308,6 @@ body{
   .sm\:rounded-\[50px\] {
     border-radius: 50px;
   }
-
-  .sm\:bg-black {
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  }
 }
 
 @media (min-width: 768px) {
@@ -1462,11 +1428,6 @@ body{
     gap: 1.25rem;
   }
 
-  .md\:bg-green-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -1540,11 +1501,6 @@ body{
     grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:bg-yellow-400 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-  }
-
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1590,11 +1546,6 @@ body{
 
   .xl\:h-36 {
     height: 9rem;
-  }
-
-  .xl\:bg-pink-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(219 39 119 / var(--tw-bg-opacity));
   }
 }
 
