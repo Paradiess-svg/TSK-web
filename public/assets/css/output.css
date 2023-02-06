@@ -810,6 +810,14 @@ body{
   margin-top: 3rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -828,6 +836,10 @@ body{
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mb-2 {
@@ -888,6 +900,10 @@ body{
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .h-96 {
@@ -1026,6 +1042,10 @@ body{
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1115,18 +1135,22 @@ body{
   padding-right: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pl-7 {
   padding-left: 1.75rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pl-4 {
@@ -1159,6 +1183,8 @@ body{
 
 .pt-6 {
   padding-top: 1.5rem;
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-center {
@@ -1199,6 +1225,11 @@ body{
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-2xl {
@@ -1639,11 +1670,6 @@ body{
     line-height: 1.75rem;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -1652,6 +1678,11 @@ body{
   .md\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:opacity-100 {
