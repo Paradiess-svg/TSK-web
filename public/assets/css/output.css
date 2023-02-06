@@ -696,6 +696,10 @@ body{
   grid-column-start: 1;
 }
 
+.col-start-7 {
+  grid-column-start: 7;
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -1425,6 +1429,10 @@ body{
     height: 6rem;
   }
 
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1525,6 +1533,14 @@ body{
 
   .lg\:h-32 {
     height: 8rem;
+  }
+
+  .lg\:h-\[700px\] {
+    height: 700px;
+  }
+
+  .lg\:h-\[800px\] {
+    height: 800px;
   }
 
   .lg\:grid-rows-4 {
