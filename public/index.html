@@ -89,35 +89,36 @@
   </div>
   <!-- hero END -->
 
-  <!-- sm:bg-black md:bg-green-600 lg:bg-yellow-400 xl:bg-pink-600 -->
   <div
-    class="container mx-auto -mt-[400px] sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl-mt-[1400px] 2xl:-mt-[1700px]">
+    class="container mx-auto -mt-[400px] sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl-mt-[1400px] 2xl:-mt-[1700px] grid grid-cols-12">
 
     <!-- About -->
-    <section class="grid grid-cols-12" id="about">
+    <section
+      class="col-start-2 col-span-10 grid grid-cols-10 bg-white h-auto rounded-3xl drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8 relative"
+      id="about">
+      
+      <img src="assets/img/overlay/about-overlay1.svg" alt="overlay-1" class="absolute bottom-0">
+      <img src="assets/img/overlay/about-overlay-2.svg" alt="overlay-2" class="absolute top-0 right-0">
+
       <div
-        class="bg-white h-auto mt-24 col-start-2 col-span-10 grid grid-rows-3 grid-cols-10 rounded-3xl drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8 relative">
-        <img src="assets/img/overlay/about-overlay1.svg" alt="overlay-1" class="absolute bottom-0">
-        <img src="assets/img/overlay/about-overlay-2.svg" alt="overlay-2" class="absolute top-0 right-0">
-        <div
-          class="bg-warna6 h-14 mt-5 mb-0 col-start-4 col-span-4 flex items-center justify-center z-10 md:mt-8 md:h-20 md:col-start-3 md:col-span-6 xl:mt-8">
-          <h1 class="text-white font-montserrat text-3xl font-bold md:text-5xl">About</h1>
-        </div>
-        <div
-          class="row-start-2 col-start-3 col-span-6 mt-3 mb-5 row-span-2 z-10 md:mt-4 md:col-start-3 md:col-span-6 md:mb-8 xl:mb-8">
-          <p class="text-center font-comfortaa xt-sm md:text-xl">
-            We are a professional IT consulting company that provides
-            solutions to every technology problems for your company. Our tean
-            has assisted our various business partners in overcoming
-            technology challenges and increasing their business prductivity
-          </p>
-        </div>
+        class="bg-warna6 h-14 mt-5 col-start-4 col-span-4 flex items-center justify-center z-10 md:mt-8 md:h-20 md:col-start-3 md:col-span-6 xl:mt-8">
+        <h1 class="text-white font-montserrat text-center text-3xl font-bold md:text-5xl">About</h1>
       </div>
+
+      <div class="col-start-3 col-span-6 mt-4 mb-5 row-span-2 z-10  md:mb-8 xl:mb-8">
+        <p class="text-center font-comfortaa xt-sm md:text-xl">
+          We are a professional IT consulting company that provides
+          solutions to every technology problems for your company. Our tean
+          has assisted our various business partners in overcoming
+          technology challenges and increasing their business prductivity
+        </p>
+      </div>
+
     </section>
     <!-- About END -->
 
     <!-- Vision & Mission -->
-    <section class="grid grid-flow-row grid-cols-12 gap-5 mt-24 mx-2" id="visionMission">
+    <section class="row-start-2 grid grid-flow-row grid-cols-12 gap-5 mt-24 mx-2" id="visionMission">
 
       <!-- vision -->
       <div
@@ -262,7 +263,8 @@
   <section class="grid grid-cols-12">
     <div class="bg-white col-span-12 grid grid-cols-12 gap-5 mt-12">
 
-      <div class="bg-warna6 h-14 md:h-24 mt-5 md:mt-16 row-start-1 col-start-4 col-span-6 z-10 flex items-center justify-center">
+      <div
+        class="bg-warna6 h-14 md:h-24 mt-5 md:mt-16 row-start-1 col-start-4 col-span-6 z-10 flex items-center justify-center">
         <h1 class="text-white text-3xl md:text-5xl font-montserrat font-bold">Our Client</h1>
       </div>
 
@@ -316,7 +318,7 @@
   <!-- Our Product -->
   <div class="container mx-auto ">
 
-    
+
     <section class="col-span-full grid grid-cols-12 mt-24" id="our-product">
 
       <div class="bg-warna6 h-14 md:h-20 mt-5 col-start-4 col-span-6 flex items-center justify-center z-10">
@@ -366,7 +368,9 @@
 
           <div class="col-span-3 mt-5">
             <!-- <button class="bg-transparent hover:bg-warna5 border border-warna5 py-2 px-4 w-full  font-montserrat font-bold text-warna5 hover:text-white transition duration-500 ease-in-out">Show More</button> -->
-            <button type="button"  class="text-warna5 hover:text-white border hover:bg-warna5 border-warna5 focus:ring-2 font-bold text-xl px-5 py-2 text-center transition duration-500 ease-in-out font-montserrat">Show More</button>
+            <button type="button"
+              class="text-warna5 hover:text-white border hover:bg-warna5 border-warna5 focus:ring-2 font-bold text-xl px-5 py-2 text-center transition duration-500 ease-in-out font-montserrat">Show
+              More</button>
           </div>
         </div>
 
@@ -408,8 +412,8 @@
         </div>
 
         <div class="flex items-center">
-          <a class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500" href="#"><i
-              class="fa-solid fa-phone"></i></a>
+          <a class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500"
+            href="#"><i class="fa-solid fa-phone"></i></a>
           <div class="font-montserrat text-white text-xs md:text-sm ml-2">+62 XXX XXXX XXXX</div>
         </div>
 
@@ -418,23 +422,24 @@
         <div class="flex items-center">
           <a class="text-base md:text-xl text-warna2 hover:text-warna4 transition-all duration-500"
             href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
-          <p class="font-montserrat text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota
+          <p class="font-montserrat text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran
+            Mas, Kota
             Depok, Jawa Barat </p>
         </div>
-        
+
         <!-- More about us -->
         <div class="font-montserrat text-white col-span-3 text-base md:text-xl mt-2 md:mt-4">More about us</div>
         <div class="grid grid-rows-2 grid-cols-3 md:flex items-center">
-          <a class="font-comfortaa text-xs md:text-sm text-white hover:text-warna4 transition-all duration-500 col-span-1" href="#"
-            target="_blank">Product</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1" href="#"
-            target="_blank">Portofolio</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1" href="#"
-            target="_blank">Team</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1 row-start-2 mt-1" href="#"
-            target="_blank">Service</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-2" href="#"
-            target="_blank">Contact & info</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white hover:text-warna4 transition-all duration-500 col-span-1"
+            href="#" target="_blank">Product</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1"
+            href="#" target="_blank">Portofolio</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1"
+            href="#" target="_blank">Team</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1 row-start-2 mt-1"
+            href="#" target="_blank">Service</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-2"
+            href="#" target="_blank">Contact & info</a>
         </div>
 
       </div>
@@ -451,15 +456,15 @@
         </div>
         <div class="col-span-1 grid grid-rows-3 grid-cols-2 md:flex">
 
-          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300" href="#"
-            target="_blank"><i class="fa-brands fa-facebook "></i></a>
+          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+            href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
 
           <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
             href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
               class="fa-brands fa-twitter "></i></a>
 
-          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300" href="#"
-            target="_blank"><i class="fa-brands fa-youtube "></i></a>
+          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+            href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
 
           <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
             href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i

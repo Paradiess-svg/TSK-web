@@ -1125,6 +1125,10 @@ body{
   text-align: right;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-montserrat {
   font-family: Montserrat, sans-serif;
 }
