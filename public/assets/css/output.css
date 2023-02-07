@@ -1173,6 +1173,11 @@ body{
   color: rgba(243, 156, 18, 1);
 }
 
+.text-cyan-400 {
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity));
+}
+
 .text-warna2 {
   color: rgba(41, 128, 185, 1);
 }
