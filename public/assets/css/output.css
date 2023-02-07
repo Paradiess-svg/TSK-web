@@ -551,6 +551,12 @@ body{
   overflow-x: hidden;
 }
 
+.test{
+  background-color: #F39C12;
+  height: 1500px ;
+  width: 115px ;
+}
+
 .navbar{
   position: fixed;
   width: 100%;
@@ -642,6 +648,30 @@ body{
 
 .z-10 {
   z-index: 10;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.-z-20 {
+  z-index: -20;
+}
+
+.z-\[-20\] {
+  z-index: -20;
+}
+
+.-z-50 {
+  z-index: -50;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .col-span-10 {
@@ -744,6 +774,10 @@ body{
   grid-row-start: 7;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -772,6 +806,11 @@ body{
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .ml-5 {
@@ -884,6 +923,10 @@ body{
 
 .-mt-\[450px\] {
   margin-top: -450px;
+}
+
+.box-content {
+  box-sizing: content-box;
 }
 
 .block {
