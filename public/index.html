@@ -51,7 +51,7 @@
   <!-- navbar -->
   <nav class="navbar md:flex md:items-center md:justify-between">
     <div class="flex justify-between">
-      <a class="cursor-pointer ml-5" href="#" target="_blank">
+      <a class="cursor-pointer ml-5" href="index.html">
         <img class="h-10 inline" src="assets/img/Logo Full Color.png">
       </a>
 
@@ -75,7 +75,7 @@
         <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Service</a>
       </li>
       <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Contact & Info</a>
+        <a href="contact.html" class="text-xl text-white hover:text-warna6 duration-500">Contact & Info</a>
       </li>
     </ul>
   </nav>
@@ -88,68 +88,82 @@
   </div>
   <!-- hero END -->
 
-
+  <!-- sm:bg-black md:bg-green-600 lg:bg-yellow-400 xl:bg-pink-600 -->
   <div
-    class="container mx-auto -mt-[450px] sm:-mt-[300px] md:-mt-[200px] lg:-mt-[100px] ">
+    class="container mx-auto -mt-[400px] sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl-mt-[1400px] 2xl:-mt-[1700px] grid grid-cols-12 grid-flow-row">
 
     <!-- About -->
-    <section class="grid grid-cols-12" id="about">
+    <section
+      class="col-start-2 col-span-10 grid grid-cols-10 gap-5 bg-white h-auto rounded-3xl drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8 relative"
+      id="about">
+
+      <img src="assets/img/overlay/about-overlay1.svg" alt="overlay-1" class="absolute bottom-0">
+      <img src="assets/img/overlay/about-overlay-2.svg" alt="overlay-2" class="absolute top-0 right-0">
+
       <div
-        class="bg-white h-auto mt-24 col-start-2 col-span-10 grid grid-rows-3 grid-cols-10 rounded-3xl drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8 relative">
-        <img src="assets/img/overlay/about-overlay1.svg" alt="overlay-1" class="absolute bottom-0">
-        <img src="assets/img/overlay/about-overlay-2.svg" alt="overlay-2" class="absolute top-0 right-0">
-        <div
-          class="bg-warna6 h-14 mt-5 mb-0 col-start-4 col-span-4 flex items-center justify-center z-10 md:mt-8 md:h-20 md:col-start-3 md:col-span-6 xl:mt-8">
-          <h1 class="text-white font-montserrat text-3xl font-bold md:text-5xl">About</h1>
-        </div>
-        <div
-          class="row-start-2 col-start-3 col-span-6 mt-3 mb-5 row-span-2 z-10 md:mt-4 md:col-start-3 md:col-span-6 md:mb-8 xl:mb-8">
-          <p class="text-center font-comfortaa xt-sm md:text-xl">
-            We are a professional IT consulting company that provides
-            solutions to every technology problems for your company. Our tean
-            has assisted our various business partners in overcoming
-            technology challenges and increasing their business prductivity
-          </p>
-        </div>
+        class="bg-warna6 h-14 mt-5 col-start-4 col-span-4 flex items-center justify-center z-10 md:mt-8 md:h-20 md:col-start-3 md:col-span-6 xl:mt-8">
+        <h1 class="text-white font-montserrat text-center text-3xl font-bold md:text-4xl lg:text-5xl">About</h1>
       </div>
+
+      <div class="col-start-3 col-span-6 mt-4 mb-5 row-span-2 z-10  md:mb-8 xl:mb-8">
+        <p class="text-center font-comfortaa xt-sm md:text-xl">
+          We are a professional IT consulting company that provides
+          solutions to every technology problems for your company. Our tean
+          has assisted our various business partners in overcoming
+          technology challenges and increasing their business prductivity
+        </p>
+      </div>
+
     </section>
     <!-- About END -->
 
     <!-- Vision & Mission -->
-    <section class="grid grid-flow-row grid-cols-12 gap-5 mt-24 mx-2" id="visionMission">
+    <section class="col-span-12 grid grid-cols-12 gap-5 mt-24" id="visionMission">
 
       <!-- vision -->
       <div
-        class="bg-white h-auto  col-span-6 grid grid-rows-5 grid-cols-6 rounded-3xl gap-3 drop-shadow-2xl sm:h-[400px] sm:grid-rows-4 sm:rounded-[50px] md:grid-rows-5 md:h-[550px] lg:h-auto lg:grid-rows-4 xl:h-[450px] relative"
+        class="bg-white h-auto col-span-6 grid grid-cols-6 rounded-3xl drop-shadow-2xl sm:h-[400px] sm:rounded-[50px] md:h-auto lg:h-auto xl:h-[450px] relative"
         id="vision">
+
+        <!-- overlay -->
         <img src="assets/img/overlay/vision-overlay.svg" alt="overlay-vision" class="absolute bottom-0">
+
+        <!-- Text Vision -->
         <div
           class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center z-10 md:h-20 md:mt-8 xl:mt-8">
-          <h1 class="text-white font-montserrat text-3xl my-auto font-bold md:text-5xl">Vision</h1>
+          <h1 class="text-white font-montserrat text-3xl my-auto font-bold md:text-4xl lg:text-5xl">Vision</h1>
         </div>
-        <div
-          class="col-start-2 col-span-4 row-span-4 text-sm mt-0 mb-5 z-10 sm:row-span-3 md:mt-4 md:text-xl md:mb-8 md:row-span-4 lg:row-span-3 xl:mt-4 xl:mb-8">
+
+        <!-- Vision-content -->
+        <div class="col-start-2 col-span-4 text-sm mt-0 mb-5 z-10 md:mt-4 md:text-xl md:mb-8 xl:mt-4 xl:mb-8">
           <p class="text-center font-comfortaa text-sm md:text-xl">
             Making the information Technology services provider company
             competent, leading, and providing the best solutions in it's field
             and connecting the education with the professional environtment.
           </p>
         </div>
+
       </div>
       <!-- Vision END -->
 
       <!-- Mission -->
       <div
-        class="bg-white h-auto col-span-6 grid grid-rows-5 grid-cols-6 rounded-3xl gap-3 drop-shadow-2xl sm:h-[400px] sm:grid-rows-4 sm:rounded-[50px] md:grid-rows-5 md:h-[550px] lg:h-auto lg:grid-rows-4 xl:h-[450px] relative"
+        class="col-start-7 col-span-6 bg-white h-auto grid grid-cols-6 rounded-3xl drop-shadow-2xl sm:h-[400px] sm:rounded-[50px] md:h-auto lg:h-auto xl:h-[450px] relative"
         id="mission">
+
+        <!-- overlay -->
         <img src="assets/img/overlay/mission-overlay1.svg" alt="overlay-mission1" class="absolute top-0">
         <img src="assets/img/overlay/mission-overlay2.svg" alt="overlay-mission2" class="absolute bottom-0 right-0">
+
+        <!-- Text Mission -->
         <div
           class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center z-10 md:h-20 md:mt-8 xl:mt-8">
-          <h1 class="text-white font-montserrat text-3xl font-bold md:text-5xl">Mission<h1>
+          <h1 class="text-white font-montserrat text-3xl font-bold md:text-4xl lg:text-5xl">Mission<h1>
         </div>
+
+        <!-- Mission-content -->
         <div
-          class="col-start-2 col-span-4 row-span-4 font-comfortaa text-sm mt-0 mb-5 z-10 sm:row-span-3 md:mt-4 md:text-xl md:mb-8 md:row-span-4 lg:row-span-3 xl:mt-4 xl:mb-8">
+          class="col-start-2 col-span-4 font-comfortaa text-sm mt-2 mb-5 z-10 md:mt-4 md:text-xl md:mb-8 xl:mt-4 xl:mb-8">
           <li>Giving the best service</li>
           <li>Provide adequate result as needed</li>
           <li>Provide added value to the company with a system that can be seeded, safe, and competitive cost</li>
@@ -166,90 +180,89 @@
 
     <!-- Amazing Team -->
     <section
-      class="bg-white h-[320px] md:h-[550px] xl:h-[650px] col-span-12 grid grid-rows-3 md:grid-rows-4 grid-cols-12 rounded-2xl my-12 md:gap-5 sm:rounded-[50px] relative mt-24 mb-0"
+      class="col-span-12 h-80 sm:h-[350px] md:h-[480px] lg:h-[550px] xl:h-[650px] bg-white grid grid-cols-12  my-12 md:gap-5 sm:rounded-[50px] relative mt-24 mb-0"
       id="amazing-team">
 
       <!-- overlay -->
       <img src="assets/img/overlay/amazingTeam-overlay1.svg" alt="overlay-amazingTeam1" class="absolute">
       <img src="assets/img/overlay/amazingTeam-overlay2.svg" alt="overlay-amazingTeam2"
         class="absolute bottom-0 right-0">
-      <!-- overlay END -->
 
+      <!-- Text Amazing Team -->
       <div class="bg-warna6 h-14 md:h-20 mt-5 md:mt-8 col-start-4 col-span-6 flex items-center justify-center z-10">
-        <h1 class="text-white font-montserrat text-3xl md:text-5xl font-bold">Amazing Team</h1>
+        <h1 class="text-white font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold">Amazing Team</h1>
       </div>
 
-      <div class="row-start-2 row-span-2 md:row-span-3 col-span-12 grid grid-cols-12 mb-5 md:mb-8 z-10">
-        <img src="/public/assets/img/team.svg" alt="team" class="col-span-4 self-center w-[200px] md:w-[400px]">
+      <!-- Ilust - Team -->
+      <div class="col-span-4 z-10 self-center sm:pl-4">
+        <img src="/public/assets/img/team.svg" alt="team">
+      </div>
 
-        <!-- Card Slider -->
-        <div class="your-class col-start-5 col-span-7 flex gap-1" id="cardFrontendUiux">
+      <!-- Card -->
+      <div class="your-class flex align-middle col-span-8 z-10 sm:mt-6" id="cardFrontendUiux">
 
-          <!-- Frontend Developer , Backend Developer , Mobile Developer , UI/UX Designer , Technical writer , Qualirty Assurance , project Manager and Administrative . Total 26 of hard worker and profesional individual.  -->
-
-          <!-- FrontEnd -->
-          <div>
-            <div
-              class="w-64 mt-4 ml-8 bg-warna2 h-[200px] md:h-[340px] xl:h-[420px] rounded-3xl shadow-2xl self-center grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
-              id="cardFrontend">
-              <!-- <div class="h-12 md:h-24 lg:h-32 xl:h-32 flex mt-10">
-                <p class="mx-auto text-white"><i class="fa-solid fa-code fa-8x"></i></p>
-              </div> -->
-              <div class="fa-9x">
-                <p class="text-center text-white"><i class="fa-solid fa-code"></i></p>
-              </div>
-              <hr class="bg-white h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10">
-              <div class="text-white h-1 text-center">
-                <h1 class="font-comfortaa font-medium text-base md:text-2xl lg:text-4xl">FRONT<br>END</h1>
-              </div>
+        <!-- FrontEnd -->
+        <div>
+          <!-- h-44 w-32 -->
+          <div
+            class="mt-4 sm:mb-5 ml-1 sm:ml-2 lg:ml-5 xl:ml-8 bg-warna2 h-44 w-24 sm:h-52 sm:w-32 md:h-64 md:w-44 lg:h-80 lg:w-52 xl:h-96 xl:w-72 rounded-xl md:rounded-3xl grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
+            id="cardFrontend">
+            <!-- <div class="h-12 md:h-24 lg:h-32 xl:h-32 flex mt-10">
+              <p class="mx-auto text-white"><i class="fa-solid fa-code fa-8x"></i></p>
+            </div> -->
+            <div class="text-5xl pt-6 sm:text-6xl sm:pt-7 md:text-7xl md:pt-10 lg:text-8xl xl:text-9xl xl:mt-2">
+              <p class="text-center text-white"><i class="fa-solid fa-code"></i></p>
+            </div>
+            <hr class="bg-white h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10">
+            <div class="text-white h-1 text-center">
+              <h1 class="font-comfortaa font-medium text-sm sm:text-base md:text-2xl lg:text-4xl">FRONT<br>END</h1>
             </div>
           </div>
+        </div>
 
-          <!-- Ui/UX -->
-          <div>
-            <div
-              class="w-64 mt-4 ml-8 overflow-visible rounded-3xl border h-[200px] md:h-[340px] xl:h-[420px] bg-white border-warna2 shadow-2xl  grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
-              id="cardUiux">
-              <div class="h-12 md:h-24 lg:h-32 xl:h-36 flex mt-10">
-                <img src="assets/img/uiux.svg" alt="uiux" class="mx-auto items-center">
-              </div>
-              <hr class="bg-warna2 h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10 ">
-              <div class="text-warna2 text-center">
-                <h1 class="font-comfortaa text-base md:text-2xl lg:text-4xl font-medium">UI/UX</h1>
-              </div>
+        <!-- Ui/UX -->
+        <div>
+          <div
+            class="mt-4 ml-1 sm:ml-2 lg:ml-5 xl:ml-8 rounded-xl md:rounded-3xl border h-44 w-24 sm:h-52 sm:w-32 md:h-64 md:w-44 lg:h-80 lg:w-52 xl:h-96 xl:w-72 bg-white border-warna2  grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
+            id="cardUiux">
+            <div class="h-12 md:h-24 lg:h-32 xl:h-36 flex mt-10">
+              <img src="assets/img/uiux.svg" alt="uiux" class="mx-auto items-center">
+            </div>
+            <hr class="bg-warna2 h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10 ">
+            <div class="text-warna2 text-center">
+              <h1 class="font-comfortaa text-sm sm:text-base md:text-2xl lg:text-4xl font-medium">UI/UX</h1>
             </div>
           </div>
+        </div>
 
-          <!-- Mobile Developer -->
-          <div>
-            <div
-              class="w-64 mt-4 ml-8 bg-warna2 h-[200px] md:h-[340px] xl:h-[420px] rounded-3xl shadow-2xl self-center grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
-              id="cardFrontend">
-              <div class="fa-9x">
-                <p class="text-center text-white"><i class="fa-solid fa-mobile"></i></p>
-              </div>
-              <hr class="bg-white h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10">
-              <div class="text-white h-1 text-center">
-                <h1 class="font-comfortaa font-medium text-base md:text-2xl lg:text-4xl">MOBILE<br>DEV</h1>
-              </div>
+        <!-- Mobile Developer -->
+        <div>
+          <div
+            class="mt-4 ml-1 sm:ml-2 lg:ml-5 xl:ml-8 bg-warna2 h-44 w-24 sm:h-52 sm:w-32 md:h-64 md:w-44 lg:h-80 lg:w-52 xl:h-96 xl:w-72 rounded-xl md:rounded-3xl self-center grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
+            id="cardFrontend">
+            <div class="text-5xl pt-6 sm:text-6xl sm:pt-7 md:text-7xl md:pt-10 lg:text-8xl xl:text-9xl xl:mt-2">
+              <p class="text-center text-white"><i class="fa-solid fa-mobile"></i></p>
+            </div>
+            <hr class="bg-white h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10">
+            <div class="text-white h-1 text-center">
+              <h1 class="font-comfortaa font-medium text-sm sm:text-base md:text-2xl lg:text-4xl">MOBILE<br>DEV</h1>
             </div>
           </div>
+        </div>
 
-          <!-- BackEnd -->
-          <div>
-            <div
-              class="w-64 mt-4 ml-8 overflow-visible rounded-3xl border h-[200px] md:h-[340px] xl:h-[420px] bg-white border-warna2 shadow-2xl  grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
-              id="cardUiux">
-              <div class="fa-9x">
-                <p class="text-center text-warna2"> <i class="fa-solid fa-file-code"></i> </p>
-              </div>
-              <hr class="bg-warna2 h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10 ">
-              <div class="text-warna2 text-center">
-                <h1 class="font-comfortaa text-base md:text-2xl lg:text-4xl font-medium">BACK<br>END</h1>
-              </div>
+        <!-- BackEnd -->
+        <div>
+          <div
+            class="mt-4 ml-1 sm:ml-2 lg:ml-5 xl:ml-8 overflow-visible rounded-xl md:rounded-3xl border h-44 w-24 sm:h-52 sm:w-32 md:h-64 md:w-44 lg:h-80 lg:w-52 xl:h-96 xl:w-72 bg-white border-warna2 grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
+            id="cardUiux">
+            <div class="text-5xl pt-6 sm:text-6xl sm:pt-7 md:text-7xl md:pt-10 lg:text-8xl xl:text-9xl xl:mt-2">
+              <p class="text-center text-warna2"> <i class="fa-solid fa-file-code"></i> </p>
+            </div>
+            <hr class="bg-warna2 h-1 w-3/4 mx-auto self-center row-start-2 mt-2 md:mt-10 ">
+            <div class="text-warna2 text-center">
+              <h1 class="font-comfortaa text-sm sm:text-base md:text-2xl lg:text-4xl font-medium">BACK<br>END</h1>
             </div>
           </div>
-
         </div>
 
     </section>
@@ -261,11 +274,12 @@
   <section class="grid grid-cols-12">
     <div class="bg-white col-span-12 grid grid-cols-12 gap-5 mt-12">
 
-      <div class="bg-warna6 h-14 md:h-24 mt-5 md:mt-16 row-start-1 col-start-4 col-span-6 z-10 flex items-center justify-center">
+      <div
+        class="bg-warna6 h-14 md:h-24 mt-5 md:mt-16 row-start-1 col-start-4 col-span-6 z-10 flex items-center justify-center">
         <h1 class="text-white text-3xl md:text-5xl font-montserrat font-bold">Our Client</h1>
       </div>
 
-      <div class="row-start-2 col-start-2 col-span-4 mt-5 md:mt-10">
+      <div class="row-start-2 col-start-2 col-span-4 pt-5 mt-10">
         <img src="assets/img/image 1.svg">
       </div>
 
@@ -304,7 +318,7 @@
         <img src="assets/img/image 33.svg">
       </div>
 
-      <div class="row-start-5 col-start-8 col-span-4 mb-5 md:mt-16">
+      <div class="row-start-5 col-start-8 col-span-4 mb-5 md:mb-16 md:mt-16">
         <img src="assets/img/image 34.svg">
       </div>
 
@@ -315,10 +329,10 @@
   <!-- Our Product -->
   <div class="container mx-auto ">
 
-    
+
     <section class="col-span-full grid grid-cols-12 mt-24" id="our-product">
 
-      <div class="bg-warna6 h-14 md:h-20 mt-5 col-start-4 col-span-6 flex items-center justify-center z-10">
+      <div class="bg-warna6 h-14 md:h-20 col-start-4 col-span-6 flex items-center justify-center z-10">
         <h1 class="text-white font-montserrat text-3xl md:text-5xl font-bold">Our Product</h1>
       </div>
 
@@ -365,7 +379,9 @@
 
           <div class="col-span-3 mt-5">
             <!-- <button class="bg-transparent hover:bg-warna5 border border-warna5 py-2 px-4 w-full  font-montserrat font-bold text-warna5 hover:text-white transition duration-500 ease-in-out">Show More</button> -->
-            <button type="button"  class="text-warna5 hover:text-white border hover:bg-warna5 border-warna5 focus:ring-2 font-bold text-xl px-5 py-2 text-center transition duration-500 ease-in-out font-montserrat">Show More</button>
+            <button type="button"
+              class="text-warna5 hover:text-white border hover:bg-warna5 border-warna5 focus:ring-2 font-bold text-xl px-5 py-2 text-center transition duration-500 ease-in-out font-montserrat">Show
+              More</button>
           </div>
         </div>
 
@@ -407,8 +423,8 @@
         </div>
 
         <div class="flex items-center">
-          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500" href="tel:6285776512171"><i
-              class="fa-solid fa-phone"></i></a>
+          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500"
+            href="tel:6285776512171"><i class="fa-solid fa-phone"></i></a>
           <div class="font-montserrat text-white text-sm ml-2">+62 857 7651 2171</div>
         </div>
 
@@ -417,54 +433,53 @@
         <div class="flex items-center">
           <a class="text-base md:text-xl text-warna2 hover:text-warna4 transition-all duration-500"
             href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
-          <p class="font-montserrat text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota
+          <p class="font-montserrat text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran
+            Mas, Kota
             Depok, Jawa Barat </p>
         </div>
-        
+
         <!-- More about us -->
         <div class="font-montserrat text-white col-span-3 text-base md:text-xl mt-2 md:mt-4">More about us</div>
         <div class="grid grid-rows-2 grid-cols-3 md:flex items-center">
-          <a class="font-comfortaa text-xs md:text-sm text-white hover:text-warna4 transition-all duration-500 col-span-1" href="#"
-            target="_blank">Product</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1" href="#"
-            target="_blank">Portofolio</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1" href="#"
-            target="_blank">Team</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1 row-start-2 mt-1" href="#"
-            target="_blank">Service</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-2" href="#"
-            target="_blank">Contact & info</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white hover:text-warna4 transition-all duration-500 col-span-1"
+            href="#" target="_blank">Product</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1"
+            href="#" target="_blank">Portofolio</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1"
+            href="#" target="_blank">Team</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1 row-start-2 mt-1"
+            href="#" target="_blank">Service</a>
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-2"
+            href="Contact.html" target="_blank">Contact & info</a>
         </div>
-
       </div>
 
-      <div class="w-full h-auto mt-2 md:mt-4">
+      <div class="w-full h-auto mt-2">
         <img src="assets/img/foot.svg" alt="">
       </div>
 
 
       <div class="grid grid-cols-3 md:flex md:justify-between mx-3 mt-2 md:mt-4 mb-2 md:mb-4">
-        <div class="col-span-2 font-comfortaa text-sm md:text-xl text-white col-start-1">Copyright© 2023
+        <div class="col-span-2 font-comfortaa text-sm md:text-lg text-white col-start-1">Copyright© 2023
           <br>PT. Tetamba Studio Kreasi.
-          All rights reserved.
+          <br>All rights reserved.
         </div>
-        <div class="col-span-1 grid grid-rows-3 grid-cols-2 md:flex">
+        <div class="col-span-1 grid grid-rows-3 grid-cols-2 md:flex self-end">
 
-          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300" href="#"
-            target="_blank"><i class="fa-brands fa-facebook "></i></a>
+          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+            href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
 
           <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
             href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
               class="fa-brands fa-twitter "></i></a>
 
-          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300" href="#"
-            target="_blank"><i class="fa-brands fa-youtube "></i></a>
+          <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+            href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
 
           <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
             href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
               class="fa-brands fa-linkedin "></i></a>
-
-          <a class="col-span-2 text-lg md:text-2xl text-center md:text-right text-warna2 hover:text-warna4 transition-all duration-500"
+          <a class="col-start-5 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
             href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
               class="fa-brands fa-instagram "></i></a>
         </div>
@@ -473,8 +488,6 @@
 
     </div>
   </footer>
-  <!-- Footer END -->
-
 </body>
 
 </html>
