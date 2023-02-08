@@ -42,7 +42,8 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/js/slick.js"></script>
-  <script src="assets/js/email-copied.js"></script>
+  <!-- <script src="assets/js/email-copied.js"></script> -->
+  <!-- Script email copied tak berfungsi saat menjadi external JS -->
 
 </head>
 
@@ -424,7 +425,7 @@
 
         <div class="flex items-center">
           <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500"
-            href="tel:6285776512171"><i class="fa-solid fa-phone"></i></a>
+            href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
           <div class="font-montserrat text-white text-sm ml-2">+62 857 7651 2171</div>
         </div>
 
@@ -488,6 +489,16 @@
 
     </div>
   </footer>
+
+  <!-- Script Untuk email copied -->
+  <script>
+    var btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  const textCopied = ClipboardJS.copy("Contact@tetambastudio.com");
+  element.classList.add("copied");
+});
+  </script>
 </body>
 
 </html>

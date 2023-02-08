@@ -37,11 +37,6 @@
         transition: all 0.3s ease;
     }
 
-    .hero{
-        padding-top: 15%;
-        padding-left: 10%;
-        padding-bottom: 115%;
-    }
 
     .foot-line{
         transform: rotate(58deg);
@@ -52,5 +47,4 @@
     left: -360px;
     top: 3900px;
     }
-   
 }

@@ -34,7 +34,8 @@
   <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
   <script src="assets/js/clipboard.min.js"></script>
   <script src="assets/js/navbar-responsive.js"></script>
-  <script src="assets/js/email-copied.js"></script>
+  <!-- <script src="assets/js/email-copied.js"></script> -->
+  <!-- Script email copied tak berfungsi saat menjadi external JS -->
   <script src="assets/js/contact-nav.js"></script>
 </head>
 
@@ -73,7 +74,7 @@
   <!-- navbar END -->
 
   <!-- hero RESPONSIVE-->
-  <div class="h-screen ">
+  <div class="h-screen select-none pointer-events-none relative">
     <img class="" src="/public/assets/img/hero.svg" alt="">
     <img class="-z-10 absolute top-0 right-0 max-w-full h-auto" src="../public/assets/img/img-hero.svg" alt="">
   </div>
@@ -84,7 +85,7 @@
 
     <!-- Contact Us -->
     <div
-      class="col-start-4 col-span-6 xl:col-start-5 xl:col-span-4 bg-white rounded-[100px] h-20 md:h-24 lg:h-28 shadow-2xl flex items-center justify-center">
+      class="col-start-4 col-span-6 xl:col-start-5 xl:col-span-4 bg-white rounded-[100px] h-20 md:h-24 lg:h-28 shadow-2xl flex items-center justify-center relative">
       <h1 class="font-montserrat font-bold text-warna3 text-2xl sm:text-3xl lg:text-5xl">
         Contact Us
       </h1>
@@ -92,36 +93,36 @@
     <!-- Contact Us END -->
 
     <!-- Our Social Media -->
-    <div class="col-span-full bg-white rounded-3xl h-24 lg:h-32 shadow-2xl flex items-center justify-around">
+    <div class="col-span-full bg-white rounded-3xl h-24 lg:h-32 shadow-2xl flex items-center justify-around relative">
       <h1 class="font-montserrat font-bold text-warna3 text-xl sm:text-3xl lg:text-5xl">
         Our Social Media
       </h1>
 
       <ul class="flex justify-between w-2/5 text-2xl sm:text-3xl lg:text-5xl text-warna1">
-        <li class="hover:text-warna2 hover:scale-110 transition duration-150 ease-in-out">
+        <li class="hover:scale-110  text-warna2 hover:text-warna4 transition-all duration-500 ease-in-out">
           <a href="#" target="_blank"></a>
           <i class="fa-brands fa-facebook"> </i>
         </li>
 
-        <li class="hover:text-warna2 hover:scale-110 transition duration-150 ease-in-out">
+        <li class="hover:scale-110  text-warna2 hover:text-warna4 transition-all duration-500 ease-in-out">
           <a href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank">
             <i class="fa-brands fa-twitter"></i>
           </a>
         </li>
 
-        <li class="hover:text-warna2 hover:scale-110 transition duration-150 ease-in-out">
+        <li class="hover:scale-110  text-warna2 hover:text-warna4 transition-all duration-500 ease-in-out">
           <a href="#" target="_blank">
             <i class="fa-brands fa-youtube"></i>
           </a>
         </li>
 
-        <li class="hover:text-warna2 hover:scale-110 transition duration-150 ease-in-out">
+        <li class="hover:scale-110  text-warna2 hover:text-warna4 transition-all duration-500 ease-in-out">
           <a href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
 
-        <li class="hover:text-warna2 hover:scale-110 transition duration-150 ease-in-out">
+        <li class="hover:scale-110  text-warna2 hover:text-warna4 transition-all duration-500 ease-in-out">
           <a href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank">
             <i class="fa-brands fa-instagram"></i>
           </a>
@@ -149,7 +150,13 @@
 
           <p class="font-comfortaa font-medium text-warna3 text-xs sm:text-lg lg:text-2xl">tetambastudio@gmail.com</p>
 
-          <a href="#" class="text-warna1 text-6xl"> <i class="fa-solid fa-envelope"></i> </a>
+          <a id="btn" class="text-warna2 hover:text-warna4 transition-all duration-500 text-6xl" data-tooltip-target="tooltip-click" data-tooltip-trigger="click" data-tooltip-placement="left"> <i class="fa-solid fa-envelope"></i> </a>
+          <div id="tooltip-click" role="tooltip"
+            class="copied pl-5 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            E-mail Copied
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+
 
         </div>
 
@@ -170,7 +177,7 @@
 
           <p class="font-comfortaa font-medium text-warna3 text-xs sm:text-lg lg:text-2xl">+62 857 7651 2171</p>
 
-          <a href="#" class="text-warna1 text-6xl"> <i class="fa-solid fa-phone"></i> </a>
+          <a href="tel:6285776512171" target="_blank" class="text-warna2 hover:text-warna4 transition-all duration-500 text-6xl"> <i class="fa-solid fa-phone"></i> </a>
 
         </div>
       </div>
@@ -179,6 +186,41 @@
     </div>
 
   </div>
+     <!-- Mark -->
+     <div class="max-w-full h-auto mt-24 select-none pointer-events-none ">
+      <img src="/public/assets/img/Mark.svg" alt="">
+    </div>
+    <!-- Mark END -->
+
+    <div class="bg-white pt-24">
+    <div class="text-center rounded-3xl font-montserrat font-bold text-warna3 text-2xl sm:text-4xl lg:text-5xl border-2 border-warna3 w-1/2 mx-[25%]">
+      address
+    </div>
+    <div class="grid grid-cols-12 my-8">
+      <div class="place-items-center md:col-start-3 col-start-2 md:col-span-9 col-span-10 flex">
+        <a class="text-6xl  text-warna2 hover:text-warna4 transition-all duration-500"
+            href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
+          <p class="font-comfortaa text-warna3 text-base sm:text-xl md:text-3xl ml-5">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran
+            Mas, Kota
+            Depok, Jawa Barat </p>
+      </div>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
+        style="border:0; width: 100%; height: 360px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="bg-warna5 text-center font-comfortaa text-lg text-white py-2">Copyright© 2023 PT.Tetamba Studio Kreasi. 
+    All rights reserved.</div>
+    
+      <!-- Script Untuk email copied -->
+    <script>
+          var btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  const textCopied = ClipboardJS.copy("Contact@tetambastudio.com");
+  element.classList.add("copied");
+});
+    </script>
 </body>
 
 </html>
