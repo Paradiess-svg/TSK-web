@@ -42,7 +42,7 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/js/slick.js"></script>
-  <!-- <script src="assets/js/email-copied.js"></script> -->
+  <script src="assets/js/email-copied.js"></script>
   <!-- Script email copied tak berfungsi saat menjadi external JS -->
 
 </head>
@@ -408,18 +408,14 @@
     <div class="col-span-1">
       <div class="ml-3 mt-5">
 
+
+
         <!-- Contact Us -->
         <div class="font-montserrat text-white text-base md:text-xl">Contact us</div>
         <div class="flex items-center">
-          <a id="btn" class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500 "
-            data-tooltip-target="tooltip-click" data-tooltip-trigger="click" data-tooltip-placement="left"><i
-              class="fa-solid fa-envelope"></i></a>
-          <div id="tooltip-click" role="tooltip"
-            class="copied pl-5 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            E-mail Copied
-            <div class="tooltip-arrow" data-popper-arrow></div>
-          </div>
-
+          <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+            class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500 "
+            target="_blank"><i class="fa-solid fa-envelope"></i></a>
           <div class=" font-comfortaa text-white text-sm ml-2">Contact @tetambastudio.com</div>
         </div>
 
@@ -480,7 +476,7 @@
           <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
             href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
               class="fa-brands fa-linkedin "></i></a>
-          <a class="col-start-5 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
+          <a class="col-start-5 text-2xl text-right text-warna2 hover:text-warna4 transition-all duration-500"
             href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
               class="fa-brands fa-instagram "></i></a>
         </div>
@@ -489,16 +485,6 @@
 
     </div>
   </footer>
-
-  <!-- Script Untuk email copied -->
-  <script>
-    var btn = document.querySelector("#btn");
-
-btn.addEventListener("click", () => {
-  const textCopied = ClipboardJS.copy("Contact@tetambastudio.com");
-  element.classList.add("copied");
-});
-  </script>
 </body>
 
 </html>

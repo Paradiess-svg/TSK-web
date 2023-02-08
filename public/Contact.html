@@ -150,13 +150,10 @@
 
           <p class="font-comfortaa font-medium text-warna3 text-xs sm:text-lg lg:text-2xl">tetambastudio@gmail.com</p>
 
-          <a id="btn" class="text-warna2 hover:text-warna4 transition-all duration-500 text-6xl" data-tooltip-target="tooltip-click" data-tooltip-trigger="click" data-tooltip-placement="left"> <i class="fa-solid fa-envelope"></i> </a>
-          <div id="tooltip-click" role="tooltip"
-            class="copied pl-5 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            E-mail Copied
-            <div class="tooltip-arrow" data-popper-arrow></div>
-          </div>
-
+          <a id="btn" href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+            class="text-warna2 hover:text-warna4 transition-all duration-500 text-6xl"
+            data-tooltip-target="tooltip-click" data-tooltip-trigger="click" data-tooltip-placement="left"> <i
+              class="fa-solid fa-envelope"></i> </a>
 
         </div>
 
@@ -177,7 +174,9 @@
 
           <p class="font-comfortaa font-medium text-warna3 text-xs sm:text-lg lg:text-2xl">+62 857 7651 2171</p>
 
-          <a href="tel:6285776512171" target="_blank" class="text-warna2 hover:text-warna4 transition-all duration-500 text-6xl"> <i class="fa-solid fa-phone"></i> </a>
+          <a href="tel:6285776512171" target="_blank"
+            class="text-warna2 hover:text-warna4 transition-all duration-500 text-6xl"> <i
+              class="fa-solid fa-phone"></i> </a>
 
         </div>
       </div>
@@ -186,41 +185,65 @@
     </div>
 
   </div>
-     <!-- Mark -->
-     <div class="max-w-full h-auto mt-24 select-none pointer-events-none ">
-      <img src="/public/assets/img/Mark.svg" alt="">
-    </div>
-    <!-- Mark END -->
-
-    <div class="bg-white pt-24">
-    <div class="text-center rounded-3xl font-montserrat font-bold text-warna3 text-2xl sm:text-4xl lg:text-5xl border-2 border-warna3 w-1/2 mx-[25%]">
-      address
-    </div>
-    <div class="grid grid-cols-12 my-8">
-      <div class="place-items-center md:col-start-3 col-start-2 md:col-span-9 col-span-10 flex">
-        <a class="text-6xl  text-warna2 hover:text-warna4 transition-all duration-500"
-            href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
-          <p class="font-comfortaa text-warna3 text-base sm:text-xl md:text-3xl ml-5">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran
-            Mas, Kota
-            Depok, Jawa Barat </p>
-      </div>
-    </div>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
-        style="border:0; width: 100%; height: 360px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- Mark -->
+  <div class="max-w-full h-auto mt-24 select-none pointer-events-none ">
+    <img src="/public/assets/img/Mark.svg" alt="">
   </div>
-  <div class="bg-warna5 text-center font-comfortaa text-lg text-white py-2">Copyright© 2023 PT.Tetamba Studio Kreasi. 
-    All rights reserved.</div>
-    
-      <!-- Script Untuk email copied -->
-    <script>
-          var btn = document.querySelector("#btn");
+  <!-- Mark END -->
 
-btn.addEventListener("click", () => {
-  const textCopied = ClipboardJS.copy("Contact@tetambastudio.com");
-  element.classList.add("copied");
-});
-    </script>
+
+  <!-- Address -->
+  <div class="bg-white h-full -z-10 relative overflow-hidden">
+
+    <!-- Overlay -->
+    <img src="assets/img/overlay/contact/overlay-maps.svg" alt="" class="absolute -top-14 -right-28">
+    <img src="assets/img/overlay/contact/overlay-maps.svg" alt="" class="absolute -bottom-16 -left-32">
+
+    <!-- Address-Content -->
+    <div class="w-fit h-64 mx-auto z-10 flex justify-center items-center align-middle">
+
+      <div class="text-8xl text-warna1 mr-8">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+
+      <div class="h-20 flex flex-col justify-between">
+
+        <h1 class="font-montserrat text-4xl text-warna3">Address Office</h1>
+
+        <p class="font-comfortaa text-2xl text-warna3">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok,
+          Jawa Barat
+          16432</p>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Address END -->
+
+  <!-- Maps -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-96"></iframe>
+  <!-- Maps END -->
+
+
+  <!-- Footer -->
+  <div class="bg-warna5 h-16 p-5 flex align-middle">
+
+    <div class="w-[700px] mx-auto flex justify-around">
+
+      <p class="font-comfortaa text-base text-white">Copyright© 2023 </p>
+
+      <p class="font-comfortaa text-base text-white">PT. Tetamba Studio Kreasi.</p>
+
+      <p class="font-comfortaa text-base text-white">All rights reserved.</p>
+
+    </div>
+
+  </div>
+  <!-- Footer END -->
+
 </body>
 
 </html>
