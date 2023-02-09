@@ -1903,6 +1903,22 @@ body {
     margin-top: 0.5rem;
   }
 
+  .xl\:-mt-\[18px\] {
+    margin-top: -18px;
+  }
+
+  .xl\:-mt-\[15px\] {
+    margin-top: -15px;
+  }
+
+  .xl\:-mt-\[10px\] {
+    margin-top: -10px;
+  }
+
+  .xl\:-mt-0 {
+    margin-top: -0px;
+  }
+
   .xl\:h-\[450px\] {
     height: 450px;
   }
