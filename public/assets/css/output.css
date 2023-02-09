@@ -1812,6 +1812,11 @@ body {
     line-height: 1.5rem;
   }
 
+  .md\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
   .md\:opacity-100 {
     opacity: 1;
   }
