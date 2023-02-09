@@ -1561,6 +1561,10 @@ body {
     margin-top: -11rem;
   }
 
+  .sm\:-mt-\[270px\] {
+    margin-top: -270px;
+  }
+
   .sm\:h-4\/5 {
     height: 80%;
   }
