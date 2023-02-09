@@ -55,8 +55,9 @@
       </span>
     </div>
 
+    <!-- max-[768px]:bg-warna5 -->
     <ul
-      class="max-[768px]:bg-warna5 mr-5 font-comfortaaaa md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
+      class=" mr-5 font-comfortaaaa md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
 
       <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
         <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Product</a>
@@ -90,7 +91,8 @@
   <!-- Hero END -->
 
   <!-- -mt-56 md:-mt-[500px] lg:-mt-[950px] xl:-mt-[1250px] -->
-  <div class="container mx-auto grid grid-cols-12 gap-x-5 gap-y-24">
+  <div
+    class="container mx-auto -mt-96 sm:-mt-44 md:-mt-10 lg:mt-20 grid grid-cols-12 gap-x-5 gap-y-12 md:gap-y-20 lg:gap-y-24">
 
     <!-- Contact Us -->
     <div
@@ -209,26 +211,34 @@
   <!-- Mark END -->
 
   <!-- Address -->
-  <div class="bg-white h-full -z-10 relative overflow-hidden">
+  <div class="bg-white h-auto -z-10 p-5 relative overflow-hidden">
 
     <!-- Overlay -->
-    <img src="assets/img/overlay/contact/overlay-maps.svg" alt="" class="absolute -top-14 -right-28" />
-    <img src="assets/img/overlay/contact/overlay-maps.svg" alt="" class="absolute -bottom-16 -left-32" />
+    <img src="assets/img/overlay/contact/overlay-maps.svg" alt="" class="absolute -top-14 -right-28 w-48 lg:w-80" />
+    <img src="assets/img/overlay/contact/overlay-maps.svg" alt="" class="absolute -bottom-16 -left-32 w-48 lg:w-80" />
 
     <!-- Address-Content -->
-    <div class="w-fit h-64 mx-auto z-10 flex justify-center items-center align-middle">
-      <div class="text-8xl text-warna1 mr-8">
-        <i class="fa-solid fa-location-dot"></i>
+    <div class="container mx-auto h-auto lg:h-48 -z-10 grid grid-cols-12">
+
+      <div
+        class="col-start-1 lg:col-start-2 xl:col-start-3 col-span-full lg:col-span-10 xl:col-span-9 flex justify-center items-center">
+
+        <div class="text-7xl lg:text-8xl text-warna1 hover:text-warna5 outline-8 mr-8">
+          <a href="https://www.youtube.com"> <i class="fa-solid fa-location-dot"></i> </a>
+        </div>
+
+        <div class="lg:h-20 z-10 flex flex-col justify-between">
+
+          <h1 class="font-montserrat font-bold text-xl lg:text-4xl text-warna3">Address Office</h1>
+
+          <p class="font-comfortaa text-base lg:text-2xl text-warna3">
+            Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok, Jawa
+            Barat 16432
+          </p>
+
+        </div>
       </div>
 
-      <div class="h-20 flex flex-col justify-between">
-        <h1 class="font-montserrat text-4xl text-warna3">Address Office</h1>
-
-        <p class="font-comfortaa text-2xl text-warna3">
-          Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok, Jawa
-          Barat 16432
-        </p>
-      </div>
     </div>
 
   </div>
@@ -237,21 +247,21 @@
   <!-- Maps -->
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
-    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-96"></iframe>
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-64 lg:h-96"></iframe>
   <!-- Maps END -->
 
   <!-- Footer -->
-  <div class="bg-warna5 h-16 p-5 flex align-middle">
+  <div class="bg-warna5 w-full h-16 p-8 lg:p-5 flex justify-center">
 
-    <div class="w-[700px] mx-auto flex justify-around">
+    <div class="w-[700px] flex justify-around items-center flex-col md:flex-row ">
 
-      <p class="font-comfortaa text-base text-white">Copyright© 2023</p>
+      <p class="font-comfortaa text-xs md:text-base text-white">Copyright© 2023</p>
 
-      <p class="font-comfortaa text-base text-white">
+      <p class="font-comfortaa text-xs md:text-base text-white">
         PT. Tetamba Studio Kreasi.
       </p>
 
-      <p class="font-comfortaa text-base text-white">All rights reserved.</p>
+      <p class="font-comfortaa text-xs md:text-base text-white">All rights reserved.</p>
 
     </div>
 
