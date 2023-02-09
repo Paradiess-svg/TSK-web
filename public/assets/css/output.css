@@ -1504,6 +1504,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .max-\[767px\]\:bg-warna5 {
+    background-color: rgba(243, 156, 18, 1);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:-mt-\[500px\] {
     margin-top: -500px;
