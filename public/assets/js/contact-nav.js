@@ -1,10 +1,11 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    // sticky navbar on scroll script
-    if (this.scrollY > 20) {
+    if (this.scrollY > 20) { 
+      //Saat di scroll
       $(".contact-nav").addClass("text-warna6");
       $(".contact-nav").removeClass("text-warna5");
-    } else {
+    } else { 
+      //Saat Normal
       $(".contact-nav").removeClass("text-warna6");
       $(".contact-nav").addClass("text-warna5");
     }
