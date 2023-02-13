@@ -1114,6 +1114,10 @@ body {
   overflow: visible;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-\[100px\] {
   border-radius: 100px;
 }
@@ -1881,6 +1885,10 @@ body {
 
   .xl\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .xl\:-mt-0 {
+    margin-top: -0px;
   }
 
   .xl\:h-\[450px\] {
