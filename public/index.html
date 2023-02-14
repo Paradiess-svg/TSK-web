@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
 
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Faviocon & Title -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <title>TSK - Web</title>
 
   <!-- Font -->
@@ -42,11 +42,11 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/js/slick.js"></script>
-  <script src="assets/js/email-copied.js"></script>
+  <script src="assets/js/npc-nav.js"></script>
 
 </head>
 
-<body class="bg-warna2 min-w-[483px]">
+<body class="bg-warna2">
 
   <!-- navbar -->
   <nav class="navbar md:flex md:items-center md:justify-between">
@@ -61,35 +61,38 @@
     </div>
 
     <ul
-      class=" max-[768px]:bg-warna5 mr-5 font-comfortaaaa md:flex md:items-center md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
+      class=" max-[767px]:bg-warna5 mr-5 font-comfortaa md:flex md:items-center md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
       <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Product</a>
+        <a href="#" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Product</a>
       </li>
       <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Portofolio</a>
+        <a href="#" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Portofolio</a>
       </li>
       <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Team</a>
+        <a href="#" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Team</a>
       </li>
       <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Service</a>
+        <a href="#" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Service</a>
       </li>
       <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-        <a href="#" class="text-xl text-white hover:text-warna6 duration-500">Contact & Info</a>
+        <a href="contact.html" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Contact & Info</a>
       </li>
     </ul>
   </nav>
   <!-- navbar END -->
 
-  <!-- hero -->
-  <div class=" bg-no-repeat z-10 static" style="background-image:url(assets/img/Group\ 1.svg) ;">
-    <img class="hero" src="../public/assets/img/Logotype Putih.svg" alt="">
-    <img class="z-[-10] absolute top-0 right-0 h-full" src="../public/assets/img/img-hero.svg" alt="">
+  <!-- hero RESPONSIVE -->
+  <div class="h-screen select-none pointer-events-none relative">
+    <img src="/public/assets/img/hero.svg" alt="">
+    <img class="z-[-10] absolute top-0 right-0 max-w-full h-auto" src="../public/assets/img/img-hero.svg" alt="">
   </div>
   <!-- hero END -->
 
+  <!-- sm:bg-black md:bg-green-600 lg:bg-yellow-400 xl:bg-pink-600 -->
+  <!-- -mt-[400px]  sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl:-mt-[1400px] 2xl:-mt-[1700px] -->
+
   <div
-    class="container mx-auto -mt-[400px] sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl-mt-[1400px] 2xl:-mt-[1700px] grid grid-cols-12 grid-flow-row">
+    class="container mx-auto grid grid-cols-12 grid-flow-row -mt-[420px]  sm:-mt-[270px] md:-mt-[150px] lg:-mt-[50px] xl:-mt-[20px] ">
 
     <!-- About -->
     <section
@@ -317,7 +320,7 @@
         <img src="assets/img/image 33.svg">
       </div>
 
-      <div class="row-start-5 col-start-8 col-span-4 mb-5 md:mt-16">
+      <div class="row-start-5 col-start-8 col-span-4 mb-5 md:mb-16 md:mt-16">
         <img src="assets/img/image 34.svg">
       </div>
 
@@ -331,7 +334,7 @@
 
     <section class="col-span-full grid grid-cols-12 mt-24" id="our-product">
 
-      <div class="bg-warna6 h-14 md:h-20 mt-5 col-start-4 col-span-6 flex items-center justify-center z-10">
+      <div class="bg-warna6 h-14 md:h-20 col-start-4 col-span-6 flex items-center justify-center z-10">
         <h1 class="text-white font-montserrat text-3xl md:text-5xl font-bold">Our Product</h1>
       </div>
 
@@ -406,25 +409,21 @@
     <div class="col-span-1">
       <div class="ml-3 mt-5">
 
+
+
         <!-- Contact Us -->
         <div class="font-montserrat text-white text-base md:text-xl">Contact us</div>
         <div class="flex items-center">
-          <a id="btn" class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500 "
-            data-tooltip-target="tooltip-click" data-tooltip-trigger="click" data-tooltip-placement="left"><i
-              class="fa-solid fa-envelope"></i></a>
-          <div id="tooltip-click" role="tooltip"
-            class="copied pl-5 absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            E-mail Copied
-            <div class="tooltip-arrow" data-popper-arrow></div>
-          </div>
-
-          <div class=" font-comfortaa text-white text-sm ml-2">Contact@tetambastudio.com</div>
+          <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+            class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500 "
+            target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          <div class=" font-comfortaa text-white text-sm ml-2">Contact @tetambastudio . com</div>
         </div>
 
         <div class="flex items-center">
-          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500"
-            href="tel:6285776512171"><i class="fa-solid fa-phone"></i></a>
-          <div class="font-montserrat text-white text-sm ml-2">+62 857 7651 2171</div>
+          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500" 
+            href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
+          <div class="font-comfortaa text-white text-sm ml-2">+62 857 7651 2171</div>
         </div>
 
         <!-- Address -->
@@ -432,7 +431,7 @@
         <div class="flex items-center">
           <a class="text-base md:text-xl text-warna2 hover:text-warna4 transition-all duration-500"
             href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
-          <p class="font-montserrat text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran
+          <p class="font-comfortaa text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran
             Mas, Kota
             Depok, Jawa Barat </p>
         </div>
@@ -446,14 +445,14 @@
             href="#" target="_blank">Portofolio</a>
           <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1"
             href="#" target="_blank">Team</a>
-          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1 "
+          <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1 row-start-2 mt-1"
             href="#" target="_blank">Service</a>
           <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-2"
-            href="#" target="_blank">Contact & info</a>
+            href="Contact.html" target="_blank">Contact & info</a>
         </div>
       </div>
 
-      <div class="w-full h-auto mt-2">
+      <div class="w-full h-auto mt-2 pointer-events-none select-none">
         <img src="assets/img/foot.svg" alt="">
       </div>
 
@@ -478,7 +477,7 @@
           <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
             href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
               class="fa-brands fa-linkedin "></i></a>
-          <a class="col-start-5 text-2xl text-right pt-1 text-warna2 hover:text-warna4 transition-all duration-500"
+          <a class="col-start-5 text-2xl text-right text-warna2 hover:text-warna4 transition-all duration-500"
             href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
               class="fa-brands fa-instagram "></i></a>
         </div>
