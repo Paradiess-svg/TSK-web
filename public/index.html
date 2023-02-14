@@ -93,25 +93,26 @@
   <!-- -mt-[400px]  sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl:-mt-[1400px] 2xl:-mt-[1700px] -->
 
   <div
-    class="container mx-auto grid grid-cols-12 grid-flow-row -mt-[420px]  sm:-mt-[270px] md:-mt-[150px] lg:-mt-[50px] xl:-mt-[20px] ">
+    class="container mx-auto grid grid-cols-12 grid-flow-row -mt-[420px] sm:-mt-[270px] md:-mt-[150px] lg:-mt-[50px] xl:-mt-[20px] ">
 
     <!-- About -->
     <section
-      class="col-start-2 col-span-10 grid grid-cols-10 gap-5 bg-white h-auto rounded-3xl drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8 relative"
+      class="col-start-2 xl:col-start-3 col-span-10 xl:col-span-8 bg-white h-auto p-5 md:p-10 rounded-3xl md:rounded-[50px] drop-shadow-2xl grid grid-cols-10 gap-5 relative overflow-hidden"
       id="about">
 
-      <img src="assets/img/overlay/about-overlay1.svg" alt="overlay-1"
-        class="absolute bottom-0 select-none pointer-events-none">
-      <img src="assets/img/overlay/about-overlay-2.svg" alt="overlay-2"
-        class="absolute top-0 right-0 select-none pointer-events-none">
+      <!-- Overlay -->
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-1"
+        class="absolute h-60 md:h-80 -bottom-10 sm:-bottom-20 md:-bottom-16 -left-24 md:-left-32 select-none pointer-events-none">
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-2"
+        class="absolute h-80 md:h-[567px] -top-24 md:-top-72 -right-56 md:-right-96 select-none pointer-events-none">
 
-      <div
-        class="bg-warna6 h-14 mt-5 col-start-4 col-span-4 flex items-center justify-center z-10 md:mt-8 md:h-20 md:col-start-3 md:col-span-6 xl:mt-8">
-        <h1 class="text-white font-montserrat text-center text-3xl font-bold md:text-4xl lg:text-5xl">About</h1>
-      </div>
+      <!-- About-Content -->
+      <div class="col-start-2 lg:col-start-3 col-span-8 lg:col-span-6 h-full flex flex-col justify-between gap-5 z-10">
+        <div class="bg-warna6 h-14 md:h-20 flex items-center justify-center">
+          <h1 class="text-white text-center font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl">About</h1>
+        </div>
 
-      <div class="col-start-3 col-span-6 mt-4 mb-5 row-span-2 z-10  md:mb-8 xl:mb-8">
-        <p class="text-center font-comfortaa xt-sm md:text-xl">
+        <p class="text-black text-center font-comfortaa text-sm md:text-xl">
           We are a professional IT consulting company that provides
           solutions to every technology problems for your company. Our tean
           has assisted our various business partners in overcoming
@@ -123,30 +124,31 @@
     <!-- About END -->
 
     <!-- Vision & Mission -->
-    <section class="col-span-12 grid grid-cols-12 gap-5 mt-24" id="visionMission">
+    <section class="col-span-12 h-auto flex gap-5 mt-24" id="visionMission">
 
       <!-- vision -->
       <div
-        class="bg-white h-auto col-span-6 grid grid-cols-6 rounded-3xl drop-shadow-2xl sm:h-[400px] sm:rounded-[50px] md:h-auto lg:h-auto xl:h-[450px] relative"
+        class="bg-white h-full w-1/2 p-5 md:p-10 grid grid-cols-6 rounded-3xl md:rounded-[50px] drop-shadow-2xl relative overflow-hidden"
         id="vision">
 
         <!-- overlay -->
-        <img src="assets/img/overlay/vision-overlay.svg" alt="overlay-vision"
-          class="absolute bottom-0 select-none pointer-events-none">
+        <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-vision"
+          class="absolute h-[567px] -bottom-52 md:-bottom-40 lg:-bottom-64 -left-24 md:-left-28 lg:-left-56 select-none pointer-events-none">
 
-        <!-- Text Vision -->
-        <div
-          class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center z-10 md:h-20 md:mt-8 xl:mt-8">
-          <h1 class="text-white font-montserrat text-3xl my-auto font-bold md:text-4xl lg:text-5xl">Vision</h1>
-        </div>
+        <div class="col-span-full lg:col-start-2 lg:col-span-4 flex flex-col gap-5 lg:gap-10 z-10">
 
-        <!-- Vision-content -->
-        <div class="col-start-2 col-span-4 text-sm mt-0 mb-5 z-10 md:mt-4 md:text-xl md:mb-8 xl:mt-4 xl:mb-8">
-          <p class="text-center font-comfortaa text-sm md:text-xl">
+          <!-- Text Vision -->
+          <div class="bg-warna6 h-14 md:h-20 flex items-center justify-center">
+            <h1 class="text-white font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl my-auto">Vision</h1>
+          </div>
+
+          <!-- Vision Content -->
+          <p class="text-black text-center font-comfortaa text-xs md:text-xl">
             Making the information Technology services provider company
             competent, leading, and providing the best solutions in it's field
             and connecting the education with the professional environtment.
           </p>
+
         </div>
 
       </div>
@@ -154,31 +156,31 @@
 
       <!-- Mission -->
       <div
-        class="col-start-7 col-span-6 bg-white h-auto grid grid-cols-6 rounded-3xl drop-shadow-2xl sm:h-[400px] sm:rounded-[50px] md:h-auto lg:h-auto xl:h-[450px] relative"
+        class="bg-white w-1/2 h-auto p-5 md:p-10 grid grid-cols-6 rounded-3xl drop-shadow-2xl md:rounded-[50px] relative overflow-hidden"
         id="mission">
 
         <!-- overlay -->
-        <img src="assets/img/overlay/mission-overlay1.svg" alt="overlay-mission1"
-          class="absolute top-0 select-none pointer-events-none">
-        <img src="assets/img/overlay/mission-overlay2.svg" alt="overlay-mission2"
-          class="absolute bottom-0 right-0 select-none pointer-events-none">
+        <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-mission1"
+          class="absolute h-[500px] md:h-[567px] -top-48 md:-top-56 -left-24 sm:-left-40 md:-left-28 lg:-left-[340px] select-none pointer-events-none">
+        <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-mission2"
+          class="absolute h-44 md:h-80 -bottom-12 md:-bottom-28 lg:-bottom-32 -right-12 md:-right-28 select-none pointer-events-none">
 
-        <!-- Text Mission -->
-        <div
-          class="bg-warna6 h-14 mt-5 col-start-2 col-span-4 flex items-center justify-center z-10 md:h-20 md:mt-8 xl:mt-8">
-          <h1 class="text-white font-montserrat text-3xl font-bold md:text-4xl lg:text-5xl">Mission<h1>
-        </div>
+        <div class="col-span-full lg:col-start-2 lg:col-span-4 h-full flex flex-col gap-5 lg:gap-10 z-10">
+          <!-- Text Mission -->
+          <div class="bg-warna6 h-14 md:h-20 flex items-center justify-center">
+            <h1 class="text-white font-montserrat text-3xl font-bold md:text-4xl lg:text-5xl">Mission<h1>
+          </div>
 
-        <!-- Mission-content -->
-        <div
-          class="col-start-2 col-span-4 font-comfortaa text-sm mt-2 mb-5 z-10 md:mt-4 md:text-xl md:mb-8 xl:mt-4 xl:mb-8">
-          <li>Giving the best service</li>
-          <li>Provide adequate result as needed</li>
-          <li>Provide added value to the company with a system that can be seeded, safe, and competitive cost</li>
-          <li>Develop new products</li>
-          <li>Building partnership</li>
-          <li>Providing employment</li>
-          <li>Making a learning place for prospective system research and system development </li>
+          <!-- Mission-content -->
+          <div class="col-start-2 col-span-4 font-comfortaa font-medium text-xs md:text-xl">
+            <li>Giving the best service</li>
+            <li>Provide adequate result as needed</li>
+            <li>Provide added value to the company with a system that can be seeded, safe, and competitive cost</li>
+            <li>Develop new products</li>
+            <li>Building partnership</li>
+            <li>Providing employment</li>
+            <li>Making a learning place for prospective system research and system development </li>
+          </div>
         </div>
       </div>
       <!-- Mission END -->
@@ -216,9 +218,6 @@
           <div
             class="mt-4 sm:mb-5 ml-1 sm:ml-2 lg:ml-5 xl:ml-8 bg-warna2 h-44 w-24 sm:h-52 sm:w-32 md:h-64 md:w-44 lg:h-80 lg:w-52 xl:h-96 xl:w-72 rounded-xl md:rounded-3xl grid grid-rows-3 hover:scale-105 transition duration-300 ease-in-out"
             id="cardFrontend">
-            <!-- <div class="h-12 md:h-24 lg:h-32 xl:h-32 flex mt-10">
-              <p class="mx-auto text-white"><i class="fa-solid fa-code fa-8x"></i></p>
-            </div> -->
             <div class="text-5xl pt-6 sm:text-6xl sm:pt-7 md:text-7xl md:pt-10 lg:text-8xl xl:text-9xl xl:mt-2">
               <p class="text-center text-white"><i class="fa-solid fa-code"></i></p>
             </div>
@@ -280,55 +279,41 @@
   </div>
 
   <!-- Our Client -->
-  <section class="grid grid-cols-12">
-    <div class="bg-white col-span-12 grid grid-cols-12 gap-5 mt-12">
+  <section class="bg-white w-full h-fit mt-24 p-10 lg:p-20">
+    <div class="container grid grid-cols-12">
 
-      <div
-        class="bg-warna6 h-14 md:h-24 mt-5 md:mt-16 row-start-1 col-start-4 col-span-6 z-10 flex items-center justify-center">
-        <h1 class="text-white text-3xl md:text-5xl font-montserrat font-bold">Our Client</h1>
-      </div>
+      <div class="col-span-full flex flex-col gap-20">
 
-      <div class="row-start-2 col-start-2 col-span-4 pt-5 mt-10">
-        <img src="assets/img/image 1.svg">
-      </div>
+        <!-- Judul Our Client -->
+        <div class="bg-warna6 h-14 md:h-20 w-10/12 sm:w-6/12 self-center flex items-center justify-center">
+          <h1 class="text-white text-center font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl">Our Client</h1>
+        </div>
 
-      <div class="row-start-3 col-start-8 col-span-4">
-        <img src="assets/img/image 2.svg">
-      </div>
+        <!-- Logo Client -->
+        <div class="flex flex-col w-full h-fit gap-5">
 
-      <div class="row-start-4 col-start-2 col-span-4">
-        <img src="assets/img/image 3.svg">
-      </div>
+          <img src="assets/img/image 1.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
 
-      <div class="row-start-5 col-start-8 col-span-4">
-        <img src="assets/img/image 26.svg">
-      </div>
+          <img src="assets/img/image 2.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
 
-      <div class="row-start-6 col-start-2 col-span-4">
-        <img src="assets/img/image 6.svg">
-      </div>
+          <img src="assets/img/image 3.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
 
-      <div class="row-start-7 col-start-8 col-span-4">
-        <img src="assets/img/image 5.svg">
-      </div>
+          <img src="assets/img/image 26.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
 
-    </div>
-    <div class="bg-white col-span-12 grid grid-cols-12 gap-5 ">
+          <img src="assets/img/image 6.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
 
-      <div class="row-start-2 col-start-2 col-span-4">
-        <img src="assets/img/image 10.svg">
-      </div>
+          <img src="assets/img/image 5.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
 
-      <div class="row-start-3 col-start-8 col-span-4">
-        <img src="assets/img/image 7.svg">
-      </div>
+          <img src="assets/img/image 10.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
 
-      <div class="row-start-4 col-start-2 col-span-4">
-        <img src="assets/img/image 33.svg">
-      </div>
+          <img src="assets/img/image 7.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
 
-      <div class="row-start-5 col-start-8 col-span-4 mb-5 md:mb-16 md:mt-16">
-        <img src="assets/img/image 34.svg">
+          <img src="assets/img/image 33.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
+
+          <img src="assets/img/image 34.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
+
+        </div>
+
       </div>
 
     </div>
@@ -336,70 +321,75 @@
   <!-- Our Client END -->
 
   <!-- Our Product -->
-  <div class="container mx-auto ">
+  <section class="w-full h-fit p-10 md:p-20">
+    <div class="container grid grid-cols-12">
 
+      <div class="col-span-full flex flex-col gap-10 md:gap-20">
 
-    <section class="col-span-full grid grid-cols-12 mt-24" id="our-product">
-
-      <div class="bg-warna6 h-14 md:h-20 col-start-4 col-span-6 flex items-center justify-center z-10">
-        <h1 class="text-white font-montserrat text-3xl md:text-5xl font-bold">Our Product</h1>
-      </div>
-
-      <div class="bg-warna1 h-14 md:h-20 mt-5 md:mt-8 col-start-4 col-span-6 flex items-center justify-center z-10">
-        <h1 class="text-white font-montserrat text-2xl md:text-4xl font-normal">Web Penerbit Salemba</h1>
-      </div>
-
-      <div class="col-span-full grid grid-rows-3 grid-cols-12 gap-3 mt-20">
-
-        <!-- Column 1 -->
-        <div class="col-span-4 row-span-3">
-          <img src="assets/img/1.png" alt="satu" class="">
-          <img src="assets/img/2.png" alt="dua" class="mt-5">
-          <img src="assets/img/3.png" alt="tiga" class="mt-5">
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col-span-4 row-span-3 mt-8">
-          <img src="assets/img/4.png" alt="empat">
-          <img src="assets/img/5.png" alt="lima" class="mt-5">
-          <img src="assets/img/6.png" alt="enam" class="mt-5">
-        </div>
-
-        <!-- Column 3 -->
-        <div class="col-span-4 row-span-2 mt-28 grid grid-cols-4">
-
-          <div class="col-span-4">
-            <hr class="w-1/2 bg-warna5 h-1">
+        <div class="flex flex-col gap-5">
+          <div class="bg-warna6 h-14 md:h-20 w-10/12 sm:w-6/12 self-center flex items-center justify-center">
+            <h1 class="text-white text-center font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl">Our Product
+            </h1>
           </div>
 
-          <div class="col-span-4 grid grid-cols-4 mt-8 gap-2">
-            <img src="assets/img/react.png" alt="react" class="col-span-1">
-            <img src="assets/img/net.png" alt="net" class="col-span-1">
-            <img src="assets/img/sql.png" alt="sql" class="col-span-1">
-          </div>
-
-          <div class="col-span-4 mt-5">
-            <p class="font-comfortaa font-medium text-white">We developer a service system called Salemba Practice for
-              Penerbit Salemba. This service consists of e-learning , e-Tryiut and Training in mid-2019</p>
-            <br>
-            <p class="text-white font-comfortaa font-medium">There is also a catalog of various books that can be
-              purchased , either in print or digital (e-book).</p>
-          </div>
-
-          <div class="col-span-3 mt-5">
-            <!-- <button class="bg-transparent hover:bg-warna5 border border-warna5 py-2 px-4 w-full  font-montserrat font-bold text-warna5 hover:text-white transition duration-500 ease-in-out">Show More</button> -->
-            <button type="button"
-              class="text-warna5 hover:text-white border hover:bg-warna5 border-warna5 focus:ring-2 font-bold text-xl px-5 py-2 text-center transition duration-500 ease-in-out font-montserrat">Show
-              More</button>
+          <div class="bg-warna1 h-14 md:h-20 w-10/12 sm:w-6/12 self-center flex items-center justify-center">
+            <h1 class="text-white text-center font-montserrat font-medium text-xl md:text-2xl lg:text-4xl">Web Penerbit
+              Salemba
+            </h1>
           </div>
         </div>
 
+        <div class="grid grid-cols-12 gap-5">
+
+          <!-- col-1 -->
+          <div class="col-span-12 sm:col-span-6 lg:col-span-4">
+            <div class="flex flex-col gap-5">
+              <img src="assets/img/1.png" alt="satu">
+              <img src="assets/img/2.png" alt="dua">
+              <img src="assets/img/3.png" alt="tiga">
+            </div>
+          </div>
+
+          <!-- col-2 -->
+          <div class="lg:col-span-4 mt-10 hidden lg:block">
+            <div class="flex flex-col gap-5">
+              <img src="assets/img/4.png" alt="empat">
+              <img src="assets/img/5.png" alt="lima">
+              <img src="assets/img/6.png" alt="enam">
+            </div>
+          </div>
+
+          <!-- col-3 -->
+          <div class="col-span-12 sm:col-span-6 lg:col-span-4 md:mt-10 lg:mt-20">
+            <div class="flex flex-col gap-5">
+              <div class="bg-warna5 w-1/2 h-2"></div>
+
+              <div class="text-white font-comfortaa font-medium text-base">
+                <h4>We developer a service system called Salemba
+                  Practice for Penerbit Salemba. This service consists of e-learning , e-Tryiut and Training in mid-2019
+                </h4>
+                <br>
+                <h4>There is also a catalog of various books that can be purchased , either in print or digital
+                  (e-book).
+                </h4>
+              </div>
+
+              <div class="grid grid-cols-4">
+                <button type="button"
+                  class="col-span-3 bg-transparent hover:bg-warna5 w-full border border-warna5 focus:ring-2 py-2 text-warna5 hover:text-white text-center font-montserrat font-bold text-xl transition duration-500 ease-in-out">Show
+                  More</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-    </section>
-
-  </div>
-  <!-- Our Product END-->
+  </section>
+  <!-- Our Projct END -->
 
   <!-- Footer-->
   <footer class="bg-warna6 h-full w-full grid grid-cols-2 grid-row-12 ">
@@ -428,7 +418,7 @@
         </div>
 
         <div class="flex items-center">
-          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500" 
+          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500"
             href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
           <div class="font-comfortaa text-white text-sm ml-2">+62 857 7651 2171</div>
         </div>
@@ -493,6 +483,7 @@
 
     </div>
   </footer>
+
 </body>
 
 </html>
