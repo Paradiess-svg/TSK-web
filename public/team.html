@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Faviocon & Title -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <title>Team</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script src="assets/js/main-nav.js"></script>
+    <script src="assets/js/npc-nav.js"></script>
+</head>
+
+<body class="bg-warna2">
+
+    <!-- Navbar -->
+    <nav class="navbar md:flex md:items-center md:justify-between">
+        <div class="flex justify-between">
+            <a class="cursor-pointer ml-5" href="index.html">
+                <img class="h-10 inline" src="assets/img/Logo Full Color.png" />
+            </a>
+
+            <span class="text-3xl cursor-pointer mr-5 md:hidden block menu-click">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul
+            class="max-[767px]:bg-warna5 mr-5 font-comfortaa md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
+
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="#" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Product</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="#" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Portofolio</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="#"
+                    class="main-nav text-xl text-warna5 hover:text-white duration-500 max-[768px]:text-warna6">Team</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="#" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Service</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="Contact.html" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Contact &
+                    Info</a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Hero-->
+    <div class="h-screen select-none pointer-events-none relative">
+        <img class="" src="/public/assets/img/hero-contact.svg" alt="" />
+        <img class="-z-10 absolute top-0 right-0 max-w-full h-auto" src="../public/assets/img/img-hero.svg" alt="" />
+    </div>
+    <!-- Hero END -->
+
+    <div
+        class="container mx-auto  grid grid-cols-12 gap-x-5 gap-y-12 md:gap-y-20 lg:gap-y-24  -mt-[420px] sm:-mt-[270px] md:-mt-[150px] lg:-mt-[50px] xl:-mt-0  ">
+
+
+        <!-- Our Team -->
+        <div
+            class="col-start-4 col-span-6 xl:col-start-5 xl:col-span-4 bg-white rounded-[100px] h-20 md:h-24 lg:h-28 shadow-2xl flex items-center justify-center relative ">
+            <h1 class="font-montserrat font-bold text-warna3 text-2xl sm:text-3xl lg:text-5xl">
+                Our Team
+            </h1>
+        </div>
+        <!-- Our Team END -->
+
+        <!-- Admin -->
+        <!-- <div class="fade"> -->
+            <!-- Belum bisa menggunakan slick-slide sumber https://kruxor.com/view/code/qEOYF/slick-slider-carousel-with-custom-next-and-prev-buttons/ dan index.html -->
+            <section
+            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white col-start-2 col-span-10 h-96 grid grid-cols-10 drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8 relative slide-1"
+            id="admin">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="col-span-4 h-full flex flex-col justify-between py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Jabatan
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Desk Jabatan
+                    </p>
+                </div>
+
+                <div class="w-full h-fit flex flex-col justify-center align-middle text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Your name
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        "Never Gonna Give You Up"
+                    </p>
+                </div>
+                <div class="w-full flex justify-end ">
+                    <h1 class="text-6xl self-end"><button class="slide-prev"><i class="fa-solid fa-chevron-left  text-warna6 hover:text-white transition-all duration-500"></i></button></h1>
+                </div>
+            </div>
+
+            <div class="col-span-6 rounded-r-3xl pb-10 overflow-hidden flex flex-row items-center relative">
+                <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                <h1 class="text-6xl self-end"><button class="slide-next"><i class="fa-solid fa-chevron-right text-warna6 hover:text-white transition-all duration-500"></i></button> </h1>
+            </div>
+        <!-- </div> -->
+
+        </section>
+        <!-- Admin END -->
+        </div>
+        
+        
+
+    </div>
+
+    <!-- Footer-->
+    <footer class="bg-warna6 h-full w-full grid grid-cols-2 grid-row-12 ">
+
+
+        <!-- Google map -->
+        <div class="col-span-1">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
+                style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full"></iframe>
+        </div>
+
+        <div class="col-span-1">
+            <div class="ml-3 mt-5">
+
+
+
+                <!-- Contact Us -->
+                <div class="font-montserrat text-white text-base md:text-xl">Contact us</div>
+                <div class="flex items-center">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+                        class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500 "
+                        target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <div class=" font-comfortaa text-white text-sm ml-2">Contact @tetambastudio . com</div>
+                </div>
+
+                <div class="flex items-center">
+                    <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500"
+                        href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <div class="font-comfortaa text-white text-sm ml-2">+62 857 7651 2171</div>
+                </div>
+
+                <!-- Address -->
+                <div class="font-montserrat text-white text-base md:text-xl mt-2 md:mt-4">Address</div>
+                <div class="flex items-center">
+                    <a class="text-base md:text-xl text-warna2 hover:text-warna4 transition-all duration-500"
+                        href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i
+                            class="fa-solid fa-location-dot "></i></a>
+                    <p class="font-comfortaa text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec.
+                        Pancoran
+                        Mas, Kota
+                        Depok, Jawa Barat </p>
+                </div>
+
+                <!-- More about us -->
+                <div class="font-montserrat text-white col-span-3 text-base md:text-xl mt-2 md:mt-4">More about us</div>
+                <div class="grid grid-rows-2 grid-cols-3 md:flex items-center">
+                    <a class="font-comfortaa text-xs md:text-sm text-white hover:text-warna4 transition-all duration-500 col-span-1"
+                        href="#" target="_blank">Product</a>
+                    <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1"
+                        href="#" target="_blank">Portofolio</a>
+                    <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1"
+                        href="#" target="_blank">Team</a>
+                    <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-1 row-start-2 mt-1"
+                        href="#" target="_blank">Service</a>
+                    <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-2"
+                        href="Contact.html" target="_blank">Contact & info</a>
+                </div>
+            </div>
+
+            <div class="w-full h-auto mt-2 pointer-events-none select-none">
+                <img src="assets/img/foot.svg" alt="">
+            </div>
+
+
+            <div class="grid grid-cols-3 md:flex md:justify-between mx-3 mt-2 md:mt-4 mb-2 md:mb-4">
+                <div class="col-span-2 font-comfortaa text-sm md:text-lg text-white col-start-1">Copyright© 2023
+                    <br>PT. Tetamba Studio Kreasi.
+                    <br>All rights reserved.
+                </div>
+                <div class="col-span-1 grid grid-rows-3 grid-cols-2 md:flex self-end">
+
+                    <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+                        href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
+
+                    <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+                        href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
+                            class="fa-brands fa-twitter "></i></a>
+
+                    <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+                        href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
+
+                    <a class="col-span-1 text-lg md:text-2xl text-center md:text-right md:pr-4 text-warna2 hover:text-warna4 transition-all duration-300"
+                        href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
+                            class="fa-brands fa-linkedin "></i></a>
+                    <a class="col-start-5 text-2xl text-right text-warna2 hover:text-warna4 transition-all duration-500"
+                        href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
+                            class="fa-brands fa-instagram "></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <!-- footer END -->
+
+</body>
+
+</html>
