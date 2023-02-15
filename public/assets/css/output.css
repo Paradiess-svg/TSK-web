@@ -903,6 +903,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1030,6 +1034,10 @@ video {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .max-w-full {
@@ -1277,6 +1285,14 @@ video {
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
 }
 
 .text-center {

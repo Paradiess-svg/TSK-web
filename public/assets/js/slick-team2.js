@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('#fade').slick({
+    
+    $('#fade2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -10,12 +11,11 @@ $(document).ready(function () {
     
       $('.slide-prev').click(function(e){ 
         //e.preventDefault(); 
-    $('#fade').slick('slickPrev');
+    $('#fade2').slick('slickPrev');
     } );
     
     $('.slide-next').click(function(e){
     //e.preventDefault(); 
-    $('#fade').slick('slickNext');
+    $('#fade2').slick('slickNext');
     } );  
-
 })
