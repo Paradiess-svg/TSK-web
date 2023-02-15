@@ -18,6 +18,9 @@
         rel="stylesheet" />
 
     <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -27,15 +30,19 @@
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/navbar-responsive.js"></script>
     <script src="assets/js/main-nav.js"></script>
+    <script src="assets/js/slick-team.js"></script>
     <script src="assets/js/npc-nav.js"></script>
 </head>
 
@@ -96,55 +103,127 @@
                 Our Team
             </h1>
         </div>
-        <!-- Our Team END -->
-
-        <!-- Admin -->
-        <!-- <div class="fade"> -->
-            <!-- Belum bisa menggunakan slick-slide sumber https://kruxor.com/view/code/qEOYF/slick-slider-carousel-with-custom-next-and-prev-buttons/ dan index.html -->
-            <section
-            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white col-start-2 col-span-10 h-96 grid grid-cols-10 drop-shadow-2xl sm:rounded-[50px] xl:col-start-3 xl:col-span-8 relative slide-1"
-            id="admin">
-
-
-            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
-
-
-            <div class="col-span-4 h-full flex flex-col justify-between py-10 pl-10 text-warna3">
-                <div class="flex flex-col w-full h-fit">
-                    <p class="font-montserrat text-xl font-bold md:text-4xl">
-                        Jabatan
-                    </p>
-                    <p class="font-comfortaa text-l font-light md:text-base">
-                        Desk Jabatan
-                    </p>
-                </div>
-
-                <div class="w-full h-fit flex flex-col justify-center align-middle text-white">
-                    <p class="text-center font-montserrat text-xl md:text-4xl">
-                        Your name
-                    </p>
-                    <p class="text-center font-comfortaa text-l font-light md:text-base">
-                        "Never Gonna Give You Up"
-                    </p>
-                </div>
-                <div class="w-full flex justify-end ">
-                    <h1 class="text-6xl self-end"><button class="slide-prev"><i class="fa-solid fa-chevron-left  text-warna6 hover:text-white transition-all duration-500"></i></button></h1>
-                </div>
-            </div>
-
-            <div class="col-span-6 rounded-r-3xl pb-10 overflow-hidden flex flex-row items-center relative">
-                <img class="mt-10 " src="assets/img/Male.svg" alt="">
-                <h1 class="text-6xl self-end"><button class="slide-next"><i class="fa-solid fa-chevron-right text-warna6 hover:text-white transition-all duration-500"></i></button> </h1>
-            </div>
-        <!-- </div> -->
-
-        </section>
-        <!-- Admin END -->
         </div>
-        
-        
+    <div
+        class="container mx-auto w-3/5 mt-24 " id="fade">
+        <!-- <div id="fade"> -->
+            <!-- Our Team END -->
+            <!-- Admin -->
+            <!-- Belum bisa menggunakan slick-slide sumber https://kruxor.com/view/code/qEOYF/slick-slider-carousel-with-custom-next-and-prev-buttons/ dan index.html 
+            Seharusnya  sebelum admin ada div untuk card, dan isinya ada div untuk membungkus jabatan per orangnya-->
 
+            <!-- Div untuk admin
+            container mx-auto  grid grid-cols-12 -->
+            <!-- Div untuk isi admin-->
+            <!-- <div class="fade col-start-2 col-span-10 h-96 grid-cols-10"> -->
+            <!-- Pekerja 1 -->
+            <section
+                class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+                id="admin">
+
+
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+                <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                    <div class="flex flex-col w-full h-fit">
+                        <p class="font-montserrat text-xl font-bold md:text-4xl">
+                            Siswa
+                        </p>
+                        <p class="font-comfortaa text-l font-light md:text-base">
+                            Murid keren
+                        </p>
+                    </div>
+
+                    <div class="w-96 h-fit pt-10 text-white">
+                        <p class="text-center font-montserrat text-xl md:text-4xl">
+                            Donny
+                        </p>
+                        <p class="text-center font-comfortaa text-l font-light md:text-base">
+                            "Never Gonna Give You Up"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="absolute right-11 top-1">
+                    <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                    </h1>
+                </div>
+            </section>
+            <!-- Pekerja 2 -->
+            <section
+                class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+                id="admin">
+
+
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+                <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                    <div class="flex flex-col w-full h-fit">
+                        <p class="font-montserrat text-xl font-bold md:text-4xl">
+                            Guru RPL
+                        </p>
+                        <p class="font-comfortaa text-l font-light md:text-base">
+                            Guru PBO
+                        </p>
+                    </div>
+
+                    <div class="w-96 h-fit pt-10 text-white">
+                        <p class="text-center font-montserrat text-xl md:text-4xl">
+                            Adi
+                        </p>
+                        <p class="text-center font-comfortaa text-l font-light md:text-base">
+                            "I can do it"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="absolute right-11 top-1">
+                    <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                    </h1>
+                </div>
+            </section>
+            <!-- Pekerja 3 -->
+            <section
+                class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+                id="admin">
+
+
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+                <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                    <div class="flex flex-col w-full h-fit">
+                        <p class="font-montserrat text-xl font-bold md:text-4xl">
+                            Guru RPL
+                        </p>
+                        <p class="font-comfortaa text-l font-light md:text-base">
+                            Guru PPKN
+                        </p>
+                    </div>
+
+                    <div class="w-96 h-fit pt-10 text-white">
+                        <p class="text-center font-montserrat text-xl md:text-4xl">
+                            Dita
+                        </p>
+                        <p class="text-center font-comfortaa text-l font-light md:text-base">
+                            "silently beautiful"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="absolute right-11 top-1">
+                    <img class="mt-10 " src="assets/img/female.svg" alt="">
+                    </h1>
+                </div>
+            </section>
+        </div>
     </div>
+    <!-- Admin END -->
+    
+
+
 
     <!-- Footer-->
     <footer class="bg-warna6 h-full w-full grid grid-cols-2 grid-row-12 ">
