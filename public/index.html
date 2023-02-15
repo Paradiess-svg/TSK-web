@@ -93,7 +93,7 @@
   <!-- -mt-[400px]  sm:-mt-[500px] md:-mt-[900px] lg:-mt-[1100px] xl:-mt-[1400px] 2xl:-mt-[1700px] -->
 
   <div
-    class="container mx-auto grid grid-cols-12 grid-flow-row -mt-[420px] sm:-mt-[270px] md:-mt-[150px] lg:-mt-[50px] xl:-mt-[20px] ">
+    class="container mx-auto grid grid-cols-12 grid-flow-row -mt-80 sm:-mt-56 md:-mt-[150px] lg:-mt-[50px] xl:-mt-[20px] ">
 
     <!-- About -->
     <section
@@ -279,10 +279,18 @@
   </div>
 
   <!-- Our Client -->
-  <section class="bg-white w-full h-fit mt-24 p-10 lg:p-20">
+  <section class="bg-white w-full h-fit mt-24 p-10 lg:p-20 relative overflow-hidden">
     <div class="container grid grid-cols-12">
 
-      <div class="col-span-full flex flex-col gap-20">
+      <!-- Overlay -->
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
+        class="absolute h-[500px] lg:h-[737px] -top-0 -left-96 lg:-left-[450px]">
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
+        class="absolute h-72 lg:h-[466px] bottom-60 lg:bottom-96 right-8 lg:right-12">
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
+        class="absolute h-32 lg:h-56 bottom-24 left-16 lg:left-40">
+
+      <div class="col-span-full flex flex-col gap-20 z-10">
 
         <!-- Judul Our Client -->
         <div class="bg-warna6 h-14 md:h-20 w-10/12 sm:w-6/12 self-center flex items-center justify-center">
@@ -321,11 +329,19 @@
   <!-- Our Client END -->
 
   <!-- Our Product -->
-  <section class="w-full h-fit p-10 md:p-20">
+  <section class="w-full h-fit p-10 md:p-20 relative overflow-hidden">
     <div class="container grid grid-cols-12">
 
-      <div class="col-span-full flex flex-col gap-10 md:gap-20">
+      <!-- Overlay -->
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
+        class="absolute h-[476px] top-0 md:top-28 -left-32 md:-left-44 lg:left-32 sm:hidden md:block">
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="" class="absolute h-96 right-0 bottom-24">
+      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
+        class="absolute h-44 left-0 lg:left-28 bottom-0 lg:bottom-14">
 
+      <div class="col-span-full flex flex-col gap-10 md:gap-20 z-10">
+
+        <!-- Judul -->
         <div class="flex flex-col gap-5">
           <div class="bg-warna6 h-14 md:h-20 w-10/12 sm:w-6/12 self-center flex items-center justify-center">
             <h1 class="text-white text-center font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl">Our Product
@@ -339,6 +355,7 @@
           </div>
         </div>
 
+        <!-- Our Product - Content -->
         <div class="grid grid-cols-12 gap-5">
 
           <!-- col-1 -->
@@ -364,7 +381,7 @@
             <div class="flex flex-col gap-5">
               <div class="bg-warna5 w-1/2 h-2"></div>
 
-              <div class="text-white font-comfortaa font-medium text-base">
+              <div class="text-white font-comfortaa font-medium text-sm sm:text-base">
                 <h4>We developer a service system called Salemba
                   Practice for Penerbit Salemba. This service consists of e-learning , e-Tryiut and Training in mid-2019
                 </h4>
@@ -375,8 +392,8 @@
               </div>
 
               <div class="grid grid-cols-4">
-                <button type="button"
-                  class="col-span-3 bg-transparent hover:bg-warna5 w-full border border-warna5 focus:ring-2 py-2 text-warna5 hover:text-white text-center font-montserrat font-bold text-xl transition duration-500 ease-in-out">Show
+                <button type="button" onclick="document.location='product.html'"
+                  class="col-span-2 sm:col-span-3 bg-transparent hover:bg-warna5 w-full border border-warna5 focus:ring-2 py-2 text-warna5 hover:text-white text-center font-montserrat font-bold text-xl transition duration-500 ease-in-out">Show
                   More</button>
               </div>
 
@@ -392,49 +409,53 @@
   <!-- Our Projct END -->
 
   <!-- Footer-->
-  <footer class="bg-warna6 h-full w-full grid grid-cols-2 grid-row-12 ">
-
+  <footer class="h-fit w-full flex">
 
     <!-- Google map -->
-    <div class="col-span-1">
+    <div class="w-full hidden sm:block">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d416.7709202053359!2d106.80655368968627!3d-6.391994819730127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1675220295717!5m2!1sen!2sid"
-        style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        class="w-full h-full"></iframe>
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
     </div>
 
-    <div class="col-span-1">
-      <div class="ml-3 mt-5">
+    <!-- Footer - Content -->
+    <div class="w-full h-fit flex flex-col">
 
-
+      <!-- Bagian atas -->
+      <div class="bg-warna6 flex flex-col p-2 md:p-5 gap-3">
 
         <!-- Contact Us -->
-        <div class="font-montserrat text-white text-base md:text-xl">Contact us</div>
-        <div class="flex items-center">
-          <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
-            class="text-base md:text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500 "
-            target="_blank"><i class="fa-solid fa-envelope"></i></a>
-          <div class=" font-comfortaa text-white text-sm ml-2">Contact @tetambastudio . com</div>
-        </div>
+        <div class="flex flex-col">
+          <div class="text-white font-montserrat font-bold text-sm md:text-xl">Contact us</div>
+          <div class="flex items-center gap-2">
+            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+              class="text-warna2 hover:text-warna4 text-sm md:text-lg transition-all duration-500 " target="_blank"><i
+                class="fa-solid fa-envelope"></i></a>
+            <div class="text-white font-comfortaa font-medium text-xs md:text-sm">Contact@tetambastudio.com</div>
+          </div>
 
-        <div class="flex items-center">
-          <a class=" text-lg text-right text-warna2 hover:text-warna4 transition-all duration-500"
-            href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
-          <div class="font-comfortaa text-white text-sm ml-2">+62 857 7651 2171</div>
+          <div class="flex items-center gap-2">
+            <a class="text-warna2 hover:text-warna4 text-sm md:text-lg transition-all duration-500"
+              href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
+            <div class="text-white font-comfortaa font-medium text-xs md:text-sm">+62 857 7651 2171</div>
+          </div>
         </div>
 
         <!-- Address -->
-        <div class="font-montserrat text-white text-base md:text-xl mt-2 md:mt-4">Address</div>
-        <div class="flex items-center">
-          <a class="text-base md:text-xl text-warna2 hover:text-warna4 transition-all duration-500"
-            href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
-          <p class="font-comfortaa text-white text-xs md:text-sm ml-2">Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran
-            Mas, Kota
-            Depok, Jawa Barat </p>
+        <div class="flex flex-col">
+          <div class="text-white font-montserrat font-bold text-sm md:text-xl">Address</div>
+          <div class="flex items-center gap-2">
+            <a class="text-warna2 hover:text-warna4 self-start text-base md:text-xl transition-all duration-500"
+              href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
+            <p class="text-white font-comfortaa font-medium text-xs md:text-sm">Jl. Nuri 2 No.103, Depok Jaya, Kec.
+              Pancoran
+              Mas, Kota Depok, Jawa Barat </p>
+          </div>
         </div>
 
+
         <!-- More about us -->
-        <div class="font-montserrat text-white col-span-3 text-base md:text-xl mt-2 md:mt-4">More about us</div>
+        <!-- <div class="font-montserrat text-white col-span-3 text-base md:text-xl mt-2 md:mt-4">More about us</div>
         <div class="grid grid-rows-2 grid-cols-3 md:flex items-center">
           <a class="font-comfortaa text-xs md:text-sm text-white hover:text-warna4 transition-all duration-500 col-span-1"
             href="#" target="_blank">Product</a>
@@ -446,15 +467,46 @@
             href="#" target="_blank">Service</a>
           <a class="font-comfortaa text-xs md:text-sm text-white  hover:text-warna4 transition-all duration-500 md:ml-4 col-span-2"
             href="Contact.html" target="_blank">Contact & info</a>
+        </div> -->
+      </div>
+
+      <!-- Mark Pembatas -->
+      <div class="bg-warna4 w-full h-fit flex justify-center p-2">
+        <img src="assets/img/Logo Footer.svg" alt="" class="h-4 md:h-7 pointer-events-none select-none">
+      </div>
+
+      <!-- Bagian Bawah -->
+      <div class="bg-warna6 flex flex-col md:flex-row justify-between p-2 md:p-5">
+
+        <div class="w-full h-fit">
+          <h4 class="text-white font-comfortaa font-medium text-xs md:text-sm">Copyright&copy; 2023 PT. Tetamba Studio
+            Kreasi. All rights reserved.
+          </h4>
         </div>
+
+        <div class="w-fit h-auto flex md:items-end self-end md:justify-end gap-3">
+
+          <a class="text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500" href="#"
+            target="_blank"><i class="fa-brands fa-facebook "></i></a>
+
+          <a class="text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+            href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
+              class="fa-brands fa-twitter "></i></a>
+
+          <a class="text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500" href="#"
+            target="_blank"><i class="fa-brands fa-youtube "></i></a>
+
+          <a class="text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+            href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
+              class="fa-brands fa-linkedin "></i></a>
+          <a class="text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+            href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
+              class="fa-brands fa-instagram "></i></a>
+        </div>
+
       </div>
 
-      <div class="w-full h-auto mt-2 pointer-events-none select-none">
-        <img src="assets/img/foot.svg" alt="">
-      </div>
-
-
-      <div class="grid grid-cols-3 md:flex md:justify-between mx-3 mt-2 md:mt-4 mb-2 md:mb-4">
+      <!-- <div class=" grid grid-cols-3 md:flex md:justify-between mx-3 mt-2 md:mt-4 mb-2 md:mb-4">
         <div class="col-span-2 font-comfortaa text-sm md:text-lg text-white col-start-1">Copyright© 2023
           <br>PT. Tetamba Studio Kreasi.
           <br>All rights reserved.
@@ -478,8 +530,7 @@
             href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
               class="fa-brands fa-instagram "></i></a>
         </div>
-      </div>
-
+      </div> -->
 
     </div>
   </footer>
