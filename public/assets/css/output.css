@@ -794,6 +794,10 @@ video {
   grid-column-start: 3;
 }
 
+.col-start-6 {
+  grid-column-start: 6;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
