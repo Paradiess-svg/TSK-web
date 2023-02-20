@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  body {
-    overflow-x: hidden;
-  }
-
-  .test {
-    background-color: #f39c12;
-    height: 1500px;
-    width: 115px;
-  }
 
   .navbar {
     position: fixed;
@@ -32,28 +23,5 @@
     padding: 30px 0;
     padding-left: 1px;
     transition: all 0.3s ease;
-  }
-
-  .foot-line {
-    transform: rotate(58deg);
-    background-color: rgba(
-      241.00000083446503,
-      196.00000351667404,
-      15.000000055879354,
-      1
-    );
-    width: 115px;
-    height: 150px;
-    position: absolute;
-    left: -360px;
-    top: 3900px;
-  }
-
-  .segitiga {
-    height: 0px;
-    width: 0px;
-    border-top: solid 1511px blue;
-    border-right: solid 1000px transparent;
-    margin-bottom: 20px;
   }
 }

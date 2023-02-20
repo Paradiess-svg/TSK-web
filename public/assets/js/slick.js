@@ -10,4 +10,8 @@ $(document).ready(function () {
     nextArrow:
       "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right text-warna2 text-xl sm:text-[80px] pr-3' aria-hidden='true'></i></button>",
   });
+
+
+
+
 });
