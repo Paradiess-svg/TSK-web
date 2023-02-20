@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Faviocon & Title -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <title>Team</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script src="assets/js/main-nav.js"></script>
+    <script src="assets/js/slick-team.js"></script>
+    <script src="assets/js/slick-team2.js"></script>
+    <script src="assets/js/npc-nav.js"></script>
+
+</head>
+
+<body class="bg-warna2">
+
+    <!-- Navbar -->
+    <nav class="navbar md:flex md:items-center md:justify-between">
+        <div class="flex justify-between">
+            <a class="cursor-pointer ml-5" href="index.html">
+                <img class="h-10 inline" src="assets/img/Logo Full Color.png" />
+            </a>
+
+            <span class="text-3xl cursor-pointer mr-5 md:hidden block menu-click">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul
+            class=" max-[767px]:bg-warna5 mr-5 font-comfortaa md:flex md:items-center md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="product.html" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Product</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="" class="text-xl text-white disabled:hover:text-warna6 duration-500 cursor-not-allowed"
+                    disabled>Portofolio</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="#"
+                    class="main-nav text-xl text-warna5 hover:text-white duration-500 max-[768px]:text-warna6">Team</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="" class="text-xl text-white disabled:hover:text-warna6 duration-500 cursor-not-allowed"
+                    disabled>Service</a>
+            </li>
+            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+                <a href="contact.html" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Contact &
+                    Info</a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Hero-->
+    <div class="h-screen select-none pointer-events-none relative">
+        <img class="" src="/public/assets/img/hero-contact.svg" alt="" />
+        <img class="-z-10 absolute top-0 right-0 max-w-full h-auto" src="../public/assets/img/img-hero.svg" alt="" />
+    </div>
+    <!-- Hero END -->
+
+    <div
+        class="container mx-auto  grid grid-cols-12 gap-x-5 gap-y-12 md:gap-y-20 lg:gap-y-24  -mt-[420px] sm:-mt-[270px] md:-mt-[150px] lg:-mt-[50px] xl:-mt-0  ">
+
+
+        <!-- Our Team -->
+        <div
+            class="col-start-4 col-span-6 xl:col-start-5 xl:col-span-4 bg-white rounded-[100px] h-20 md:h-24 lg:h-28 shadow-2xl flex items-center justify-center relative ">
+            <h1 class="font-montserrat font-bold text-warna3 text-2xl sm:text-3xl lg:text-5xl">
+                Our Team
+            </h1>
+        </div>
+    </div>
+    <div class="container mx-auto w-3/5 mt-24 " id="fade">
+        <!-- <div id="fade"> -->
+        <!-- Our Team END -->
+        <!-- Admin -->
+        <!-- Belum bisa menggunakan slick-slide sumber https://kruxor.com/view/code/qEOYF/slick-slider-carousel-with-custom-next-and-prev-buttons/ dan index.html 
+            Seharusnya  sebelum admin ada div untuk card, dan isinya ada div untuk membungkus jabatan per orangnya-->
+
+        <!-- Div untuk admin
+            container mx-auto  grid grid-cols-12 -->
+        <!-- Div untuk isi admin-->
+        <!-- <div class="fade col-start-2 col-span-10 h-96 grid-cols-10"> -->
+        <!-- Pekerja 1 -->
+        <section
+            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+            id="admin">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Admin
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Administratif
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Achmad Rizkiansyah
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        "Never Gonna Give You Up"
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                </h1>
+            </div>
+        </section>
+        <!-- Pekerja 2 -->
+        <section
+            class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+            id="admin">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Admin
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Intership admin
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Tara Irianti
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        "I can do it"
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/female.svg" alt="">
+                </h1>
+            </div>
+        </section>
+        <!-- Pekerja 3 -->
+        <section
+            class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+            id="admin">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Admin
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Administratif
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Annisa Quratha Aini
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        “Never Gonna go around and desert you”
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/female.svg" alt="">
+                </h1>
+            </div>
+        </section>
+    </div>
+    <!-- Admin END -->
+    <!-- Programmer -->
+    <div class="container mx-auto w-3/5 mt-24 " id="fade2">
+
+        <!-- Pekerja 1 -->
+        <section
+            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+            id="programmer">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Programmer
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        FrontEnd
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Alwan Dwi Putra
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        "Update update update"
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                </h1>
+            </div>
+        </section>
+        <!-- Pekerja 2 -->
+        <section
+            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+            id="admin">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Programmer
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        BackEnd
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Achmad Izhar
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        "I can do it"
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                </h1>
+            </div>
+        </section>
+        <!-- Pekerja 3 -->
+        <section
+            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+            id="admin">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Programmer
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        BackEnd
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        M Azzam Nur Alwi
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        “Never Gonna go around and desert you”
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                </h1>
+            </div>
+        </section>
+        <!-- Pekerja 4 -->
+        <section
+            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative "
+            id="admin">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Programmer
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Senior programmer
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Achmad Maulana
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        “Never deserter”
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                </h1>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mx-auto w-3/5 mt-24 ">
+        <!-- Programmer END -->
+
+        <!-- UIUX -->
+        <!-- Pekerja 1 -->
+        <section
+            class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative overflow-hidden"
+            id="uiux">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        UI/UX Designer
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Senior UI/UX Designer
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        M. Hamzah N.
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        “Enjoy Design”
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/Male.svg" alt="">
+                </h1>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mx-auto w-3/5 mt-24 ">
+        <!-- UIUX END-->
+
+        <!-- Project Manager -->
+        <!-- Pekerja 1 -->
+        <section
+            class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative overflow-hidden"
+            id="Project Manager">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Project Manager
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Manage project
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Khairunnisa
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        “Be the best”
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/female.svg" alt="">
+                </h1>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mx-auto w-3/5 mt-24 ">
+        <!-- Project Manager END -->
+
+        <!-- Technical Writer -->
+        <!-- Pekerja 1 -->
+        <section
+            class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white h-96 drop-shadow-2xl sm:rounded-[50px]  xl:col-start-3 xl:col-span-8 relative overflow-hidden "
+            id="Technical Writer">
+
+
+            <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+
+
+            <div class="h-full flex flex-col py-10 pl-10 text-warna3">
+                <div class="flex flex-col w-full h-fit">
+                    <p class="font-montserrat text-xl font-bold md:text-4xl">
+                        Technical Writer
+                    </p>
+                    <p class="font-comfortaa text-l font-light md:text-base">
+                        Technical of project
+                    </p>
+                </div>
+
+                <div class="w-96 h-fit pt-12 text-white">
+                    <p class="text-center font-montserrat text-xl md:text-4xl">
+                        Z. Rabbani Amalia
+                    </p>
+                    <p class="text-center font-comfortaa text-l font-light md:text-base">
+                        “Communication is important”
+                    </p>
+                </div>
+            </div>
+
+            <div class="absolute right-11 top-1">
+                <img class="mt-10 " src="assets/img/female.svg" alt="">
+                </h1>
+            </div>
+        </section>
+    </div>
+    <!--  -->
+
+    <!-- Footer-->
+    <footer class="h-fit w-full flex">
+
+        <!-- Google map -->
+        <div class="w-full hidden sm:block">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full"></iframe>
+        </div>
+
+        <!-- Footer - Content -->
+        <div class="w-full h-fit flex flex-col">
+
+            <!-- Bagian atas -->
+            <div class="bg-warna6 flex flex-col p-2 md:p-5 gap-3">
+
+                <!-- Contact Us -->
+                <div class="flex flex-col">
+                    <div class="text-white font-montserrat font-bold text-sm md:text-xl">Contact us</div>
+                    <div class="flex items-center gap-2">
+                        <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+                            class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl transition-all duration-500 "
+                            target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <div class="text-white font-comfortaa font-medium text-xs md:text-base">
+                            Contact@tetambastudio.com</div>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <a class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl transition-all duration-500"
+                            href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                        <div class="text-white font-comfortaa font-medium text-xs md:text-base">+62 857 7651 2171</div>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="flex flex-col">
+                    <div class="text-white font-montserrat font-bold text-sm md:text-xl">Address</div>
+                    <div class="flex items-center gap-2">
+                        <a class="hover:scale-110 text-warna2 hover:text-warna4 self-start text-base md:text-xl transition-all duration-500"
+                            href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i
+                                class="fa-solid fa-location-dot "></i></a>
+                        <p class="text-white font-comfortaa font-medium text-xs md:text-base">Jl. Nuri 2 No.103, Depok
+                            Jaya, Kec.
+                            Pancoran
+                            Mas, Kota Depok, Jawa Barat </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mark Pembatas -->
+            <div class="bg-warna4 w-full h-fit flex justify-center p-2">
+                <img src="assets/img/Logo Footer.svg" alt="" class="h-4 md:h-7 pointer-events-none select-none">
+            </div>
+
+            <!-- Bagian Bawah -->
+            <div class="bg-warna6 flex flex-col md:flex-row justify-between p-2 md:p-5">
+
+                <div class="w-full h-fit">
+                    <h4 class="text-white font-comfortaa font-medium text-xs md:text-lg">Copyright&copy; 2023 PT.
+                        Tetamba Studio
+                        Kreasi. All rights reserved.
+                    </h4>
+                </div>
+
+                <div class="w-fit h-auto flex md:items-end self-end md:justify-end gap-3 lg:gap-5">
+
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                        href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
+
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                        href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
+                            class="fa-brands fa-twitter "></i></a>
+
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                        href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
+
+                    <a class="text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                        href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
+                            class="fa-brands fa-linkedin "></i></a>
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                        href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
+                            class="fa-brands fa-instagram "></i></a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
