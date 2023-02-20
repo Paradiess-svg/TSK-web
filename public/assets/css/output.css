@@ -1045,6 +1045,10 @@ body {
           user-select: none;
 }
 
+.list-outside {
+  list-style-position: outside;
+}
+
 .grid-flow-row {
   grid-auto-flow: row;
 }
@@ -1308,6 +1312,10 @@ body {
   font-weight: 500;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1536,8 +1544,16 @@ body {
     width: 16rem;
   }
 
+  .sm\:items-end {
+    align-items: flex-end;
+  }
+
   .sm\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .sm\:self-end {
+    align-self: flex-end;
   }
 
   .sm\:rounded-\[50px\] {
@@ -1551,6 +1567,10 @@ body {
 
   .sm\:p-5 {
     padding: 1.25rem;
+  }
+
+  .sm\:text-start {
+    text-align: start;
   }
 
   .sm\:text-3xl {
@@ -1580,6 +1600,11 @@ body {
 
   .sm\:text-\[80px\] {
     font-size: 80px;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -2023,6 +2048,11 @@ body {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
