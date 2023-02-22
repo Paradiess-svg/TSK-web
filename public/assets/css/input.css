@@ -16,15 +16,13 @@
   .navbar {
     position: fixed;
     width: 100%;
+    padding: 25px 0;
     z-index: 50;
-    padding: 30px 0;
-    padding-left: 1px;
     transition: all 0.3s ease;
   }
   .navbar.sticky-costum {
     background: #f39c12;
-    padding: 15px 0;
-    padding-left: 1px;
+    padding: 10px 0;
     transition: all 0.3s ease;
   }
   .navbar.sticky-costum-2 {

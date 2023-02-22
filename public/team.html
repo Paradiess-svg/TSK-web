@@ -18,7 +18,7 @@
         rel="stylesheet" />
 
     <!-- CSS -->
-<!-- CDN -->
+    <!-- CDN -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
@@ -26,29 +26,8 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-<!-- ORIGINAL CSS -->
+    <!-- ORIGINAL CSS -->
     <link rel="stylesheet" href="assets/css/output.css" />
-
-    <!-- JS -->
-<!-- CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"
-        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!-- ORIGINAL JS -->
-    <script src="assets/js/navbar-responsive.js"></script>
-    <script src="assets/js/navbar-responsive.js"></script>
-    <script src="assets/js/main-nav.js"></script>
-    <script src="assets/js/slick-team.js"></script>
-    <script src="assets/js/slick-team2.js"></script>
-    <script src="assets/js/npc-nav.js"></script>
 
 </head>
 
@@ -56,51 +35,55 @@
 
     <!-- Navbar -->
     <nav class="navbar md:flex md:items-center md:justify-between">
-        <div class="flex justify-between">
-            <a class="cursor-pointer ml-5" href="index.html">
-                <img class="h-10 inline" src="assets/img/Logo Full Color.png" />
+        <div class="px-5 2xl:px-10 flex justify-between">
+            <a class="cursor-pointer" href="index.html">
+                <img class="h-5 md:h-10 lg:h-12 xl:h-16 2xl:h-24 2xl:my-8 w-auto inline"
+                    src="assets/img/Logo Full Color.png">
             </a>
 
-            <span class="text-3xl cursor-pointer mr-5 md:hidden block menu-click">
+            <span class="text-lg md:text-3xl cursor-pointer md:hidden block menu-click">
                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
 
         <ul
-            class=" max-[767px]:bg-warna5 mr-5 font-comfortaa md:flex md:items-center md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700">
-            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-                <a href="product.html" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Product</a>
+            class=" max-[767px]:bg-warna5 w-full md:w-auto mr-5 md:z-auto opacity-0 md:opacity-100 top-[-400px] left-0 transition-all ease-in duration-700 p-5 md:p-0 md:flex md:items-center md:gap-5 lg:gap-8 xl:gap-8 2xl:gap-20 absolute md:static">
+            <li class="my-4 md:my-0">
+                <a href="product.html"
+                    class="npc-nav font-comfortaa text-xl md:text-base lg:text-lg xl:text-2xl 2xl:text-5xl text-white hover:text-warna6 duration-500">Product</a>
             </li>
-            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-                <a href="" class="text-xl text-white disabled:hover:text-warna6 duration-500 cursor-not-allowed"
+            <li class="my-4 md:my-0">
+                <a href="#"
+                    class="font-comfortaa text-xl md:text-base lg:text-lg xl:text-2xl 2xl:text-5xl text-white disabled:hover:text-warna6 duration-500 cursor-not-allowed"
                     disabled>Portofolio</a>
             </li>
-            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
+            <li class="my-4 md:my-0">
                 <a href="#"
-                    class="main-nav text-xl text-warna5 hover:text-white duration-500 max-[768px]:text-warna6">Team</a>
+                    class="main-nav font-comfortaa text-xl md:text-base lg:text-lg xl:text-2xl 2xl:text-5xl text-warna5 hover:text-white duration-500 max-[767px]:text-warna6">Team</a>
             </li>
-            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-                <a href="" class="text-xl text-white disabled:hover:text-warna6 duration-500 cursor-not-allowed"
+            <li class="my-4 md:my-0">
+                <a href="#"
+                    class="font-comfortaa text-xl md:text-base lg:text-lg xl:text-2xl 2xl:text-5xl text-white disabled:hover:text-warna6 duration-500 cursor-not-allowed"
                     disabled>Service</a>
             </li>
-            <li class="self-center ml-0 md:ml-8 my-4 md:my-0">
-                <a href="contact.html" class="npc-nav text-xl text-white hover:text-warna6 duration-500">Contact &
-                    Info</a>
+            <li class="my-4 md:my-0">
+                <a href="contact.html"
+                    class="npc-nav font-comfortaa text-xl md:text-base lg:text-lg xl:text-2xl 2xl:text-5xl text-white hover:text-warna6 duration-500">Contact
+                    & Info</a>
             </li>
         </ul>
-
     </nav>
     <!-- Navbar END -->
 
     <!-- Hero-->
     <div class="h-screen select-none pointer-events-none relative">
-        <img class="" src="assets/img/heroes/hero-team.svg" alt="" />
-        <img class="-z-10 absolute top-0 right-0 max-w-full h-auto" src="assets/img/img-hero.svg" alt="" />
+        <img src="assets/img/heroes/hero.svg" alt="" class="w-11/12 xl:w-10/12 2xl:w-9/12">
+        <img src="assets/img/img-hero.svg" alt="" class="-z-10 absolute top-0 right-0 xl:w-auto h-auto xl:h-screen">
     </div>
     <!-- Hero END -->
 
     <main
-        class="container mx-auto -mt-[420px] sm:-mt-[270px] md:-mt-[150px] lg:-mt-[50px] xl:-mt-0 grid grid-cols-12 gap-x-5 gap-y-12 md:gap-y-20 lg:gap-y-24 mb-12 md:mb-20 lg:mb-24">
+        class="container mx-auto -mt-80 sm:-mt-56 md:-mt-16 lg:-mt-5 xl:-mt-[20px] grid grid-cols-12 gap-x-5 gap-y-12 md:gap-y-20 lg:gap-y-24 mb-12 md:mb-20 lg:mb-24">
 
 
         <!-- Our Team -->
@@ -122,7 +105,8 @@
                 class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -146,7 +130,8 @@
                     </div>
                 </div>
 
-                <div class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8">
+                <div
+                    class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Male.svg" alt="" class="w-24 sm:w-48 md:w-56 lg:w-72 h-auto">
                 </div>
 
@@ -157,7 +142,8 @@
                 class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -181,7 +167,7 @@
                     </div>
                 </div>
 
-                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8">
+                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Female.svg" alt="" class="w-20 sm:w-48 md:w-52 lg:w-60 h-auto">
                 </div>
 
@@ -192,7 +178,8 @@
                 class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -216,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8">
+                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Female.svg" alt="" class="w-20 sm:w-48 md:w-52 lg:w-60 h-auto">
                 </div>
 
@@ -233,7 +220,8 @@
                 class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -257,7 +245,8 @@
                     </div>
                 </div>
 
-                <div class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8">
+                <div
+                    class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Male.svg" alt="" class="w-24 sm:w-48 md:w-56 lg:w-72 h-auto">
                 </div>
 
@@ -268,7 +257,8 @@
                 class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -292,7 +282,8 @@
                     </div>
                 </div>
 
-                <div class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8">
+                <div
+                    class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Male.svg" alt="" class="w-24 sm:w-48 md:w-56 lg:w-72 h-auto">
                 </div>
 
@@ -303,7 +294,8 @@
                 class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -327,7 +319,8 @@
                     </div>
                 </div>
 
-                <div class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8">
+                <div
+                    class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Male.svg" alt="" class="w-24 sm:w-48 md:w-56 lg:w-72 h-auto">
                 </div>
 
@@ -338,7 +331,8 @@
                 class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -362,7 +356,8 @@
                     </div>
                 </div>
 
-                <div class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8">
+                <div
+                    class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Male.svg" alt="" class="w-24 sm:w-48 md:w-56 lg:w-72 h-auto">
                 </div>
 
@@ -379,7 +374,8 @@
                 class="bg-gradient-to-tl from-[#323B99] via-[#2980B9] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -403,7 +399,8 @@
                     </div>
                 </div>
 
-                <div class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8">
+                <div
+                    class="absolute right-1 sm:right-3 lg:right-10 top-12 sm:top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Male.svg" alt="" class="w-24 sm:w-48 md:w-56 lg:w-72 h-auto">
                 </div>
 
@@ -420,7 +417,8 @@
                 class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -444,7 +442,7 @@
                     </div>
                 </div>
 
-                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8">
+                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Female.svg" alt="" class="w-20 sm:w-48 md:w-52 lg:w-60 h-auto">
                 </div>
 
@@ -461,7 +459,8 @@
                 class="bg-gradient-to-tl from-[#993257] via-[#993257] to-white w-full h-72 md:h-96 drop-shadow-md rounded-3xl md:rounded-[50px] relative overflow-hidden"
                 id="admin">
 
-                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2" class="absolute top-10 right-0">
+                <img src="assets/img/overlay/team-overlay.svg" alt="overlay-2"
+                    class="absolute top-10 right-0 select-none pointer-events-none">
 
                 <div class="w-1/2 h-full flex flex-col py-5 md:py-10 pl-5 md:pl-10 text-warna3">
 
@@ -485,7 +484,7 @@
                     </div>
                 </div>
 
-                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8">
+                <div class="absolute right-3 sm:-right-5 lg:right-0 top-14 md:top-8 select-none pointer-events-none">
                     <img src="assets/img/Female.svg" alt="" class="w-20 sm:w-48 md:w-52 lg:w-60 h-auto">
                 </div>
 
@@ -510,34 +509,36 @@
         <div class="w-full h-fit flex flex-col">
 
             <!-- Bagian atas -->
-            <div class="bg-warna6 flex flex-col p-2 md:p-5 gap-3">
+            <div class="bg-warna6 flex flex-col p-2 md:p-5 2xl:px-8 2xl:py-10 gap-3 2xl:gap-14">
 
                 <!-- Contact Us -->
-                <div class="flex flex-col">
-                    <div class="text-white font-montserrat font-bold text-sm md:text-xl">Contact us</div>
-                    <div class="flex items-center gap-2">
+                <div class="flex flex-col 2xl:gap-5">
+                    <div class="text-white font-montserrat font-bold text-sm md:text-xl 2xl:text-4xl">Contact us</div>
+                    <div class="flex items-center gap-2 2xl:gap-5">
                         <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
-                            class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl transition-all duration-500 "
+                            class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl 2xl:text-5xl transition-all duration-500 "
                             target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                        <div class="text-white font-comfortaa font-medium text-xs md:text-base">
+                        <div class="text-white font-comfortaa font-medium text-xs md:text-base 2xl:text-3xl">
                             Contact@tetambastudio.com</div>
                     </div>
 
-                    <div class="flex items-center gap-2">
-                        <a class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl transition-all duration-500"
+                    <div class="flex items-center gap-2 2xl:gap-5">
+                        <a class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl 2xl:text-5xl transition-all duration-500"
                             href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
-                        <div class="text-white font-comfortaa font-medium text-xs md:text-base">+62 857 7651 2171</div>
+                        <div class="text-white font-comfortaa font-medium text-xs md:text-base 2xl:text-3xl">+62 857
+                            7651 2171</div>
                     </div>
                 </div>
 
                 <!-- Address -->
-                <div class="flex flex-col">
-                    <div class="text-white font-montserrat font-bold text-sm md:text-xl">Address</div>
-                    <div class="flex items-center gap-2">
-                        <a class="hover:scale-110 text-warna2 hover:text-warna4 self-start text-base md:text-xl transition-all duration-500"
+                <div class="flex flex-col 2xl:gap-5">
+                    <div class="text-white font-montserrat font-bold text-sm md:text-xl 2xl:text-4xl">Address</div>
+                    <div class="flex items-center gap-2 2xl:gap-5">
+                        <a class="hover:scale-110 text-warna2 hover:text-warna4 self-start text-base md:text-xl 2xl:text-5xl transition-all duration-500"
                             href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i
                                 class="fa-solid fa-location-dot "></i></a>
-                        <p class="text-white font-comfortaa font-medium text-xs md:text-base">Jl. Nuri 2 No.103, Depok
+                        <p class="text-white font-comfortaa font-medium text-xs md:text-base 2xl:text-3xl">Jl. Nuri 2
+                            No.103, Depok
                             Jaya, Kec.
                             Pancoran
                             Mas, Kota Depok, Jawa Barat </p>
@@ -554,15 +555,17 @@
             </div>
 
             <!-- Mark Pembatas -->
-            <div class="bg-warna4 w-full h-fit flex justify-center p-2">
-                <img src="assets/img/Mark Footer.svg" alt="" class="h-4 md:h-7 pointer-events-none select-none">
+            <div class="bg-warna4 w-full h-fit flex justify-center p-2 2xl:p-5">
+                <img src="assets/img/Mark Footer.svg" alt=""
+                    class="h-4 md:h-7 2xl:h-16 pointer-events-none select-none">
             </div>
 
             <!-- Bagian Bawah -->
-            <div class="bg-warna6 flex flex-col md:flex-row justify-between p-2 md:p-5">
+            <div class="bg-warna6 w-full h-fit flex flex-col md:flex-row justify-between p-2 md:p-5 2xl:px-8 2xl:py-10">
 
                 <div class="w-full h-fit">
-                    <h4 class="text-white text-center sm:text-start font-comfortaa font-medium text-xs md:text-lg">
+                    <h4
+                        class="text-white text-center sm:text-start font-comfortaa font-medium text-xs md:text-lg 2xl:text-3xl">
                         Copyright&copy;
                         2023 PT. Tetamba Studio
                         Kreasi. All rights reserved.
@@ -571,27 +574,50 @@
 
                 <div class="w-fit h-auto flex self-center sm:self-end gap-3 lg:gap-5">
 
-                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
                         href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
 
-                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
                         href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
                             class="fa-brands fa-twitter "></i></a>
 
-                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
                         href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
 
-                    <a class="text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
                         href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
                             class="fa-brands fa-linkedin "></i></a>
-                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl transition-all duration-500"
+                    <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
                         href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
                             class="fa-brands fa-instagram "></i></a>
                 </div>
 
             </div>
+
         </div>
     </footer>
+    <!-- Footer END -->
+
+
+    <!-- JS -->
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- ORIGINAL JS -->
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script src="assets/js/main-nav.js"></script>
+    <script src="assets/js/slick-team.js"></script>
+    <script src="assets/js/slick-team2.js"></script>
+    <script src="assets/js/npc-nav.js"></script>
 
 </body>
 
