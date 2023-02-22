@@ -6,6 +6,7 @@ $(document).ready(function () {
         fade: true,
         autoplaySpeed: 2000,
         arrows:true,
+        swipeToSlide: true
       });
     
       $('.slide-prev').click(function(e){ 
