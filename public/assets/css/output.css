@@ -551,22 +551,24 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
+.navbar{
   position: fixed;
   width: 100%;
-  padding: 25px 0;
   z-index: 50;
+  padding: 30px 0;
+  padding-left: 1px;
   transition: all 0.3s ease;
 }
 
-.navbar.sticky-costum {
-  background: #f39c12;
-  padding: 10px 0;
+.navbar.sticky-costum{
+  background: #F39C12;
+  padding: 15px 0;
+  padding-left: 1px;
   transition: all 0.3s ease;
 }
 
-.navbar.sticky-costum-2 {
-  background: #f39c12;
+.navbar.sticky-costum-2{
+  background: #F39C12;
   padding: 30px 0;
   padding-left: 1px;
   transition: all 0.3s ease;
@@ -788,12 +790,12 @@ body {
   grid-column: span 4 / span 4;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .col-start-4 {
@@ -818,14 +820,14 @@ body {
   margin-right: auto;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mr-5 {
@@ -1797,6 +1799,10 @@ body {
     height: 6rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
@@ -1823,10 +1829,6 @@ body {
 
   .md\:h-96 {
     height: 24rem;
-  }
-
-  .md\:h-8 {
-    height: 2rem;
   }
 
   .md\:w-auto {
@@ -1942,6 +1944,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1960,11 +1967,6 @@ body {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .md\:opacity-100 {
@@ -2190,14 +2192,14 @@ body {
     line-height: 2.5rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -2234,6 +2236,10 @@ body {
     height: 100vh;
   }
 
+  .xl\:h-12 {
+    height: 3rem;
+  }
+
   .xl\:h-\[450px\] {
     height: 450px;
   }
@@ -2244,10 +2250,6 @@ body {
 
   .xl\:h-\[400px\] {
     height: 400px;
-  }
-
-  .xl\:h-12 {
-    height: 3rem;
   }
 
   .xl\:w-10\/12 {
@@ -2392,6 +2394,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .\32xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .\32xl\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -2405,10 +2412,5 @@ body {
   .\32xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }

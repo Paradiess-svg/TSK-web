@@ -2,11 +2,19 @@ function Menu(e) {
   let list = document.querySelector("ul");
   e.name === "menu"
     ? ((e.name = "close"),
+<<<<<<< HEAD
       list.classList.add("top-[80px]"),
       list.classList.add("opacity-100"),
       list.classList.add("z-[-10]"))
     : ((e.name = "menu"),
       list.classList.remove("top-[80px]"),
+=======
+      list.classList.add("top-[68px]"),
+      list.classList.add("opacity-100"),
+      list.classList.add("z-[-10]"))
+    : ((e.name = "menu"),
+      list.classList.remove("top-[68px]"),
+>>>>>>> 3bb70d8e6842b5e145cfa36f7da5ce6554fdce48
       list.classList.remove("opacity-100"));
 }
 
