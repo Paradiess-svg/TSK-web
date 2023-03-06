@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Faviocon & Title -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Tetamba Studio Kreasi | Product</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-warna2">
+    <!-- navbar -->
+    <nav class="navbar md:flex md:items-center md:justify-between">
+      <div class="flex justify-between px-5 2xl:px-10">
+        <a class="cursor-pointer" href="index.html">
+          <img
+            class="inline h-5 w-auto md:h-8 xl:h-12 2xl:my-8 2xl:h-16"
+            src="assets/img/Logo Full Color.png"
+          />
+        </a>
+
+        <span
+          class="menu-click block cursor-pointer text-lg md:hidden md:text-3xl"
+        >
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="absolute top-[-400px] left-0 mr-5 w-full px-5 opacity-0 transition-all duration-700 ease-in max-[767px]:bg-warna5 md:static md:z-auto md:flex md:w-auto md:items-center md:gap-5 md:p-0 md:opacity-100 lg:gap-8 xl:gap-8 2xl:gap-20"
+      >
+        <li class="my-3 md:my-0">
+          <a
+            href="#"
+            class="main-nav font-comfortaa text-sm text-warna5 duration-500 hover:text-white max-[767px]:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Product</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="#"
+            class="cursor-not-allowed font-comfortaa text-sm text-white duration-500 disabled:hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            disabled
+            >Portofolio</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="team.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Team</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="#"
+            class="cursor-not-allowed font-comfortaa text-sm text-white duration-500 disabled:hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            disabled
+            >Service</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="contact.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Contact & Info</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar END -->
+
+    <!-- Hero-->
+    <div class="pointer-events-none relative h-screen select-none">
+      <img
+        src="assets/img/heroes/hero.svg"
+        alt=""
+        class="w-11/12 xl:w-10/12 2xl:w-9/12"
+      />
+      <img
+        src="assets/img/img-hero.svg"
+        alt=""
+        class="absolute top-0 right-0 -z-10 h-auto xl:h-screen xl:w-auto"
+      />
+    </div>
+    <!-- Hero END -->
+
+    <div
+      class="container mx-auto -mt-80 mb-12 grid grid-cols-12 gap-y-12 sm:-mt-56 md:-mt-16 md:mb-20 md:gap-y-20 lg:-mt-5 lg:mb-24 lg:gap-y-24 xl:-mt-[20px]"
+    >
+      <!-- We are delighted to be at your service -->
+      <div
+        class="relative col-span-10 col-start-2 flex items-center justify-center rounded-[100px] bg-white p-5 shadow-2xl md:col-span-8 md:col-start-3 lg:h-28"
+      >
+        <h1
+          class="text-center font-montserrat text-base font-bold text-warna3 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+        >
+          “We are delighted to be at your service”
+        </h1>
+      </div>
+
+      <!-- Card BRI Agent/Brins -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="BRI AGENT"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              BRI
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Agent
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              Applications that can help micro insurance marketing agents at PT.
+              BRI Asuransi Indonesia in making purchases, sales, and submitting
+              insurance claims. Available for web and mobile platforms.
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/Laravel.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+                <img
+                  src="assets/img/ic-product/Kotlin.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRINS-1.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRINS-2.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRINS-3.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRINS-4.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRINS-5.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRINS-6.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Card BRI Agent/Brins END -->
+
+      <!-- Card BRI NDS -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="BRI NDS"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              BRI
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              New Delivery System
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              The latest breakthrough at Bank BRI for a new core system at Bank
+              BRI that can support BRI's fast and dynamic business needs. A
+              development project to create a system which combines the
+              functions of BRINETS, BRIExpress, and BRINS in an integrated
+              system.
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/Katalon.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+                <img
+                  src="assets/img/ic-product/Vue.js.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-NDS-1.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-NDS-2.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-NDS-3.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-NDS-4.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Card BRI NDS END -->
+
+      <!-- Card FLPP Jamkrindo -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="FLPP JAMKRINDO"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Web
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Applikasi online (FLPP Jamkrindo)
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              A mobile application that can help get information about
+              promotions, catalogs and vehicle loan simulations at BRI Finance.
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/Yii.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Jamkrindo-1.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Jamkrindo-2.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Card FLPP Jamkrindo END -->
+
+      <!-- Card BRI Finance -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="BRI FINANCE"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              BRI
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Finance
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              A mobile application that can help get information about
+              promotions, catalogs and vehicle loan simulations at BRI Finance.
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/Yii.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+                <img
+                  src="assets/img/ic-product/react.js.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-Finance-1.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-Finance-2.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-Finance-3.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/BRI-Finance-4.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Card BRI Finance END -->
+
+      <!-- Card Web Penerbit Salemba -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="WEB PENERBIT SALEMBA"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Web
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Penerbit Salemba
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              We developed a service system called Salemba Practice for Penerbit
+              Salemba. This service consists of e-learning, e-Tryout and
+              Training in mid-2019. There is also a catalog of various books
+              that can be purchased, either in print or digital (e-book).
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/react.js.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+                <img
+                  src="assets/img/ic-product/Net Core.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Penerbit Salemba-1.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Penerbit Salemba-2.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Penerbit Salemba-3.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Penerbit Salemba-4.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Penerbit Salemba-5.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Card Web Penerbit Salemba END -->
+
+      <!-- Pinang Referral BRI Agro -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="BRI AGRO"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Pinang
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Referral BRI Agro
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              Pinang is a digital micro loan service by Bank BRI Agro based on
+              an android application. The Pinang facility can be accessed by BRI
+              / BRI Agro Payroll customers (BRI / BRI Agro salary accounts).
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/react.js.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+                <img
+                  src="assets/img/ic-product/Srping.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/pinang-2.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/pinang-1.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Card Pinang Referral BRI Agro END -->
+
+      <!-- SIPBM Kemendesa -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="SIBM KEMENDESA"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              SIPBM
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Kemendesa
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              Sistem Informasi Pembangunan Berbasis Masyarakat (SIPBM) is a
+              mobile census information system for collecting data on school-age
+              children who are not school.
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/android.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+                <img
+                  src="assets/img/ic-product/Yii.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/SIPBM-Kemendesa-1.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/SIPBM-Kemendesa-2.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- SIPBM Kemendesa END -->
+
+      <!-- Mandiri Tunas Finance -->
+      <section
+        class="col-span-10 col-start-2 flex min-h-[300px] flex-col gap-5 rounded-[25px] bg-white p-5 drop-shadow-lg md:rounded-[50px] md:p-10"
+        id="MANDIRI TUNAS FINANCE"
+      >
+        <div class="h-fit w-full">
+          <div class="flex gap-3">
+            <p
+              class="font-montserrat text-xl font-bold text-warna5 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Mandiri
+            </p>
+            <p
+              class="font-montserrat text-xl font-bold text-warna3 sm:text-2xl md:text-3xl lg:text-5xl"
+            >
+              Tunas Finance
+            </p>
+          </div>
+        </div>
+
+        <div class="flex h-full w-full">
+          <div class="flex h-full w-full flex-col justify-between gap-10">
+            <p
+              class="font-comfortaa text-xs font-light sm:text-base md:text-xl"
+            >
+              MTF is an application that can help you to get information about
+              motor vehicle loan simulations, products and promos available at
+              Mandiri Tunas Finance.
+            </p>
+
+            <div class="flex h-fit w-full flex-col gap-2 md:gap-5">
+              <hr class="h-2 w-1/3 bg-warna5" />
+              <div class="flex gap-5">
+                <img
+                  src="assets/img/ic-product/react.js.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+                <img
+                  src="assets/img/ic-product/Yii.svg"
+                  alt=""
+                  class="h-auto w-12 md:w-24"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex h-full w-full flex-col justify-center gap-2">
+            <section class="vertical-center-3 h-full w-fit">
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Mandiri-Tunas-Finance-1.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Mandiri-Tunas-Finance-2.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Mandiri-Tunas-Finance-3.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Mandiri-Tunas-Finance-4.png"
+                />
+              </div>
+              <div>
+                <img
+                  class="rounded-md py-5 pl-5 drop-shadow-lg"
+                  src="assets/img/content-product/Mandiri-Tunas-Finance-5.png"
+                />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Mandiri Tunas Finance END -->
+    </div>
+
+    <!-- Footer-->
+    <footer class="flex h-fit w-full">
+      <!-- Google map PC RESPONSIVE -->
+      <div class="hidden w-full sm:block">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="h-full w-full"
+        ></iframe>
+      </div>
+
+      <!-- Footer - Content -->
+      <div class="flex h-fit w-full flex-col">
+        <!-- Bagian atas -->
+        <div
+          class="flex flex-col gap-3 bg-warna6 p-2 md:p-5 2xl:gap-14 2xl:px-8 2xl:py-10"
+        >
+          <!-- Contact Us -->
+          <div class="flex flex-col 2xl:gap-5">
+            <div
+              class="font-montserrat text-sm font-bold text-white md:text-xl 2xl:text-4xl"
+            >
+              Contact us
+            </div>
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+                class="text-sm text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <div
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                Contact@tetambastudio.com
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                class="text-sm text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                href="tel:6285776512171"
+                target="_blank"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+              <div
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                +62 857 7651 2171
+              </div>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="flex flex-col 2xl:gap-5">
+            <div
+              class="font-montserrat text-sm font-bold text-white md:text-xl 2xl:text-4xl"
+            >
+              Address
+            </div>
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                class="self-start text-base text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                href="https://goo.gl/maps/SszXyLyVyKmz8mzR6"
+                target="_blank"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+              <p
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok,
+                Jawa Barat
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google map MOBILE RESNPONSIVE -->
+        <div class="block w-full sm:hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="h-full w-full"
+          ></iframe>
+        </div>
+
+        <!-- Mark Pembatas -->
+        <div class="flex h-fit w-full justify-center bg-warna4 p-2 2xl:p-5">
+          <img
+            src="assets/img/Mark Footer.svg"
+            alt=""
+            class="pointer-events-none h-4 select-none md:h-7 2xl:h-16"
+          />
+        </div>
+
+        <!-- Bagian Bawah -->
+        <div
+          class="flex h-fit w-full flex-col justify-between bg-warna6 p-2 md:flex-row md:p-5 2xl:px-8 2xl:py-10"
+        >
+          <div class="h-fit w-full">
+            <h4
+              class="text-center font-comfortaa text-xs font-medium text-white sm:text-start md:text-lg 2xl:text-3xl"
+            >
+              Copyright&copy; 2023 PT. Tetamba Studio Kreasi. All rights
+              reserved.
+            </h4>
+          </div>
+
+          <div class="flex h-auto w-fit gap-3 self-center sm:self-end lg:gap-5">
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://twitter.com/gadgetfes/status/1524637030969659392"
+              target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://www.linkedin.com/company/tetambastudio/about/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://www.instagram.com/tetamba.studio/?hl=id"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
+
+    <!-- JS -->
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      charset="utf-8"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/46197067d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- ORIGINAL JS -->
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slick-vertical-product.js"></script>
+    <script src="assets/js/npc-nav.js"></script>
+    <script src="assets/js/main-nav.js"></script>
+  </body>
+</html>
