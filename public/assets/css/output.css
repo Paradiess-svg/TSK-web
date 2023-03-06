@@ -810,6 +810,34 @@ body {
   grid-column-start: 3;
 }
 
+.col-start-8 {
+  grid-column-start: 8;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-start-4 {
+  grid-row-start: 4;
+}
+
+.row-start-5 {
+  grid-row-start: 5;
+}
+
+.row-start-6 {
+  grid-row-start: 6;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -860,6 +888,26 @@ body {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -979,6 +1027,14 @@ body {
   height: 1rem;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
 .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -1044,6 +1100,10 @@ body {
   width: 3rem;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1080,6 +1140,10 @@ body {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1295,12 +1359,25 @@ body {
   padding-bottom: 1.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1528,6 +1605,12 @@ body {
 
 .disabled\:hover\:text-warna6:hover:disabled {
   color: rgba(44, 52, 135, 1);
+}
+
+@media (max-width: 768px) {
+  .max-\[768px\]\:bg-warna5 {
+    background-color: rgba(243, 156, 18, 1);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1762,6 +1845,10 @@ body {
     grid-column-start: 3;
   }
 
+  .md\:row-span-3 {
+    grid-row: span 3 / span 3;
+  }
+
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1777,6 +1864,14 @@ body {
 
   .md\:mb-20 {
     margin-bottom: 5rem;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .md\:block {
@@ -1859,6 +1954,10 @@ body {
     width: 13rem;
   }
 
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1925,8 +2024,17 @@ body {
     padding-bottom: 2.5rem;
   }
 
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:pl-10 {
     padding-left: 2.5rem;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 
   .md\:text-3xl {
