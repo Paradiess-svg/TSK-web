@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Faviocon & Title -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ORIGINAL CSS -->
+    <title>Tetamba Studio Kreasi | Service</title>
+
+    <link rel="stylesheet" href="assets/css/output.css" />
+  </head>
+
+  <body class="bg-warna2">
+    <!-- navbar -->
+    <nav class="navbar md:flex md:items-center md:justify-between">
+      <div class="flex justify-between px-5 2xl:px-10">
+        <a class="cursor-pointer" href="index.html">
+          <img
+            class="inline h-5 w-auto md:h-8 xl:h-12 2xl:my-8 2xl:h-16"
+            src="assets/img/Logo Full Color.png"
+          />
+        </a>
+
+        <span
+          class="menu-click block cursor-pointer text-lg md:hidden md:text-3xl"
+        >
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="absolute top-[-400px] left-0 mr-5 w-full px-5 opacity-0 transition-all duration-700 ease-in max-[767px]:bg-warna5 md:static md:z-auto md:flex md:w-auto md:items-center md:gap-5 md:p-0 md:opacity-100 lg:gap-8 xl:gap-8 2xl:gap-20"
+      >
+        <li class="my-3 md:my-0">
+          <a
+            href="product.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Product</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="#"
+            class="cursor-not-allowed font-comfortaa text-sm text-white duration-500 disabled:hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            disabled
+            >Portofolio</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="team.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Team</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="service.html"
+            class="main-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Service</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="contact.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Contact & Info</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar END -->
+
+    <!-- Hero-->
+    <div class="pointer-events-none relative h-screen select-none">
+      <img
+        src="assets/img/heroes/hero.svg"
+        alt=""
+        class="w-11/12 xl:w-10/12 2xl:w-8/12"
+      />
+      <img
+        src="assets/img/img-hero.svg"
+        alt=""
+        class="absolute top-0 right-0 -z-10 h-auto xl:h-screen xl:w-auto"
+      />
+    </div>
+    <!-- Hero END -->
+
+    <!-- Label Tetamba's Service -->
+    <div
+      class="container mx-auto mb-20 -mt-80 sm:-mt-56 md:mb-24 md:-mt-16 lg:my-28 lg:-mt-5 xl:my-32 xl:-mt-[20px]"
+    >
+      <div
+        class="mx-auto flex w-8/12 flex-col rounded-[100px] bg-white p-3 drop-shadow-2xl md:w-6/12 md:p-5 xl:p-8"
+      >
+        <h1
+          class="text-center font-montserrat text-base font-bold text-warna3 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+        >
+          Tetamba’s service
+        </h1>
+      </div>
+    </div>
+
+    <!-- Oodo Product Catalogue -->
+    <div class="container mx-auto my-24 lg:my-28 xl:my-32">
+      <div
+        class="mx-auto flex w-10/12 flex-col gap-5 rounded-2xl bg-white p-5 drop-shadow-2xl md:w-9/12 lg:rounded-[30px] lg:p-10"
+      >
+        <h1
+          class="font-montserrat text-xl font-bold text-warna3 md:text-2xl lg:text-3xl xl:text-4xl"
+        >
+          <span class="text-warna5">OODO</span> Product Catalogue
+        </h1>
+        <p
+          class="font-comfortaa text-xs font-medium text-warna3 md:text-base lg:text-xl xl:text-2xl"
+        >
+          Odoo is a suite of open source business apps that cover all your
+          company needs
+        </p>
+      </div>
+    </div>
+    <!-- Oodo Product Catalogue END -->
+
+    <!-- What is oodo -->
+    <div
+      class="relative my-20 grid h-fit w-full grid-cols-12 md:my-24 lg:my-28 xl:my-32 xl:items-center"
+    >
+      <!-- ilust -->
+      <img
+        src="assets/img/ilust-what is oodo.svg"
+        alt=""
+        class="absolute -left-36 col-span-6 h-auto w-96 md:-left-24 md:w-[500px] lg:-left-32 lg:w-[650px] xl:-left-40 xl:-top-28 xl:w-[850px]"
+      />
+
+      <!-- content -->
+      <div
+        class="col-span-full col-start-6 grid grid-cols-12 gap-5 rounded-l-2xl bg-white p-5 lg:rounded-l-[30px] lg:p-10"
+      >
+        <div class="col-span-10 flex flex-col gap-3">
+          <h1
+            class="font-montserrat text-xl font-bold md:text-2xl lg:text-3xl xl:text-5xl"
+          >
+            <span class="text-warna5">What</span> is
+          </h1>
+          <img
+            src="assets/img/odoo - logo.svg"
+            alt=""
+            class="h-auto w-20 md:w-28 xl:w-40"
+          />
+          <hr class="h-2 w-6/12 bg-warna3" />
+        </div>
+
+        <div class="col-span-10">
+          <p
+            class="font-comfortaa text-xs font-medium text-warna3 md:text-base lg:text-xl xl:text-2xl"
+          >
+            Odoo is a leading edge enterprise resource planning (ERP) and
+            customer relationship management (CRM) system based on open source
+            technologies with a worldwide presence. <br /><br />
+
+            The solution was developed by Odoo S.A. a Belgium based company with
+            a global R&D presence. This ERP system can be specifically tailored
+            and customized for the requirement of any industry, it not only
+            addresses the current requirements of your company but it also
+            provides you with the opportunity of continually improve and refine
+            your business processes. <br /><br />
+
+            You can pick out a module for your current requirement and grow with
+            it by adding other modules as you deem fit. <br /><br />
+
+            It is used by more than 2 million users worldwide to manage
+            companies of all different sizes for; Mining | Real Estate |
+            Hospital | Education | Logistics | Manufactures
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- What is oodo END-->
+
+    <!-- card -->
+    <div class="my-24 h-auto w-full lg:my-28 xl:my-32">
+      <!-- card function odoo -->
+      <div class="container mx-auto mb-12">
+        <div
+          class="col-span-full flex h-auto gap-10 rounded-3xl bg-white p-10 drop-shadow-2xl"
+        >
+          <!-- ilust/pict -->
+          <img
+            src="assets/img/service - card/card - fungsi/ilust-mining.svg"
+            alt=""
+            class="h-auto w-4/12"
+          />
+
+          <!-- divider -->
+          <div class="flex h-full w-fit flex-col gap-3">
+            <hr class="h-16 w-3 bg-warna3" />
+            <hr class="h-16 w-3 bg-warna5" />
+          </div>
+
+          <!-- text -->
+          <div class="h-full w-full">
+            <h1 class="font-montserrat text-5xl font-bold text-warna5">
+              Mining
+            </h1>
+
+            <p class="pt-5 font-comfortaa text-xl font-medium text-warna3">
+              Manufacturers can better track their internal and external stock
+              movements with ERP software, and they can access a variety of data
+              from a single system.
+            </p>
+
+            <ul
+              class="list-inside list-disc pt-10 font-comfortaa text-xl font-medium text-warna3"
+            >
+              <li>Asset Management</li>
+              <li>Cargo Management</li>
+              <li>Project Management</li>
+              <li>HRIS</li>
+              <li>Accounting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- card function odoo END -->
+
+      <!-- icon card function odoo -->
+      <div class="flex flex-row justify-center gap-10">
+        <!-- mining -->
+        <div
+          class="flex h-20 w-auto items-center justify-center gap-5 rounded-full bg-white py-3 px-5"
+        >
+          <img
+            src="assets/img/service - card/card - fungsi/ilust-mining.svg"
+            alt=""
+            class="h-full w-auto"
+          />
+
+          <h4 class="font-montserrat text-3xl font-bold text-warna5">Mining</h4>
+        </div>
+
+        <!-- hospital -->
+        <div
+          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5"
+        >
+          <img
+            src="assets/img/service - card/card - fungsi/ilust-hospital.svg"
+            alt=""
+            class="h-full w-auto"
+          />
+
+          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
+        </div>
+
+        <!-- logistic -->
+        <div
+          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5"
+        >
+          <img
+            src="assets/img/service - card/card - fungsi/ilust-logistic.svg"
+            alt=""
+            class="h-full w-auto"
+          />
+
+          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
+        </div>
+
+        <!-- education -->
+        <div
+          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5"
+        >
+          <img
+            src="assets/img/service - card/card - fungsi/ilust-education.svg"
+            alt=""
+            class="h-full w-auto"
+          />
+
+          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
+        </div>
+
+        <!-- real estate -->
+        <div
+          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5"
+        >
+          <img
+            src="assets/img/service - card/card - fungsi/ilust-real estate.svg"
+            alt=""
+            class="h-full w-auto"
+          />
+
+          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
+        </div>
+
+        <!-- manufacture -->
+        <div
+          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5"
+        >
+          <img
+            src="assets/img/service - card/card - fungsi/ilust - manufacture.svg"
+            alt=""
+            class="h-full w-auto"
+          />
+
+          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
+        </div>
+      </div>
+      <!-- icon card function odoo END -->
+    </div>
+    <!-- card END -->
+
+    <!-- JS -->
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      charset="utf-8"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/46197067d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- ORIGINAL JS -->
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script src="assets/js/main-nav.js"></script>
+    <script src="assets/js/npc-nav.js"></script>
+  </body>
+</html>
