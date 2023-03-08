@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -133,7 +133,7 @@
         class="mx-auto flex w-10/12 flex-col gap-5 rounded-2xl bg-white p-5 drop-shadow-2xl md:w-9/12 lg:rounded-[30px] lg:p-10"
       >
         <h1
-          class="font-montserrat text-xl font-bold text-warna3 md:text-2xl lg:text-3xl xl:text-4xl"
+          class="font-montserrat text-2xl font-bold text-warna3 md:text-3xl lg:text-4xl xl:text-5xl"
         >
           <span class="text-warna5">OODO</span> Product Catalogue
         </h1>
@@ -206,55 +206,302 @@
     <!-- card -->
     <div class="my-24 h-auto w-full lg:my-28 xl:my-32">
       <!-- card function odoo -->
-      <div class="container mx-auto mb-12">
-        <div
-          class="col-span-full flex h-auto gap-10 rounded-3xl bg-white p-10 drop-shadow-2xl"
-        >
-          <!-- ilust/pict -->
-          <img
-            src="assets/img/service - card/card - fungsi/ilust-mining.svg"
-            alt=""
-            class="h-auto w-4/12"
-          />
+      <div class="container mx-auto mb-12" id="wrap-card">
+        <!-- mining card -->
+        <div class="display block h-fit w-full" id="d-mining">
+          <div
+            class="flex h-fit flex-col gap-3 rounded-3xl bg-white p-10 drop-shadow-2xl md:h-[420px] md:flex-row md:gap-5 lg:h-[480px] lg:gap-10"
+          >
+            <!-- ilust/pict -->
+            <img
+              src="assets/img/service - card/card - fungsi/ilust-mining.svg"
+              alt=""
+              class="h-fit w-6/12 self-center md:w-4/12"
+            />
 
-          <!-- divider -->
-          <div class="flex h-full w-fit flex-col gap-3">
-            <hr class="h-16 w-3 bg-warna3" />
-            <hr class="h-16 w-3 bg-warna5" />
+            <!-- divider -->
+            <div class="flex h-full w-fit flex-row gap-3 md:flex-col">
+              <hr class="h-2 w-12 bg-warna3 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+              <hr class="h-2 w-12 bg-warna5 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+            </div>
+
+            <!-- text -->
+            <div class="h-full w-full">
+              <h1
+                class="font-montserrat text-2xl font-bold text-warna5 md:text-3xl lg:text-4xl xl:text-5xl"
+              >
+                Mining
+              </h1>
+
+              <p
+                class="mt-2 font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-5 lg:text-xl xl:text-2xl"
+              >
+                Manufacturers can better track their internal and external stock
+                movements with ERP software, and they can access a variety of
+                data from a single system.
+              </p>
+
+              <ul
+                class="mt-5 list-inside list-disc font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-10 lg:text-xl xl:text-2xl"
+              >
+                <li>Asset Management</li>
+                <li>Cargo Management</li>
+                <li>Project Management</li>
+                <li>HRIS</li>
+                <li>Accounting</li>
+              </ul>
+            </div>
           </div>
+        </div>
 
-          <!-- text -->
-          <div class="h-full w-full">
-            <h1 class="font-montserrat text-5xl font-bold text-warna5">
-              Mining
-            </h1>
+        <!-- hospital card -->
+        <div class="display hidden h-fit w-full" id="d-hospital">
+          <div
+            class="flex h-fit flex-col gap-3 rounded-3xl bg-white p-10 drop-shadow-2xl md:h-[420px] md:flex-row md:gap-5 lg:h-[480px] lg:gap-10"
+          >
+            <!-- ilust/pict -->
+            <img
+              src="assets/img/service - card/card - fungsi/ilust-hospital.svg"
+              alt=""
+              class="h-fit w-6/12 self-center md:w-4/12"
+            />
 
-            <p class="pt-5 font-comfortaa text-xl font-medium text-warna3">
-              Manufacturers can better track their internal and external stock
-              movements with ERP software, and they can access a variety of data
-              from a single system.
-            </p>
+            <!-- divider -->
+            <div class="flex h-full w-fit flex-row gap-3 md:flex-col">
+              <hr class="h-2 w-12 bg-warna3 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+              <hr class="h-2 w-12 bg-warna5 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+            </div>
 
-            <ul
-              class="list-inside list-disc pt-10 font-comfortaa text-xl font-medium text-warna3"
-            >
-              <li>Asset Management</li>
-              <li>Cargo Management</li>
-              <li>Project Management</li>
-              <li>HRIS</li>
-              <li>Accounting</li>
-            </ul>
+            <!-- text -->
+            <div class="h-full w-full">
+              <h1
+                class="font-montserrat text-2xl font-bold text-warna5 md:text-3xl lg:text-4xl xl:text-5xl"
+              >
+                Mining
+              </h1>
+
+              <p
+                class="mt-2 font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-5 lg:text-xl xl:text-2xl"
+              >
+                These solutions contain specialized modules and functions
+                designed to help providers organize their workflow, improve
+                their patient experience, boost performance and cut costs.
+              </p>
+
+              <ul
+                class="mt-5 list-inside list-disc font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-10 lg:text-xl xl:text-2xl"
+              >
+                <li>Accounting Management</li>
+                <li>HRIS</li>
+                <li>Supply Chain Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- logistic card -->
+        <div class="display hidden h-fit w-full" id="d-logistic">
+          <div
+            class="flex h-fit flex-col gap-3 rounded-3xl bg-white p-10 drop-shadow-2xl md:h-[420px] md:flex-row md:gap-5 lg:h-[480px] lg:gap-10"
+          >
+            <!-- ilust/pict -->
+            <img
+              src="assets/img/service - card/card - fungsi/ilust-logistic.svg"
+              alt=""
+              class="h-fit w-6/12 self-center md:w-4/12"
+            />
+
+            <!-- divider -->
+            <div class="flex h-full w-fit flex-row gap-3 md:flex-col">
+              <hr class="h-2 w-12 bg-warna3 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+              <hr class="h-2 w-12 bg-warna5 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+            </div>
+
+            <!-- text -->
+            <div class="h-full w-full">
+              <h1
+                class="font-montserrat text-2xl font-bold text-warna5 md:text-3xl lg:text-4xl xl:text-5xl"
+              >
+                Logistic
+              </h1>
+
+              <p
+                class="mt-2 font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-5 lg:text-xl xl:text-2xl"
+              >
+                All informaon needed to operate a logiscs business, including
+                orders, inbound and outbound transacons, deliveries, and more,
+                can be captured in one location with ERP software.
+              </p>
+
+              <ul
+                class="mt-5 list-inside list-disc font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-10 lg:text-xl xl:text-2xl"
+              >
+                <li>Logistic Management</li>
+                <li>Fleet Management</li>
+                <li>Warehouse Management</li>
+                <li>CRM-Leads</li>
+                <li>Accounting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- education card -->
+        <div class="display hidden h-fit w-full" id="d-education">
+          <div
+            class="flex h-fit flex-col gap-3 rounded-3xl bg-white p-10 drop-shadow-2xl md:h-[420px] md:flex-row md:gap-5 lg:h-[480px] lg:gap-10"
+          >
+            <!-- ilust/pict -->
+            <img
+              src="assets/img/service - card/card - fungsi/ilust-education.svg"
+              alt=""
+              class="h-fit w-6/12 self-center md:w-4/12"
+            />
+
+            <!-- divider -->
+            <div class="flex h-full w-fit flex-row gap-3 md:flex-col">
+              <hr class="h-2 w-12 bg-warna3 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+              <hr class="h-2 w-12 bg-warna5 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+            </div>
+
+            <!-- text -->
+            <div class="h-full w-full">
+              <h1
+                class="font-montserrat text-2xl font-bold text-warna5 md:text-3xl lg:text-4xl xl:text-5xl"
+              >
+                Education
+              </h1>
+
+              <p
+                class="mt-2 font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-5 lg:text-xl xl:text-2xl"
+              >
+                ERP system provides easy and quick access to information about
+                students, staff, fees, admissions, timetables, and so on. An ERP
+                solution integrates the whole campus and all the branches.
+              </p>
+
+              <ul
+                class="mt-5 list-inside list-disc font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-10 lg:text-xl xl:text-2xl"
+              >
+                <li>Learning Management</li>
+                <li>Inventory Management</li>
+                <li>School Management</li>
+                <li>Accounting Management</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- real estate card -->
+        <div class="display hidden h-fit w-full" id="d-realEstate">
+          <div
+            class="flex h-fit flex-col gap-3 rounded-3xl bg-white p-10 drop-shadow-2xl md:h-[420px] md:flex-row md:gap-5 lg:h-[480px] lg:gap-10"
+          >
+            <!-- ilust/pict -->
+            <img
+              src="assets/img/service - card/card - fungsi/ilust-real estate.svg"
+              alt=""
+              class="h-fit w-6/12 self-center md:w-4/12"
+            />
+
+            <!-- divider -->
+            <div class="flex h-full w-fit flex-row gap-3 md:flex-col">
+              <hr class="h-2 w-12 bg-warna3 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+              <hr class="h-2 w-12 bg-warna5 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+            </div>
+
+            <!-- text -->
+            <div class="h-full w-full">
+              <h1
+                class="font-montserrat text-2xl font-bold text-warna5 md:text-3xl lg:text-4xl xl:text-5xl"
+              >
+                Real Estate
+              </h1>
+
+              <p
+                class="mt-2 font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-5 lg:text-xl xl:text-2xl"
+              >
+                ERP helps with day-to-day monitoring activities like orders,
+                project management, and material procurement. With ease, keep
+                track of your profit/loss, balance sheet, and cash flow
+                statements.
+              </p>
+
+              <ul
+                class="mt-5 list-inside list-disc font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-10 lg:text-xl xl:text-2xl"
+              >
+                <li>Sales Management</li>
+                <li>Accounting Management</li>
+                <li>Contract Management</li>
+                <li>Rental</li>
+                <li>Facility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- manufacture card -->
+        <div class="display hidden h-fit w-full" id="d-manufacture">
+          <div
+            class="flex h-fit flex-col gap-3 rounded-3xl bg-white p-10 drop-shadow-2xl md:h-[420px] md:flex-row md:gap-5 lg:h-[480px] lg:gap-10"
+          >
+            <!-- ilust/pict -->
+            <img
+              src="assets/img/service - card/card - fungsi/ilust - manufacture.svg"
+              alt=""
+              class="h-fit w-6/12 self-center md:w-4/12"
+            />
+
+            <!-- divider -->
+            <div class="flex h-full w-fit flex-row gap-3 md:flex-col">
+              <hr class="h-2 w-12 bg-warna3 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+              <hr class="h-2 w-12 bg-warna5 md:h-14 md:w-2 lg:h-16 lg:w-3" />
+            </div>
+
+            <!-- text -->
+            <div class="h-full w-full">
+              <h1
+                class="font-montserrat text-2xl font-bold text-warna5 md:text-3xl lg:text-4xl xl:text-5xl"
+              >
+                Manufacture
+              </h1>
+
+              <p
+                class="mt-2 font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-5 lg:text-xl xl:text-2xl"
+              >
+                Manufacturers can better track their internal and external stock
+                movements with ERP software, and they can access a variety of
+                data from a single system.
+              </p>
+
+              <ul
+                class="mt-5 list-inside list-disc font-comfortaa text-sm font-medium text-warna3 md:text-base lg:mt-10 lg:text-xl xl:text-2xl"
+              >
+                <li>Manufacturing Management</li>
+                <li>Inventory Management</li>
+                <li>Project Management</li>
+                <li>Purchasing</li>
+                <li>CRM-Sales</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
       <!-- card function odoo END -->
 
       <!-- icon card function odoo -->
-      <div class="flex flex-row justify-center gap-10">
+      <div
+        class="container mx-auto flex flex-row justify-center gap-3 md:gap-10"
+        id="ic-button"
+      >
         <!-- mining -->
-        <div
-          class="flex h-20 w-auto items-center justify-center gap-5 rounded-full bg-white py-3 px-5"
-          id="mining"
+        <button
+          class="flex h-10 w-auto items-center justify-center rounded-full bg-white p-2 duration-300 ease-in-out md:h-14 md:py-3 md:px-5 lg:h-20"
+          id="ic-mining"
+          type="button"
+          data-value="Mining"
+          data-cardName="d-mining"
         >
           <img
             src="assets/img/service - card/card - fungsi/ilust-mining.svg"
@@ -262,78 +509,88 @@
             class="h-full w-auto"
           />
 
-          <h4 class="font-montserrat text-3xl font-bold text-warna5">Mining</h4>
-        </div>
+          <h4
+            class="ml-2 font-montserrat text-xl font-bold text-warna5 md:ml-3 md:text-2xl lg:text-3xl xl:text-4xl"
+            id="text-ic-button"
+          >
+            Mining
+          </h4>
+        </button>
 
         <!-- hospital -->
-        <div
-          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5 duration-300 ease-in-out hover:scale-110"
-          id="hospital"
+        <button
+          class="flex h-10 w-auto items-center justify-center rounded-full bg-white p-2 duration-300 ease-in-out hover:scale-110 md:h-14 md:py-3 md:px-5 lg:h-20"
+          id="ic-hospital"
+          data-cardName="d-hospital"
+          data-value="Hospital"
+          type="button"
         >
           <img
             src="assets/img/service - card/card - fungsi/ilust-hospital.svg"
             alt=""
             class="h-full w-auto"
           />
+        </button>
 
-          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
-        </div>
-
-        <!-- logistic -->
-        <div
-          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5 duration-300 ease-in-out hover:scale-110"
-          id="logistic"
+        <!-- logistic  -->
+        <button
+          class="flex h-10 w-auto items-center justify-center rounded-full bg-white p-2 duration-300 ease-in-out hover:scale-110 md:h-14 md:py-3 md:px-5 lg:h-20"
+          id="ic-logistic"
+          data-cardName="d-logistic"
+          data-value="Logistic"
+          type="button"
         >
           <img
             src="assets/img/service - card/card - fungsi/ilust-logistic.svg"
             alt=""
             class="h-full w-auto"
           />
-
-          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
-        </div>
+        </button>
 
         <!-- education -->
-        <div
-          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5 duration-300 ease-in-out hover:scale-110"
-          id="education"
+        <button
+          class="flex h-10 w-auto items-center justify-center rounded-full bg-white p-2 duration-300 ease-in-out hover:scale-110 md:h-14 md:py-3 md:px-5 lg:h-20"
+          id="ic-education"
+          data-cardName="d-education"
+          data-value="Education"
+          type="button"
         >
           <img
             src="assets/img/service - card/card - fungsi/ilust-education.svg"
             alt=""
             class="h-full w-auto"
           />
-
-          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
-        </div>
+        </button>
 
         <!-- real estate -->
-        <div
-          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5 duration-300 ease-in-out hover:scale-110"
-          id="realEstate"
+        <button
+          class="flex h-10 w-auto items-center justify-center rounded-full bg-white p-2 duration-300 ease-in-out hover:scale-110 md:h-14 md:py-3 md:px-5 lg:h-20"
+          id="ic-realEstate"
+          data-cardName="d-realEstate"
+          data-value="Real Estate"
+          type="button"
         >
           <img
             src="assets/img/service - card/card - fungsi/ilust-real estate.svg"
             alt=""
             class="h-full w-auto"
           />
-
-          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
-        </div>
+        </button>
 
         <!-- manufacture -->
-        <div
-          class="flex h-20 w-auto items-center justify-center rounded-full bg-white py-3 px-5 duration-300 ease-in-out hover:scale-110"
-          id="manufacture"
+        <button
+          class="flex h-10 w-auto items-center justify-center rounded-full bg-white p-2 duration-300 ease-in-out hover:scale-110 md:h-14 md:py-3 md:px-5 lg:h-20"
+          id="ic-manufacture"
+          data-cardName="d-manufacture"
+          data-value="Manufacture"
+          type="button"
         >
           <img
             src="assets/img/service - card/card - fungsi/ilust - manufacture.svg"
             alt=""
             class="h-full w-auto"
           />
-
-          <h4 class="font-montserrat text-3xl font-bold text-warna5"></h4>
-        </div>
+        </button>
       </div>
       <!-- icon card function odoo END -->
     </div>
@@ -374,5 +631,6 @@
     <script src="assets/js/navbar-responsive.js"></script>
     <script src="assets/js/main-nav.js"></script>
     <script src="assets/js/npc-nav.js"></script>
+    <script src="assets/js/cardService.js"></script>
   </body>
 </html>
