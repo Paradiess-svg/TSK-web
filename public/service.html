@@ -756,7 +756,7 @@
 
     <!-- what is moby -->
     <div
-      class="container mx-auto mb-24 flex h-fit w-full flex-col gap-5 rounded-2xl bg-white p-10 drop-shadow-2xl"
+      class="container z-10 mx-auto mb-24 flex h-fit w-full flex-col gap-5 rounded-2xl bg-white p-10 drop-shadow-2xl"
     >
       <h1
         class="font-montserrat text-xl font-bold capitalize text-warna3 md:text-3xl lg:text-4xl xl:text-5xl"
@@ -786,9 +786,31 @@
     <!-- what is moby END -->
 
     <!-- backgorund white -->
-    <div class="h-fit w-screen bg-white py-20">
+    <div class="relative h-fit w-screen overflow-hidden bg-white pt-20">
+      <!-- overlay -->
+      <img
+        src="assets/img/overlay/Overlay Logo Tetamba.svg"
+        alt=""
+        class="absolute -right-40 -top-24 h-auto w-[954px] md:-top-96 md:-right-72 lg:-right-96 lg:-top-[550px] 2xl:right-64 2xl:-top-96"
+      />
+      <!-- <img
+        src="assets/img/overlay/Overlay Logo Tetamba.svg"
+        alt=""
+        class="absolute -left-64 top-80 h-auto w-[645px]"
+      /> -->
+      <img
+        src="assets/img/overlay/Overlay Logo Tetamba.svg"
+        alt=""
+        class="absolute -right-24 bottom-80 hidden h-auto w-[645px] md:bottom-56 md:-right-80 md:block 2xl:hidden"
+      />
+      <img
+        src="assets/img/overlay/Overlay Logo Tetamba.svg"
+        alt=""
+        class="absolute -left-24 -bottom-32 h-auto w-[500px] md:-left-60 md:-bottom-64 2xl:-left-20 2xl:-bottom-20"
+      />
+
       <!-- moby feature -->
-      <div class="container mx-auto h-fit w-full">
+      <div class="container z-20 mx-auto h-fit w-full">
         <h1
           class="font-montserrat text-2xl font-bold capitalize text-warna3 md:text-3xl lg:text-4xl xl:text-5xl"
         >
@@ -893,7 +915,7 @@
       <!-- moby feature END -->
 
       <!-- moby main feature -->
-      <div class="container my-24 mx-auto h-fit w-full">
+      <div class="container z-20 my-24 mx-auto h-fit w-full">
         <h1
           class="font-montserrat text-2xl font-bold capitalize text-warna3 md:text-3xl lg:text-4xl xl:text-5xl"
         >
@@ -1000,6 +1022,160 @@
       </div>
       <!-- moby main feature END -->
     </div>
+
+    <!-- Footer-->
+    <footer class="flex h-fit w-full">
+      <!-- Google map PC RESPOSIVE-->
+      <div class="hidden w-full sm:block">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="h-full w-full"
+        ></iframe>
+      </div>
+
+      <!-- Footer - Content -->
+      <div class="flex h-fit w-full flex-col">
+        <!-- Bagian atas -->
+        <div
+          class="flex flex-col gap-3 bg-warna6 p-2 md:p-5 2xl:gap-14 2xl:px-8 2xl:py-10"
+        >
+          <!-- Contact Us -->
+          <div class="flex flex-col 2xl:gap-5">
+            <div
+              class="font-montserrat text-sm font-bold text-white md:text-xl 2xl:text-4xl"
+            >
+              Contact us
+            </div>
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+                class="text-sm text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <div
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                Contact@tetambastudio.com
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                class="text-sm text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                href="tel:6285776512171"
+                target="_blank"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+              <div
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                +62 857 7651 2171
+              </div>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="flex flex-col 2xl:gap-5">
+            <div
+              class="font-montserrat text-sm font-bold text-white md:text-xl 2xl:text-4xl"
+            >
+              Address
+            </div>
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                class="self-start text-base text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                href="https://goo.gl/maps/SszXyLyVyKmz8mzR6"
+                target="_blank"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+              <p
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok,
+                Jawa Barat
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google map MOBILE RESPONSIVE-->
+        <div class="block w-full sm:hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="h-full w-full"
+          ></iframe>
+        </div>
+
+        <!-- Mark Pembatas -->
+        <div class="flex h-fit w-full justify-center bg-warna4 p-2 2xl:p-5">
+          <img
+            src="assets/img/Mark Footer.svg"
+            alt=""
+            class="pointer-events-none h-4 select-none md:h-7 2xl:h-16"
+          />
+        </div>
+
+        <!-- Bagian Bawah -->
+        <div
+          class="flex h-fit w-full flex-col justify-between bg-warna6 p-2 md:flex-row md:p-5 2xl:px-8 2xl:py-10"
+        >
+          <div class="h-fit w-full">
+            <h4
+              class="text-center font-comfortaa text-xs font-medium text-white sm:text-start md:text-lg 2xl:text-3xl"
+            >
+              Copyright&copy; 2023 PT. Tetamba Studio Kreasi. All rights
+              reserved.
+            </h4>
+          </div>
+
+          <div class="flex h-auto w-fit gap-3 self-center sm:self-end lg:gap-5">
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://twitter.com/gadgetfes/status/1524637030969659392"
+              target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://www.linkedin.com/company/tetambastudio/about/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://www.instagram.com/tetamba.studio/?hl=id"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
 
     <!-- JS -->
     <!-- CDN -->
