@@ -730,6 +730,26 @@ body {
   left: -9rem;
 }
 
+.-right-40 {
+  right: -10rem;
+}
+
+.-left-64 {
+  left: -16rem;
+}
+
+.top-80 {
+  top: 20rem;
+}
+
+.-right-24 {
+  right: -6rem;
+}
+
+.bottom-80 {
+  bottom: 20rem;
+}
+
 .top-10 {
   top: 2.5rem;
 }
@@ -754,114 +774,6 @@ body {
   top: 68px;
 }
 
-.-right-0 {
-  right: -0px;
-}
-
-.-right-40 {
-  right: -10rem;
-}
-
-.-right-96 {
-  right: -24rem;
-}
-
-.-top-96 {
-  top: -24rem;
-}
-
-.-top-\[500px\] {
-  top: -500px;
-}
-
-.-top-\[550px\] {
-  top: -550px;
-}
-
-.-left-40 {
-  left: -10rem;
-}
-
-.top-60 {
-  top: 15rem;
-}
-
-.-left-80 {
-  left: -20rem;
-}
-
-.top-72 {
-  top: 18rem;
-}
-
-.top-80 {
-  top: 20rem;
-}
-
-.-left-72 {
-  left: -18rem;
-}
-
-.-left-64 {
-  left: -16rem;
-}
-
-.-right-80 {
-  right: -20rem;
-}
-
-.bottom-80 {
-  bottom: 20rem;
-}
-
-.bottom-64 {
-  bottom: 16rem;
-}
-
-.bottom-52 {
-  bottom: 13rem;
-}
-
-.bottom-48 {
-  bottom: 12rem;
-}
-
-.-bottom-56 {
-  bottom: -14rem;
-}
-
-.bottom-36 {
-  bottom: 9rem;
-}
-
-.-bottom-80 {
-  bottom: -20rem;
-}
-
-.-bottom-64 {
-  bottom: -16rem;
-}
-
-.-left-56 {
-  left: -14rem;
-}
-
-.bottom-56 {
-  bottom: 14rem;
-}
-
-.-top-56 {
-  top: -14rem;
-}
-
-.-right-24 {
-  right: -6rem;
-}
-
-.-bottom-24 {
-  bottom: -6rem;
-}
-
 .-z-10 {
   z-index: -10;
 }
@@ -872,14 +784,6 @@ body {
 
 .z-\[-10\] {
   z-index: -10;
-}
-
-.z-40 {
-  z-index: 40;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .z-20 {
@@ -959,11 +863,6 @@ body {
   margin-bottom: 5rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1025,28 +924,12 @@ body {
   margin-bottom: 6rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
 
-.-mt-60 {
-  margin-top: -15rem;
-}
-
-.-mt-56 {
-  margin-top: -14rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .block {
@@ -1247,14 +1130,6 @@ body {
   width: 100vw;
 }
 
-.w-1\/12 {
-  width: 8.333333%;
-}
-
-.w-2\/12 {
-  width: 16.666667%;
-}
-
 .w-\[954px\] {
   width: 954px;
 }
@@ -1265,6 +1140,10 @@ body {
 
 .w-\[500px\] {
   width: 500px;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
 }
 
 .max-w-full {
@@ -1589,11 +1468,6 @@ body {
   padding-right: 2rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1603,12 +1477,12 @@ body {
   padding-left: 1.25rem;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-center {
@@ -1729,6 +1603,10 @@ body {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-2xl {
@@ -2054,10 +1932,6 @@ body {
     left: -6rem;
   }
 
-  .md\:top-8 {
-    top: 2rem;
-  }
-
   .md\:-top-96 {
     top: -24rem;
   }
@@ -2066,12 +1940,12 @@ body {
     right: -18rem;
   }
 
-  .md\:-right-80 {
-    right: -20rem;
-  }
-
   .md\:bottom-56 {
     bottom: 14rem;
+  }
+
+  .md\:-right-80 {
+    right: -20rem;
   }
 
   .md\:-left-60 {
@@ -2080,6 +1954,10 @@ body {
 
   .md\:-bottom-64 {
     bottom: -16rem;
+  }
+
+  .md\:top-8 {
+    top: 2rem;
   }
 
   .md\:z-auto {
@@ -2241,6 +2119,10 @@ body {
     width: 0.5rem;
   }
 
+  .md\:w-1\/12 {
+    width: 8.333333%;
+  }
+
   .md\:w-7\/12 {
     width: 58.333333%;
   }
@@ -2251,10 +2133,6 @@ body {
 
   .md\:w-52 {
     width: 13rem;
-  }
-
-  .md\:w-1\/12 {
-    width: 8.333333%;
   }
 
   .md\:flex-row {
@@ -2462,20 +2340,20 @@ body {
     left: -8rem;
   }
 
-  .lg\:right-10 {
-    right: 2.5rem;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
+  .lg\:-right-96 {
+    right: -24rem;
   }
 
   .lg\:-top-\[550px\] {
     top: -550px;
   }
 
-  .lg\:-right-96 {
-    right: -24rem;
+  .lg\:right-10 {
+    right: 2.5rem;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
   }
 
   .lg\:col-span-6 {
@@ -2862,28 +2740,12 @@ body {
     }
   }
 
-  .\32xl\:left-64 {
-    left: 16rem;
+  .\32xl\:right-64 {
+    right: 16rem;
   }
 
   .\32xl\:-top-96 {
     top: -24rem;
-  }
-
-  .\32xl\:left-32 {
-    left: 8rem;
-  }
-
-  .\32xl\:left-48 {
-    left: 12rem;
-  }
-
-  .\32xl\:right-48 {
-    right: 12rem;
-  }
-
-  .\32xl\:right-64 {
-    right: 16rem;
   }
 
   .\32xl\:-left-20 {
