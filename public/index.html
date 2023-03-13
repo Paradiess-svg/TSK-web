@@ -1,554 +1,807 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <!-- Faviocon & Title -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Tetamba Studio Kreasi</title>
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Faviocon & Title -->
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-  <title>Tetamba Studio Kreasi</title>
+    <!-- CSS -->
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ORIGINAL CSS -->
+    <link rel="stylesheet" href="assets/css/output.css" />
+  </head>
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@300;500;700&display=swap"
-    rel="stylesheet">
+  <body class="bg-warna2">
+    <!-- navbar -->
+    <nav class="navbar md:flex md:items-center md:justify-between">
+      <div class="flex justify-between px-5 2xl:px-10">
+        <a class="cursor-pointer" href="#">
+          <img
+            class="inline h-5 w-auto md:h-8 xl:h-12 2xl:my-8 2xl:h-16"
+            src="assets/img/Logo Full Color.png"
+          />
+        </a>
 
-  <!-- CSS -->
-  <!-- CDN -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- ORIGINAL CSS -->
-  <link rel="stylesheet" href="assets/css/output.css" />
+        <span
+          class="menu-click block cursor-pointer text-lg md:hidden md:text-3xl"
+        >
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
 
-</head>
+      <ul
+        class="absolute top-[-400px] left-0 mr-5 w-full px-5 opacity-0 transition-all duration-700 ease-in max-[767px]:bg-warna5 md:static md:z-auto md:flex md:w-auto md:items-center md:gap-5 md:p-0 md:opacity-100 lg:gap-8 xl:gap-8 2xl:gap-20"
+      >
+        <li class="my-3 md:my-0">
+          <a
+            href="product.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Product</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="porto.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            d
+            >Portofolio</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="team.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Team</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="service.hmtl"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Service</a
+          >
+        </li>
+        <li class="my-3 md:my-0">
+          <a
+            href="contact.html"
+            class="npc-nav font-comfortaa text-sm text-white duration-500 hover:text-warna6 md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl"
+            >Contact & Info</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar END -->
 
-<body class="bg-warna2">
-
-  <!-- navbar -->
-  <nav class="navbar md:flex md:items-center md:justify-between">
-    <div class="px-5 2xl:px-10 flex justify-between">
-      <a class="cursor-pointer" href="#">
-        <img class="h-5 md:h-8 xl:h-12 2xl:h-16 2xl:my-8 w-auto inline" src="assets/img/Logo Full Color.png">
-      </a>
-
-      <span class="text-lg md:text-3xl cursor-pointer md:hidden block menu-click">
-        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-      </span>
+    <!-- hero RESPONSIVE -->
+    <div class="pointer-events-none relative h-screen select-none">
+      <img
+        src="assets/img/heroes/hero.svg"
+        alt=""
+        class="w-11/12 xl:w-10/12 2xl:w-9/12"
+      />
+      <img
+        src="assets/img/img-hero.svg"
+        alt=""
+        class="absolute top-0 right-0 -z-10 h-auto xl:h-screen xl:w-auto"
+      />
     </div>
+    <!-- hero END -->
 
-    <ul
-      class=" max-[767px]:bg-warna5 w-full md:w-auto mr-5 md:z-auto opacity-0 md:opacity-100 top-[-400px] left-0 transition-all ease-in duration-700 px-5 md:p-0 md:flex md:items-center md:gap-5 lg:gap-8 xl:gap-8 2xl:gap-20 absolute md:static">
-      <li class="my-3 md:my-0">
-        <a href="product.html"
-          class="npc-nav font-comfortaa text-sm md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl text-white hover:text-warna6 duration-500">Product</a>
-      </li>
-      <li class="my-3 md:my-0">
-        <a href="porto.html"
-          class="npc-nav font-comfortaa text-sm md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl text-white hover:text-warna6 duration-500 "d>Portofolio</a>
-      </li>
-      <li class="my-3 md:my-0">
-        <a href="team.html"
-          class="npc-nav font-comfortaa text-sm md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl text-white hover:text-warna6 duration-500">Team</a>
-      </li>
-      <li class="my-3 md:my-0">
-        <a href="service.hmtl"
-          class="npc-nav font-comfortaa text-sm md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl text-white hover:text-warna6 duration-500 ">Service</a>
-      </li>
-      <li class="my-3 md:my-0">
-        <a href="contact.html"
-          class="npc-nav font-comfortaa text-sm md:text-sm lg:text-base xl:text-2xl 2xl:text-4xl text-white hover:text-warna6 duration-500">Contact
-          & Info</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- navbar END -->
+    <div
+      class="container mx-auto -mt-80 grid grid-flow-row grid-cols-12 gap-y-12 sm:-mt-56 md:-mt-16 lg:-mt-5 lg:gap-y-24 xl:-mt-[20px]"
+    >
+      <!-- About -->
+      <section
+        class="relative col-span-10 col-start-2 grid h-auto grid-cols-10 gap-5 overflow-hidden rounded-3xl bg-white p-5 drop-shadow-2xl md:rounded-[50px] md:p-10 xl:col-span-8 xl:col-start-3"
+        id="about"
+      >
+        <!-- Overlay -->
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt="overlay-1"
+          class="pointer-events-none absolute -bottom-10 -left-24 h-60 select-none sm:-bottom-20 md:-bottom-16 md:-left-32 md:h-80"
+        />
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt="overlay-2"
+          class="pointer-events-none absolute -top-24 -right-56 h-80 select-none md:-top-72 md:-right-96 md:h-[567px]"
+        />
 
-  <!-- hero RESPONSIVE -->
-  <div class="h-screen select-none pointer-events-none relative">
-    <img src="assets/img/heroes/hero.svg" alt="" class="w-11/12 xl:w-10/12 2xl:w-9/12">
-    <img src="assets/img/img-hero.svg" alt="" class="-z-10 absolute top-0 right-0 xl:w-auto h-auto xl:h-screen">
-  </div>
-  <!-- <div class="h-screen select-none pointer-events-none relative">
-    <img src="assets/img/heroes/hero.svg" alt="">
-    <img class="z-[-10] absolute top-0 right-0 max-w-full h-auto" src="assets/img/img-hero.svg" alt="">
-  </div> -->
-  <!-- hero END -->
-
-  <div
-    class="container mx-auto -mt-80 sm:-mt-56 md:-mt-16 lg:-mt-5 xl:-mt-[20px] grid grid-cols-12 grid-flow-row gap-y-12 lg:gap-y-24">
-
-    <!-- About -->
-    <section
-      class="col-start-2 xl:col-start-3 col-span-10 xl:col-span-8 bg-white h-auto p-5 md:p-10 rounded-3xl md:rounded-[50px] drop-shadow-2xl grid grid-cols-10 gap-5 relative overflow-hidden"
-      id="about">
-
-      <!-- Overlay -->
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-1"
-        class="absolute h-60 md:h-80 -bottom-10 sm:-bottom-20 md:-bottom-16 -left-24 md:-left-32 select-none pointer-events-none">
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-2"
-        class="absolute h-80 md:h-[567px] -top-24 md:-top-72 -right-56 md:-right-96 select-none pointer-events-none">
-
-      <!-- About-Content -->
-      <div class="col-start-2 lg:col-start-3 col-span-8 lg:col-span-6 h-full flex flex-col justify-between gap-5 z-10">
-        <div class="bg-warna6 h-14 md:h-20 flex items-center justify-center">
-          <h1 class="text-white text-center font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl">About</h1>
-        </div>
-
-        <p class="text-black text-center font-comfortaa text-sm md:text-xl">
-          We are a professional IT consulting company that provides
-          solutions to every technology problems for your company. Our tean
-          has assisted our various business partners in overcoming
-          technology challenges and increasing their business prductivity
-        </p>
-      </div>
-
-    </section>
-    <!-- About END -->
-
-    <!-- Vision & Mission -->
-    <section class="col-span-12 h-auto flex flex-col md:flex-row gap-y-12 md:gap-y-0 md:gap-5" id="visionMission">
-
-      <!-- vision -->
-      <div
-        class="bg-white h-fit md:h-full w-10/12 md:w-1/2 mx-auto p-5 md:p-10 rounded-3xl md:rounded-[50px] drop-shadow-2xl grid grid-cols-6 relative overflow-hidden"
-        id="vision">
-
-        <!-- overlay -->
-        <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-vision"
-          class="absolute h-[567px] -bottom-52 md:-bottom-40 lg:-bottom-64 -left-24 md:-left-28 lg:-left-56 select-none pointer-events-none">
-
-        <div class="col-span-full lg:col-start-2 lg:col-span-4 flex flex-col gap-5 lg:gap-10 z-10">
-
-          <!-- Text Vision -->
-          <div class="bg-warna6 h-14 md:h-20 flex items-center justify-center">
-            <h1 class="text-white font-montserrat font-bold text-3xl md:text-4xl lg:text-5xl my-auto">Vision</h1>
+        <!-- About-Content -->
+        <div
+          class="z-10 col-span-8 col-start-2 flex h-full flex-col justify-between gap-5 lg:col-span-6 lg:col-start-3"
+        >
+          <div class="flex h-14 items-center justify-center bg-warna6 md:h-20">
+            <h1
+              class="text-center font-montserrat text-3xl font-bold text-white md:text-4xl lg:text-5xl"
+            >
+              About
+            </h1>
           </div>
 
-          <!-- Vision Content -->
-          <p class="text-black text-center font-comfortaa text-xs md:text-xl">
-            Making the information Technology services provider company
-            competent, leading, and providing the best solutions in it's field
-            and connecting the education with the professional environtment.
+          <p class="text-center font-comfortaa text-sm text-black md:text-xl">
+            We are a professional IT consulting company that provides solutions
+            to every technology problems for your company. Our tean has assisted
+            our various business partners in overcoming technology challenges
+            and increasing their business prductivity
           </p>
-
         </div>
+      </section>
+      <!-- About END -->
 
-      </div>
-      <!-- Vision END -->
+      <!-- Vision & Mission -->
+      <section
+        class="col-span-12 flex h-auto flex-col gap-y-12 md:flex-row md:gap-5 md:gap-y-0"
+        id="visionMission"
+      >
+        <!-- vision -->
+        <div
+          class="relative mx-auto grid h-fit w-10/12 grid-cols-6 overflow-hidden rounded-3xl bg-white p-5 drop-shadow-2xl md:h-full md:w-1/2 md:rounded-[50px] md:p-10"
+          id="vision"
+        >
+          <!-- overlay -->
+          <img
+            src="assets/img/overlay/Overlay Logo Tetamba.svg"
+            alt="overlay-vision"
+            class="pointer-events-none absolute -bottom-52 -left-24 h-[567px] select-none md:-bottom-40 md:-left-28 lg:-bottom-64 lg:-left-56"
+          />
 
-      <!-- Mission -->
-      <div
-        class="bg-white w-10/12 md:w-1/2 h-auto mx-auto p-5 md:p-10 rounded-3xl drop-shadow-2xl md:rounded-[50px] grid grid-cols-6 relative overflow-hidden"
-        id="mission">
+          <div
+            class="z-10 col-span-full flex flex-col gap-5 lg:col-span-4 lg:col-start-2 lg:gap-10"
+          >
+            <!-- Text Vision -->
+            <div
+              class="flex h-14 items-center justify-center bg-warna6 md:h-20"
+            >
+              <h1
+                class="my-auto font-montserrat text-3xl font-bold text-white md:text-4xl lg:text-5xl"
+              >
+                Vision
+              </h1>
+            </div>
 
-        <!-- overlay -->
-        <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-mission1"
-          class="absolute h-[500px] md:h-[567px] -top-48 md:-top-56 -left-24 sm:-left-40 md:-left-28 lg:-left-[340px] select-none pointer-events-none">
-        <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="overlay-mission2"
-          class="absolute h-44 md:h-80 -bottom-12 md:-bottom-28 lg:-bottom-32 -right-12 md:-right-28 select-none pointer-events-none">
-
-        <div class="col-span-full lg:col-start-2 lg:col-span-4 h-full flex flex-col gap-5 lg:gap-10 z-10">
-          <!-- Text Mission -->
-          <div class="bg-warna6 h-14 md:h-20 flex items-center justify-center">
-            <h1 class="text-white font-montserrat text-3xl font-bold md:text-4xl lg:text-5xl">Mission<h1>
+            <!-- Vision Content -->
+            <p class="text-center font-comfortaa text-xs text-black md:text-xl">
+              Making the information Technology services provider company
+              competent, leading, and providing the best solutions in it's field
+              and connecting the education with the professional environtment.
+            </p>
           </div>
+        </div>
+        <!-- Vision END -->
 
-          <!-- Mission-content -->
-          <div class="col-start-2 col-span-4 font-comfortaa font-medium text-xs md:text-xl">
-            <li>Giving the best service</li>
-            <li>Provide adequate result as needed</li>
-            <li>Provide added value to the company with a system that can be seeded, safe, and competitive cost</li>
-            <li>Develop new products</li>
-            <li>Building partnership</li>
-            <li>Providing employment</li>
-            <li>Making a learning place for prospective system research and system development </li>
+        <!-- Mission -->
+        <div
+          class="relative mx-auto grid h-auto w-10/12 grid-cols-6 overflow-hidden rounded-3xl bg-white p-5 drop-shadow-2xl md:w-1/2 md:rounded-[50px] md:p-10"
+          id="mission"
+        >
+          <!-- overlay -->
+          <img
+            src="assets/img/overlay/Overlay Logo Tetamba.svg"
+            alt="overlay-mission1"
+            class="pointer-events-none absolute -top-48 -left-24 h-[500px] select-none sm:-left-40 md:-top-56 md:-left-28 md:h-[567px] lg:-left-[340px]"
+          />
+          <img
+            src="assets/img/overlay/Overlay Logo Tetamba.svg"
+            alt="overlay-mission2"
+            class="pointer-events-none absolute -bottom-12 -right-12 h-44 select-none md:-bottom-28 md:-right-28 md:h-80 lg:-bottom-32"
+          />
+
+          <div
+            class="z-10 col-span-full flex h-full flex-col gap-5 lg:col-span-4 lg:col-start-2 lg:gap-10"
+          >
+            <!-- Text Mission -->
+            <div
+              class="flex h-14 items-center justify-center bg-warna6 md:h-20"
+            >
+              <h1
+                class="font-montserrat text-3xl font-bold text-white md:text-4xl lg:text-5xl"
+              >
+                Mission
+              </h1>
+            </div>
+
+            <!-- Mission-content -->
+            <div
+              class="col-span-4 col-start-2 font-comfortaa text-xs font-medium md:text-xl"
+            >
+              <li>Giving the best service</li>
+              <li>Provide adequate result as needed</li>
+              <li>
+                Provide added value to the company with a system that can be
+                seeded, safe, and competitive cost
+              </li>
+              <li>Develop new products</li>
+              <li>Building partnership</li>
+              <li>Providing employment</li>
+              <li>
+                Making a learning place for prospective system research and
+                system development
+              </li>
+            </div>
+            <!-- Mission Content END -->
           </div>
+          <!-- Mission END -->
         </div>
-      </div>
-      <!-- Mission END -->
+      </section>
+      <!-- Vision & Mission ENDs -->
 
-    </section>
-    <!-- Vision & Mission ENDs -->
+      <!-- Amazing Team -->
+      <section
+        class="relative col-span-full flex h-fit flex-col gap-5 overflow-hidden bg-white p-5 drop-shadow-2xl sm:rounded-[50px] md:gap-10 md:p-10"
+      >
+        <!-- Overlay -->
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="pointer-events-none absolute -top-40 -left-60 h-96 select-none lg:-top-64 lg:-left-96 lg:h-[567px]"
+        />
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="pointer-events-none absolute -bottom-32 -right-32 h-96 select-none lg:-bottom-44 lg:h-[567px]"
+        />
 
-    <!-- Amazing Team -->
-    <section
-      class="col-span-full bg-white h-fit sm:rounded-[50px] drop-shadow-2xl flex flex-col p-5 md:p-10 gap-5 md:gap-10 relative overflow-hidden">
-
-      <!-- Overlay -->
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
-        class="absolute h-96 lg:h-[567px] -top-40 lg:-top-64 -left-60 lg:-left-96 select-none pointer-events-none">
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
-        class="absolute h-96 lg:h-[567px] -bottom-32 lg:-bottom-44 -right-32 select-none pointer-events-none">
-
-      <!-- Text -->
-      <div class="bg-warna6 w-fit h-auto mx-auto py-1 md:py-5 px-10 z-10 flex justify-center">
-        <h1 class="text-white text-center font-montserrat font-bold text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl">
-          Amazing Team
-        </h1>
-      </div>
-
-      <div class="w-full h-fit z-10 flex justify-between">
-
-        <!-- Ilustrasi -->
-        <div class="w-4/12 flex align-middle">
-          <img src="assets/img/ilust-amazingTeam.svg" alt="team">
-        </div>
-
-        <div class="w-8/12 h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[450px]">
-
-          <!-- Card -->
-          <div class="h-full flex items-center" id="cardFrontendUiux">
-
-            <!-- FrontEnd -->
-            <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[450px]">
-              <!-- mt-4 sm:mb-5 ml-1 sm:ml-2 lg:ml-5 xl:ml-8 -->
-              <div
-                class="bg-warna2 w-20 sm:w-32 md:w-44 lg:w-52 xl:w-72 h-32 sm:h-52 md:h-64 lg:h-80 xl:h-96 rounded-xl md:rounded-3xl drop-shadow-xl mt-7 mx-auto hover:scale-105 transition duration-300 ease-in-out p-2 sm:p-5 flex flex-col justify-center gap-2 sm:gap-5 xl:gap-10"
-                id="cardFrontend">
-                <p class="text-center text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"><i
-                    class="fa-solid fa-laptop-code"></i></p>
-                <hr class="bg-white w-full sm:h-1 self-center">
-                <h1
-                  class="h-10 sm:h-20 text-white text-center font-comfortaa font-medium text-sm sm:text-base md:text-2xl lg:text-4xl">
-                  FRONT<br>END</h1>
-              </div>
-            </div>
-
-            <!-- Ui/UX -->
-            <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[450px]">
-              <!-- ml-1 sm:ml-2 lg:ml-5 -->
-              <div
-                class="bg-white border border-warna2 w-20 sm:w-32 md:w-44 lg:w-52 xl:w-72 h-32 sm:h-52 md:h-64 lg:h-80 xl:h-96 rounded-xl md:rounded-3xl drop-shadow-xl mt-7 mx-auto hover:scale-105 transition duration-300 ease-in-out p-2 sm:p-5 flex flex-col justify-center gap-2 sm:gap-5 xl:gap-10"
-                id="cardUiux">
-                <p class="text-warna2 text-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"> <i
-                    class="fa-solid fa-pen-to-square"></i> </p>
-                <hr class="bg-warna2 w-full sm:h-1 self-center">
-                <h1
-                  class="h-10 sm:h-20 text-warna2 text-center font-comfortaa text-sm sm:text-base md:text-2xl lg:text-4xl font-medium">
-                  UI/UX</h1>
-              </div>
-            </div>
-
-            <!-- Technical Writer -->
-            <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[400px]">
-              <div
-                class="bg-warna2 w-20 sm:w-32 md:w-44 lg:w-52 xl:w-72 h-32 sm:h-52 md:h-64 lg:h-80 xl:h-96 rounded-xl md:rounded-3xl drop-shadow-xl mt-7 mx-auto p-5 hover:scale-105 transition duration-300 ease-in-out flex flex-col justify-center gap-2 sm:gap-5 xl:gap-10"
-                id="cardFrontend">
-                <p class="text-white text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
-                  <i class="fa-sharp fa-solid fa-wrench"></i>
-                </p>
-                <hr class="bg-white w-full sm:h-1 self-center">
-                <h1
-                  class="h-10 sm:h-20 text-white text-center font-comfortaa font-medium text-sm sm:text-base md:text-2xl lg:text-3xl">
-                  Technical<br>Writer</h1>
-              </div>
-            </div>
-
-            <!-- BackEnd -->
-            <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[400px]">
-              <div
-                class="bg-white border border-warna2 w-20 sm:w-32 md:w-44 lg:w-52 xl:w-72 h-32 sm:h-52 md:h-64 lg:h-80 xl:h-96 rounded-xl md:rounded-3xl drop-shadow-xl mt-7 mx-auto p-5 hover:scale-105 transition duration-300 ease-in-out flex flex-col justify-center gap-2 sm:gap-5 xl:gap-10"
-                id="cardUiux">
-                <p class="text-warna2 text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"> <i
-                    class="fa-solid fa-file-code"></i> </p>
-                <hr class="bg-warna2 w-full sm:h-1 self-center">
-                <h1
-                  class="h-10 sm:h-20 text-warna2 text-center font-comfortaa font-medium text-sm sm:text-base md:text-2xl lg:text-4xl">
-                  BACK<br>END</h1>
-              </div>
-            </div>
-          </div>
-
-        </div>
-    </section>
-    <!-- Amazing Team END -->
-
-  </div>
-
-  <!-- Our Client -->
-  <section id="client" class="bg-white w-full h-fit mt-24 p-10 lg:p-20 relative overflow-hidden">
-    <div class="container mx-auto grid grid-cols-12">
-
-      <!-- Overlay -->
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
-        class="absolute h-[500px] lg:h-[737px] -top-0 -left-96 lg:-left-[450px]">
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
-        class="absolute h-72 lg:h-[466px] bottom-60 lg:bottom-96 right-8 lg:right-12">
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
-        class="absolute h-32 lg:h-56 bottom-24 left-16 lg:left-40">
-
-      <div class="col-span-full flex flex-col gap-20 z-10">
-
-        <!-- Judul Our Client -->
-        <div class="bg-warna6 w-fit h-auto mx-auto py-1 md:py-5 px-10 z-10 flex justify-center">
-          <h1 class="text-white text-center font-montserrat font-bold text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl">
-            Our Client
+        <!-- Text -->
+        <div
+          class="z-10 mx-auto flex h-auto w-fit justify-center bg-warna6 py-1 px-10 md:py-5"
+        >
+          <h1
+            class="text-center font-montserrat text-2xl font-bold text-white md:text-4xl lg:text-5xl 2xl:text-7xl"
+          >
+            Amazing Team
           </h1>
         </div>
 
-        <!-- Logo Client -->
-        <div class="flex flex-col w-full h-fit gap-5">
+        <div class="z-10 flex h-fit w-full justify-between">
+          <!-- Ilustrasi -->
+          <div class="flex w-4/12 align-middle">
+            <img src="assets/img/homepage/ilust-amazingTeam.png" alt="team" />
+          </div>
 
-          <img src="assets/img/homepage/logo client/image 1.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
+          <div class="h-44 w-8/12 sm:h-72 md:h-80 lg:h-96 xl:h-[450px]">
+            <!-- Card -->
+            <div class="flex h-full items-center" id="cardFrontendUiux">
+              <!-- FrontEnd -->
+              <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[450px]">
+                <!-- mt-4 sm:mb-5 ml-1 sm:ml-2 lg:ml-5 xl:ml-8 -->
+                <div
+                  class="mx-auto mt-7 flex h-32 w-20 flex-col justify-center gap-2 rounded-xl bg-warna2 p-2 drop-shadow-xl transition duration-300 ease-in-out hover:scale-105 sm:h-52 sm:w-32 sm:gap-5 sm:p-5 md:h-64 md:w-44 md:rounded-3xl lg:h-80 lg:w-52 xl:h-96 xl:w-72 xl:gap-10"
+                  id="cardFrontend"
+                >
+                  <p
+                    class="text-center text-4xl text-white sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
+                  >
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </p>
+                  <hr class="w-full self-center bg-white sm:h-1" />
+                  <h1
+                    class="h-10 text-center font-comfortaa text-sm font-medium text-white sm:h-20 sm:text-base md:text-2xl lg:text-4xl"
+                  >
+                    FRONT<br />END
+                  </h1>
+                </div>
+              </div>
 
-          <img src="assets/img/homepage/logo client/image 2.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
+              <!-- Ui/UX -->
+              <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[450px]">
+                <!-- ml-1 sm:ml-2 lg:ml-5 -->
+                <div
+                  class="mx-auto mt-7 flex h-32 w-20 flex-col justify-center gap-2 rounded-xl border border-warna2 bg-white p-2 drop-shadow-xl transition duration-300 ease-in-out hover:scale-105 sm:h-52 sm:w-32 sm:gap-5 sm:p-5 md:h-64 md:w-44 md:rounded-3xl lg:h-80 lg:w-52 xl:h-96 xl:w-72 xl:gap-10"
+                  id="cardUiux"
+                >
+                  <p
+                    class="text-center text-4xl text-warna2 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
+                  >
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </p>
+                  <hr class="w-full self-center bg-warna2 sm:h-1" />
+                  <h1
+                    class="h-10 text-center font-comfortaa text-sm font-medium text-warna2 sm:h-20 sm:text-base md:text-2xl lg:text-4xl"
+                  >
+                    UI/UX
+                  </h1>
+                </div>
+              </div>
 
-          <img src="assets/img/homepage/logo client/image 3.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
+              <!-- Technical Writer -->
+              <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[400px]">
+                <div
+                  class="mx-auto mt-7 flex h-32 w-20 flex-col justify-center gap-2 rounded-xl bg-warna2 p-5 drop-shadow-xl transition duration-300 ease-in-out hover:scale-105 sm:h-52 sm:w-32 sm:gap-5 md:h-64 md:w-44 md:rounded-3xl lg:h-80 lg:w-52 xl:h-96 xl:w-72 xl:gap-10"
+                  id="cardFrontend"
+                >
+                  <p
+                    class="text-center text-5xl text-white sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
+                  >
+                    <i class="fa-sharp fa-solid fa-wrench"></i>
+                  </p>
+                  <hr class="w-full self-center bg-white sm:h-1" />
+                  <h1
+                    class="h-10 text-center font-comfortaa text-sm font-medium text-white sm:h-20 sm:text-base md:text-2xl lg:text-3xl"
+                  >
+                    Technical<br />Writer
+                  </h1>
+                </div>
+              </div>
 
-          <img src="assets/img/homepage/logo client/image 26.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
-
-          <img src="assets/img/homepage/logo client/image 6.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
-
-          <img src="assets/img/homepage/logo client/image 5.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
-
-          <img src="assets/img/homepage/logo client/image 10.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
-
-          <img src="assets/img/homepage/logo client/image 7.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
-
-          <img src="assets/img/homepage/logo client/image 33.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-start">
-
-          <img src="assets/img/homepage/logo client/image 34.svg" class="w-40 sm:w-64 lg:w-[420px] h-auto self-end">
-
+              <!-- BackEnd -->
+              <div class="h-44 sm:h-72 md:h-80 lg:h-96 xl:h-[400px]">
+                <div
+                  class="mx-auto mt-7 flex h-32 w-20 flex-col justify-center gap-2 rounded-xl border border-warna2 bg-white p-5 drop-shadow-xl transition duration-300 ease-in-out hover:scale-105 sm:h-52 sm:w-32 sm:gap-5 md:h-64 md:w-44 md:rounded-3xl lg:h-80 lg:w-52 xl:h-96 xl:w-72 xl:gap-10"
+                  id="cardUiux"
+                >
+                  <p
+                    class="text-center text-5xl text-warna2 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
+                  >
+                    <i class="fa-solid fa-file-code"></i>
+                  </p>
+                  <hr class="w-full self-center bg-warna2 sm:h-1" />
+                  <h1
+                    class="h-10 text-center font-comfortaa text-sm font-medium text-warna2 sm:h-20 sm:text-base md:text-2xl lg:text-4xl"
+                  >
+                    BACK<br />END
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-
+      </section>
+      <!-- Amazing Team END -->
     </div>
-  </section>
-  <!-- Our Client END -->
 
-  <!-- Our Product -->
-  <section class="w-full h-fit p-10 md:p-20 relative overflow-hidden">
-    <div class="container mx-auto grid grid-cols-12">
+    <!-- Our Client -->
+    <section
+      id="client"
+      class="relative mt-24 h-fit w-full overflow-hidden bg-white p-10 lg:p-20"
+    >
+      <div class="container mx-auto grid grid-cols-12">
+        <!-- Overlay -->
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="absolute -top-0 -left-96 h-[500px] lg:-left-[450px] lg:h-[737px]"
+        />
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="absolute bottom-60 right-8 h-72 lg:bottom-96 lg:right-12 lg:h-[466px]"
+        />
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="absolute bottom-24 left-16 h-32 lg:left-40 lg:h-56"
+        />
 
-      <!-- Overlay -->
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
-        class="absolute h-[476px] top-0 md:top-28 -left-32 md:-left-44 lg:left-32 sm:hidden md:block">
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt="" class="absolute h-96 right-0 bottom-24">
-      <img src="assets/img/overlay/Overlay Logo Tetamba.svg" alt=""
-        class="absolute h-44 left-0 lg:left-28 bottom-0 lg:bottom-14 hidden sm:block">
-
-      <div class="col-span-full flex flex-col gap-10 md:gap-20 z-10">
-
-        <!-- Judul -->
-        <div class="w-fit h-fit mx-auto flex flex-col justify-center items-center gap-5">
-
-          <div class="bg-warna6 w-full h-auto py-1 md:py-5 flex justify-center">
-            <h1 class="text-white text-center font-montserrat font-bold text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl">
-              Our Product
+        <div class="z-10 col-span-full flex flex-col gap-20">
+          <!-- Judul Our Client -->
+          <div
+            class="z-10 mx-auto flex h-auto w-fit justify-center bg-warna6 py-1 px-10 md:py-5"
+          >
+            <h1
+              class="text-center font-montserrat text-2xl font-bold text-white md:text-4xl lg:text-5xl 2xl:text-7xl"
+            >
+              Our Client
             </h1>
           </div>
 
-          <div class="bg-warna1 w-fit h-auto py-1 md:py-5 px-10 flex justify-center">
-            <h1 class="text-white text-center font-montserrat font-bold text-xl md:text-2xl lg:text-4xl 2xl:text-6xl">
-              Web Penerbit Salemba</h1>
+          <!-- Logo Client -->
+          <div class="flex h-fit w-full flex-col gap-5">
+            <img
+              src="assets/img/homepage/icon - our client/SATKOMindo.png"
+              class="h-auto w-40 self-start sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/BRI insurance.png"
+              class="h-auto w-40 self-end sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/Penerbit Salemba Empat.png"
+              class="h-auto w-40 self-start sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/Jamkrindo.png"
+              class="h-auto w-40 self-end sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/BRI agro.png"
+              class="h-auto w-40 self-start sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/BRI life.png"
+              class="h-auto w-40 self-end sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/OWLEXA.png"
+              class="h-auto w-40 self-start sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/Mandiri Tunas Finance.png"
+              class="h-auto w-40 self-end sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/BANK BRI.png"
+              class="h-auto w-40 self-start sm:w-64 lg:w-[420px]"
+            />
+
+            <img
+              src="assets/img/homepage/icon - our client/PT. TUNAS CAHAYA MANDIRI WIDYATAMA.png"
+              class="h-auto w-40 self-end sm:w-64 lg:w-[420px]"
+            />
           </div>
-          <!-- <div
-            class=" bg-warna6 h-auto w-10/12 sm:w-6/12 xl:w-auto xl:px- py-2 2xl:py-10 self-center flex items-center
-              justify-center">
+        </div>
+      </div>
+    </section>
+    <!-- Our Client END -->
+
+    <!-- Our Product -->
+    <section class="relative h-fit w-full overflow-hidden p-10 md:p-20">
+      <div class="container mx-auto grid grid-cols-12">
+        <!-- Overlay -->
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="absolute top-0 -left-32 h-[476px] sm:hidden md:top-28 md:-left-44 md:block lg:left-32"
+        />
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="absolute right-0 bottom-24 h-96"
+        />
+        <img
+          src="assets/img/overlay/Overlay Logo Tetamba.svg"
+          alt=""
+          class="absolute left-0 bottom-0 hidden h-44 sm:block lg:left-28 lg:bottom-14"
+        />
+
+        <div class="z-10 col-span-full flex flex-col gap-10 md:gap-20">
+          <!-- Judul -->
+          <div
+            class="mx-auto flex h-fit w-fit flex-col items-center justify-center gap-5"
+          >
+            <div
+              class="flex h-auto w-full justify-center bg-warna6 py-1 md:py-5"
+            >
               <h1
-                class="text-white text-center font-montserrat font-bold text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl">
+                class="text-center font-montserrat text-2xl font-bold text-white md:text-4xl lg:text-5xl 2xl:text-7xl"
+              >
                 Our Product
               </h1>
-          </div>
+            </div>
 
-          <div
-            class="bg-warna1 h-auto w-10/12 sm:w-6/12 xl:w-auto xl:px-10  py-2 2xl:py-10 self-center flex items-center justify-center">
-            <h1 class="text-white text-center font-montserrat font-medium text-xl md:text-2xl lg:text-4xl 2xl:text-6xl">
-              Web
-              Penerbit
-              Salemba
-            </h1>
-          </div> -->
-        </div>
-
-        <!-- Our Product - Content -->
-        <div class="grid grid-cols-12 gap-5">
-
-          <!-- col-1 -->
-          <div class="col-span-12 sm:col-span-6 lg:col-span-4">
-            <div class="flex flex-col gap-5">
-              <img src="assets/img/homepage/our product/1.png" alt="satu">
-              <img src="assets/img/homepage/our product/2.png" alt="dua">
-              <img src="assets/img/homepage/our product/3.png" alt="tiga">
+            <div
+              class="flex h-auto w-fit justify-center bg-warna1 py-1 px-10 md:py-5"
+            >
+              <h1
+                class="text-center font-montserrat text-xl font-bold text-white md:text-2xl lg:text-4xl 2xl:text-6xl"
+              >
+                Web Penerbit Salemba
+              </h1>
             </div>
           </div>
 
-          <!-- col-2 -->
-          <div class="lg:col-span-4 mt-10 hidden lg:block">
-            <div class="flex flex-col gap-5">
-              <img src="assets/img/homepage/our product/4.png" alt="empat">
-              <img src="assets/img/homepage/our product/5.png" alt="lima">
-              <img src="assets/img/homepage/our product/6.png" alt="enam">
-            </div>
-          </div>
-
-          <!-- col-3 -->
-          <div class="col-span-12 sm:col-span-6 lg:col-span-4 md:mt-10 lg:mt-20">
-            <div class="flex flex-col gap-5">
-              <div class="bg-warna5 w-1/2 h-2"></div>
-
-              <div class="w-full h-auto grid grid-cols-4 gap-5">
-                <img src="assets/img/homepage/react.png" alt="" class="col-span-1">
-                <img src="assets/img/homepage/net.png" alt="" class="col-span-1">
-                <img src="assets/img/homepage/sql.png" alt="" class="col-span-1">
+          <!-- Our Product - Content -->
+          <div class="grid grid-cols-12 gap-5">
+            <!-- col-1 -->
+            <div class="col-span-12 sm:col-span-6 lg:col-span-4">
+              <div class="flex flex-col gap-5">
+                <img
+                  src="assets/img/homepage/our product/Penerbit salemba empat 1.png"
+                  alt="satu"
+                />
+                <img
+                  src="assets/img/homepage/our product/Penerbit salemba empat 2.png"
+                  alt="dua"
+                />
+                <img
+                  src="assets/img/homepage/our product/Penerbit salemba empat 3.png"
+                  alt="tiga"
+                />
               </div>
-
-              <div class="text-white font-comfortaa font-medium text-sm sm:text-base 2xl:text-3xl">
-                <h4>We developer a service system called Salemba
-                  Practice for Penerbit Salemba. This service consists of e-learning , e-Tryiut and Training in mid-2019
-                </h4>
-                <br>
-                <h4>There is also a catalog of various books that can be purchased , either in print or digital
-                  (e-book).
-                </h4>
-              </div>
-
-              <div class="grid grid-cols-4">
-                <button type="button" onclick="document.location='product.html'"
-                  class="col-span-2 sm:col-span-3 bg-transparent hover:bg-warna5 w-full border border-warna5 focus:ring-2 py-2 text-warna5 hover:text-white text-center font-montserrat font-bold text-xl transition duration-500 ease-in-out">Show
-                  More</button>
-              </div>
-
             </div>
 
-          </div>
+            <!-- col-2 -->
+            <div class="mt-10 hidden lg:col-span-4 lg:block">
+              <div class="flex flex-col gap-5">
+                <img
+                  src="assets/img/homepage/our product/Penerbit salemba empat 4.png"
+                  alt="empat"
+                />
+                <img
+                  src="assets/img/homepage/our product/Penerbit salemba empat 5.png"
+                  alt="lima"
+                />
+                <img
+                  src="assets/img/homepage/our product/Penerbit salemba empat 6.png"
+                  alt="enam"
+                />
+              </div>
+            </div>
 
-        </div>
+            <!-- col-3 -->
+            <div
+              class="col-span-12 sm:col-span-6 md:mt-10 lg:col-span-4 lg:mt-20"
+            >
+              <div class="flex flex-col gap-5">
+                <div class="h-2 w-1/2 bg-warna5"></div>
 
-      </div>
+                <div class="grid h-auto w-full grid-cols-4 gap-5">
+                  <img
+                    src="assets/img/homepage/react.png"
+                    alt=""
+                    class="col-span-1"
+                  />
+                  <img
+                    src="assets/img/homepage/net.png"
+                    alt=""
+                    class="col-span-1"
+                  />
+                  <img
+                    src="assets/img/homepage/sql.png"
+                    alt=""
+                    class="col-span-1"
+                  />
+                </div>
 
-  </section>
-  <!-- Our Projct END -->
+                <div
+                  class="font-comfortaa text-sm font-medium text-white sm:text-base 2xl:text-3xl"
+                >
+                  <h4>
+                    We developer a service system called Salemba Practice for
+                    Penerbit Salemba. This service consists of e-learning ,
+                    e-Tryiut and Training in mid-2019
+                  </h4>
+                  <br />
+                  <h4>
+                    There is also a catalog of various books that can be
+                    purchased , either in print or digital (e-book).
+                  </h4>
+                </div>
 
-  <!-- Footer-->
-  <footer class="h-fit w-full flex">
-
-    <!-- Google map PC RESPOSIVE-->
-    <div class="w-full hidden sm:block">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        class="w-full h-full"></iframe>
-    </div>
-
-    <!-- Footer - Content -->
-    <div class="w-full h-fit flex flex-col">
-
-      <!-- Bagian atas -->
-      <div class="bg-warna6 flex flex-col p-2 md:p-5 2xl:px-8 2xl:py-10 gap-3 2xl:gap-14">
-
-        <!-- Contact Us -->
-        <div class="flex flex-col 2xl:gap-5">
-          <div class="text-white font-montserrat font-bold text-sm md:text-xl 2xl:text-4xl">Contact us</div>
-          <div class="flex items-center gap-2 2xl:gap-5">
-            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
-              class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl 2xl:text-5xl transition-all duration-500 "
-              target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            <div class="text-white font-comfortaa font-medium text-xs md:text-base 2xl:text-3xl">
-              Contact@tetambastudio.com</div>
-          </div>
-
-          <div class="flex items-center gap-2 2xl:gap-5">
-            <a class="hover:scale-110 text-warna2 hover:text-warna4 text-sm md:text-xl 2xl:text-5xl transition-all duration-500"
-              href="tel:6285776512171" target="_blank"><i class="fa-solid fa-phone"></i></a>
-            <div class="text-white font-comfortaa font-medium text-xs md:text-base 2xl:text-3xl">+62 857 7651 2171</div>
-          </div>
-        </div>
-
-        <!-- Address -->
-        <div class="flex flex-col 2xl:gap-5">
-          <div class="text-white font-montserrat font-bold text-sm md:text-xl 2xl:text-4xl">Address</div>
-          <div class="flex items-center gap-2 2xl:gap-5">
-            <a class="hover:scale-110 text-warna2 hover:text-warna4 self-start text-base md:text-xl 2xl:text-5xl transition-all duration-500"
-              href="https://goo.gl/maps/SszXyLyVyKmz8mzR6" target="_blank"><i class="fa-solid fa-location-dot "></i></a>
-            <p class="text-white font-comfortaa font-medium text-xs md:text-base 2xl:text-3xl">Jl. Nuri 2 No.103, Depok
-              Jaya, Kec.
-              Pancoran
-              Mas, Kota Depok, Jawa Barat </p>
+                <div class="grid grid-cols-4">
+                  <button
+                    type="button"
+                    onclick="document.location='product.html'"
+                    class="col-span-2 w-full border border-warna5 bg-transparent py-2 text-center font-montserrat text-xl font-bold text-warna5 transition duration-500 ease-in-out hover:bg-warna5 hover:text-white focus:ring-2 sm:col-span-3"
+                  >
+                    Show More
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Our Projct END -->
 
-      <!-- Google map MOBILE RESPONSIVE-->
-      <div class="w-full block sm:hidden">
+    <!-- Footer-->
+    <footer class="flex h-fit w-full">
+      <!-- Google map PC RESPOSIVE-->
+      <div class="hidden w-full sm:block">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          class="w-full h-full"></iframe>
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="h-full w-full"
+        ></iframe>
       </div>
 
-      <!-- Mark Pembatas -->
-      <div class="bg-warna4 w-full h-fit flex justify-center p-2 2xl:p-5">
-        <img src="assets/img/Mark Footer.svg" alt="" class="h-4 md:h-7 2xl:h-16 pointer-events-none select-none">
-      </div>
+      <!-- Footer - Content -->
+      <div class="flex h-fit w-full flex-col">
+        <!-- Bagian atas -->
+        <div
+          class="flex flex-col gap-3 bg-warna6 p-2 md:p-5 2xl:gap-14 2xl:px-8 2xl:py-10"
+        >
+          <!-- Contact Us -->
+          <div class="flex flex-col 2xl:gap-5">
+            <div
+              class="font-montserrat text-sm font-bold text-white md:text-xl 2xl:text-4xl"
+            >
+              Contact us
+            </div>
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=Contact@tetambastudio.com"
+                class="text-sm text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <div
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                Contact@tetambastudio.com
+              </div>
+            </div>
 
-      <!-- Bagian Bawah -->
-      <div class="bg-warna6 w-full h-fit flex flex-col md:flex-row justify-between p-2 md:p-5 2xl:px-8 2xl:py-10">
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                class="text-sm text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                href="tel:6285776512171"
+                target="_blank"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+              <div
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                +62 857 7651 2171
+              </div>
+            </div>
+          </div>
 
-        <div class="w-full h-fit">
-          <h4 class="text-white text-center sm:text-start font-comfortaa font-medium text-xs md:text-lg 2xl:text-3xl">
-            Copyright&copy;
-            2023 PT. Tetamba Studio
-            Kreasi. All rights reserved.
-          </h4>
+          <!-- Address -->
+          <div class="flex flex-col 2xl:gap-5">
+            <div
+              class="font-montserrat text-sm font-bold text-white md:text-xl 2xl:text-4xl"
+            >
+              Address
+            </div>
+            <div class="flex items-center gap-2 2xl:gap-5">
+              <a
+                class="self-start text-base text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-xl 2xl:text-5xl"
+                href="https://goo.gl/maps/SszXyLyVyKmz8mzR6"
+                target="_blank"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+              <p
+                class="font-comfortaa text-xs font-medium text-white md:text-base 2xl:text-3xl"
+              >
+                Jl. Nuri 2 No.103, Depok Jaya, Kec. Pancoran Mas, Kota Depok,
+                Jawa Barat
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="w-fit h-auto flex self-center sm:self-end gap-3 lg:gap-5">
-
-          <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
-            href="#" target="_blank"><i class="fa-brands fa-facebook "></i></a>
-
-          <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
-            href="https://twitter.com/gadgetfes/status/1524637030969659392" target="_blank"><i
-              class="fa-brands fa-twitter "></i></a>
-
-          <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
-            href="#" target="_blank"><i class="fa-brands fa-youtube "></i></a>
-
-          <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
-            href="https://www.linkedin.com/company/tetambastudio/about/" target="_blank"><i
-              class="fa-brands fa-linkedin "></i></a>
-          <a class="hover:scale-110 text-warna2 hover:text-warna4 text-lg md:text-2xl 2xl:text-5xl transition-all duration-500"
-            href="https://www.instagram.com/tetamba.studio/?hl=id" target="_blank"><i
-              class="fa-brands fa-instagram "></i></a>
+        <!-- Google map MOBILE RESPONSIVE-->
+        <div class="block w-full sm:hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.016321650315!2d106.80447511449488!3d-6.391895164296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e95aa8747cb7%3A0x6546c0b2685e5a83!2sJl.%20Nuri%202%20No.103%2C%20Depok%20Jaya%2C%20Kec.%20Pancoran%20Mas%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016432!5e0!3m2!1sen!2sid!4v1676448656630!5m2!1sen!2sid"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="h-full w-full"
+          ></iframe>
         </div>
 
+        <!-- Mark Pembatas -->
+        <div class="flex h-fit w-full justify-center bg-warna4 p-2 2xl:p-5">
+          <img
+            src="assets/img/Mark Footer.svg"
+            alt=""
+            class="pointer-events-none h-4 select-none md:h-7 2xl:h-16"
+          />
+        </div>
+
+        <!-- Bagian Bawah -->
+        <div
+          class="flex h-fit w-full flex-col justify-between bg-warna6 p-2 md:flex-row md:p-5 2xl:px-8 2xl:py-10"
+        >
+          <div class="h-fit w-full">
+            <h4
+              class="text-center font-comfortaa text-xs font-medium text-white sm:text-start md:text-lg 2xl:text-3xl"
+            >
+              Copyright&copy; 2023 PT. Tetamba Studio Kreasi. All rights
+              reserved.
+            </h4>
+          </div>
+
+          <div class="flex h-auto w-fit gap-3 self-center sm:self-end lg:gap-5">
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://twitter.com/gadgetfes/status/1524637030969659392"
+              target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://www.linkedin.com/company/tetambastudio/about/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              class="text-lg text-warna2 transition-all duration-500 hover:scale-110 hover:text-warna4 md:text-2xl 2xl:text-5xl"
+              href="https://www.instagram.com/tetamba.studio/?hl=id"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
       </div>
+    </footer>
+    <!-- Footer END -->
 
-    </div>
-  </footer>
-  <!-- Footer END -->
-
-
-  <!-- JS -->
-  <!-- CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script src="https://kit.fontawesome.com/46197067d1.js" crossorigin="anonymous"></script>
-  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- ORIGINAL JS -->
-  <script src="assets/js/clipboard.min.js"></script>
-  <script src="assets/js/navbar-responsive.js"></script>
-  <script src="assets/js/slick.js"></script>
-  <script src="assets/js/npc-nav.js"></script>
-
-</body>
-
+    <!-- JS -->
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      charset="utf-8"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/46197067d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- ORIGINAL JS -->
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/navbar-responsive.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/npc-nav.js"></script>
+  </body>
 </html>
