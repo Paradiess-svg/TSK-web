@@ -7,10 +7,6 @@ Demo: https://kuajak.com/tetamba-preview/TSK-web-main/public/index.html
 
 
 <<<---Flaw will fix--->>>
-
-Navbar dan footer terlihat kebesaran pada layar laptop yang besar dan tambah parah besarnya pada layar pc
-
-Beberapa gambar dan overlay belum ada pointer-event-none, bahkan beberapa text terlihat ditumpuk oleh overlay
-
+Semua overlay tak muncul
 <<--------->>
 For private use only
